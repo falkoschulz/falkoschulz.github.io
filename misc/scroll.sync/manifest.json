@@ -18,7 +18,7 @@
     "default_title": "Scroll Synchronizer"
   },
   "minimum_chrome_version": "102",
-  "description": "Extension to simultaneously scroll in Chrome tabs.",
+  "description": "Extension to simultaneously scroll Chrome tabs.",
   "background": {
     "service_worker": "scripts/service-worker.js",
     "type": "module"

@@ -1,33 +1,33 @@
 ﻿let pauseScrollEvent = false;
 
-window.addEventListener("scroll", async function () {
+// monitor scroll events and notify service-worker
+window.addEventListener("scroll", function () {
   if (pauseScrollEvent) {
     pauseScrollEvent = false;
     return;
   }
 
-  const x = window.scrollX;
-  const y = window.scrollY;
-  console.log("tab sends scrollXY:" + x + "," + y);
-
-  const response = await chrome.runtime.sendMessage({
-    window_scrollX: x,
-    window_scrollY: y,
+  chrome.runtime.sendMessage({
+    window_scrollX: window.scrollX,
+    window_scrollY: window.scrollY,
   });
-
-  if (response.resp === "SENT_TO_TABS") {
-    // success
-  }
 });
 
+window.addEventListener("unload", function (event) {
+  chrome.runtime.sendMessage({
+    unload: true,
+  });
+});
+
+// receive any scroll events from other tabs via service-worker messages
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (!sender.tab) {
     // from service-worker
-    var x = request.window_scrollX;
-    var y = request.window_scrollY;
-    console.log("tab receives scrollXY:" + x + "," + y);
+    const x = request.window_scrollX;
+    const y = request.window_scrollY;
+
+    // prevent firing own scroll event again
     pauseScrollEvent = true;
     window.scroll(x, y);
-    sendResponse({ resp: "SCROLL_POSITIONS_RECEIVED" });
   }
 });

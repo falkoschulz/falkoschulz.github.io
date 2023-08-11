@@ -24,13 +24,18 @@ export class ScrollSync {
     switch (name) {
       case "install":
         chrome.action.setBadgeText({
-          text: "OFF",
+          text: "",
         });
         break;
       case "message":
         const { request, sender, sendResponse } = params;
 
         if (sender.tab && this._isOn) {
+          // turn off by default on page unload
+          if (request.unload === true) {
+            this.setOff(sender.tab);
+          }
+
           // content script has updated scroll position
           this._selectedTabIds.forEach((tabId) => {
             if (tabId !== sender.tab.id) {
@@ -38,8 +43,6 @@ export class ScrollSync {
               chrome.tabs.sendMessage(tabId, request);
             }
           });
-
-          sendResponse({ resp: "SENT_TO_TABS" });
           break;
         }
     }

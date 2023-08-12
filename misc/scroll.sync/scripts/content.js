@@ -1,22 +1,40 @@
 ﻿let pauseScrollEvent = false;
 
+// simple throttle function to limit number of scroll messages fired
+const throttle = (func, wait, scope) => {
+  let timer = null;
+  return function () {
+    if (timer) clearTimeout(timer);
+    const args = arguments;
+    timer = setTimeout(function () {
+      timer = null;
+      func.apply(scope, args);
+    }, wait);
+  };
+};
+
 // monitor scroll events and notify service-worker
-window.addEventListener("scroll", function () {
-  if (pauseScrollEvent) {
-    pauseScrollEvent = false;
-    return;
-  }
+window.addEventListener(
+  "scroll",
+  throttle(() => {
+    if (pauseScrollEvent) {
+      pauseScrollEvent = false;
+      return;
+    }
 
-  chrome.runtime.sendMessage({
-    window_scrollX: window.scrollX,
-    window_scrollY: window.scrollY,
-  });
-});
+    window && chrome.runtime.sendMessage({
+      window_scrollX: window.scrollX,
+      window_scrollY: window.scrollY,
+    });
+  }, 50)
+);
 
+// detect extension unload
 window.addEventListener("unload", function (event) {
-  chrome.runtime.sendMessage({
-    unload: true,
-  });
+  chrome.runtime?.id &&
+    chrome.runtime.sendMessage({
+      unload: true,
+    });
 });
 
 // receive any scroll events from other tabs via service-worker messages

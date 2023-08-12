@@ -22,20 +22,13 @@ window.addEventListener(
       return;
     }
 
-    window && chrome.runtime.sendMessage({
-      window_scrollX: window.scrollX,
-      window_scrollY: window.scrollY,
-    });
+    window &&
+      chrome.runtime.sendMessage({
+        window_scrollX: window.scrollX,
+        window_scrollY: window.scrollY,
+      });
   }, 50)
 );
-
-// detect extension unload
-window.addEventListener("unload", function (event) {
-  chrome.runtime?.id &&
-    chrome.runtime.sendMessage({
-      unload: true,
-    });
-});
 
 // receive any scroll events from other tabs via service-worker messages
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {

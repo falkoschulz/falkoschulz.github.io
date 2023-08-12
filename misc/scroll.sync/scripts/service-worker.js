@@ -19,8 +19,12 @@ chrome.action.onClicked.addListener(async (tab) => {
   });
 
   if (nextState === "on") {
-    ScrollSync.setOn(tab);
+    ScrollSync.setOn(tab.id);
   } else {
-    ScrollSync.setOff(tab);
+    ScrollSync.setOff(tab.id);
   }
+});
+
+chrome.tabs.onRemoved.addListener((tabId) => {
+  ScrollSync.setOff(tabId);
 });

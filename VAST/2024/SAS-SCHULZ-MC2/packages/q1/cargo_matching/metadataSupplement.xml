@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds7" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_MOVEMENTS_GRAPH','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:08.659Z">
+            <columns>
+                <column dataType="string" label="Type (Edge)" xref="edge_type"/>
+                <column dataType="string" label="Source (Edge)" xref="source"/>
+                <column dataType="string" label="Target (Edge)" xref="target"/>
+                <column dataType="datetime" format="DATETIME0" label="Start time of the visit (Edge)" xref="time"/>
+                <column dataType="double" format="COMMA12." label="Duration at location (Edge)" xref="dwell"/>
+                <column dataType="datetime" format="DATETIME0" label="Date Added (Edge)" xref="edge_date_added"/>
+                <column dataType="string" label="Author Last Modified (Edge)" xref="edge_last_edited_by"/>
+                <column dataType="datetime" format="DATETIME0" label="Date Last Modified (Edge)" xref="edge_last_edited_date"/>
+                <column dataType="string" label="Type (Source)" xref="source_type"/>
+                <column dataType="string" label="Name (Source)" xref="source_name"/>
+                <column dataType="double" format="BEST12." label="Longitude (Source)" xref="source_longitude"/>
+                <column dataType="double" format="BEST12." label="Latitude (Source)" xref="source_latitude"/>
+                <column dataType="string" label="Location (Source)" xref="source_kind"/>
+                <column dataType="string" label="Location Activtities (Source)" xref="source_activities"/>
+                <column dataType="string" label="Location Fish Species (Source)" xref="source_fish_species"/>
+                <column dataType="string" label="Vessel Country (Source)" xref="source_country"/>
+                <column dataType="string" label="Vessel Owner/Company (Source)" xref="source_company"/>
+                <column dataType="double" format="COMMA12." label="Vessel Weight/gross tonnage (Source)" xref="source_tonnage"/>
+                <column dataType="double" format="COMMA12." label="Vessel Length/meters (Source)" xref="source_length"/>
+                <column dataType="double" format="COMMA12." label="Delivery Quantity/tons (Source)" xref="source_qty"/>
+                <column dataType="date" format="DATE9" label="Delivery Date (Source)" xref="source_date"/>
+                <column dataType="date" format="DATE9" label="Date Added (Source)" xref="source_date_added"/>
+                <column dataType="string" label="Author Last Modified (Source)" xref="source_last_edited_by"/>
+                <column dataType="date" format="DATE9" label="Date Last Modified (Source)" xref="source_last_edited_date"/>
+                <column dataType="string" label="Type (Target)" xref="target_type"/>
+                <column dataType="string" label="Name (Target)" xref="target_name"/>
+                <column dataType="double" format="BEST12." label="Longitude (Target)" xref="target_longitude"/>
+                <column dataType="double" format="BEST12." label="Latitude (Target)" xref="target_latitude"/>
+                <column dataType="string" label="Location (Target)" xref="target_kind"/>
+                <column dataType="string" label="Location Activtities (Target)" xref="target_activities"/>
+                <column dataType="string" label="Location Fish Species (Target)" xref="target_fish_species"/>
+                <column dataType="string" label="Vessel Country (Target)" xref="target_country"/>
+                <column dataType="string" label="Vessel Owner/Company (Target)" xref="target_company"/>
+                <column dataType="double" format="COMMA12." label="Vessel Weight/gross tonnage (Target)" xref="target_tonnage"/>
+                <column dataType="double" format="COMMA12." label="Vessel Length/meters (Target)" xref="target_length"/>
+                <column dataType="double" format="COMMA12." label="Delivery Quantity/tons (Target)" xref="target_qty"/>
+                <column dataType="date" format="DATE9" label="Delivery Date (Target)" xref="target_date"/>
+                <column dataType="date" format="DATE9" label="Date Added (Target)" xref="target_date_added"/>
+                <column dataType="string" label="Author Last Modified (Target)" xref="target_last_edited_by"/>
+                <column dataType="date" format="DATE9" label="Date Last Modified (Target)" xref="target_last_edited_date"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds603" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_MOVEMENTS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:12.492Z">
+            <columns>
+                <column dataType="string" label="Source Location" xref="source"/>
+                <column dataType="string" label="Target Location" xref="target"/>
+                <column dataType="string" label="Vessel" xref="vessel"/>
+                <column dataType="string" label="Company" xref="company"/>
+                <column dataType="datetime" format="DATETIME0" label="Departure date/time" xref="departure_time"/>
+                <column dataType="datetime" format="DATETIME0" label="Arrival date/time" xref="arrival_time"/>
+                <column dataType="double" format="BEST12." label="Longitude (Source)" xref="source_longitude"/>
+                <column dataType="double" format="BEST12." label="Latitude (Source)" xref="source_latitude"/>
+                <column dataType="double" format="BEST12." label="Longitude (Target)" xref="target_longitude"/>
+                <column dataType="double" format="BEST12." label="Latitude (Target)" xref="target_latitude"/>
+                <column dataType="double" format="COMMA12.2" label="Distance (mi)" xref="dist_mi"/>
+                <column dataType="double" format="COMMA12.2" label="Distance (nautical mile)" xref="dist_nmi"/>
+                <column dataType="double" format="COMMA12.2" label="Duration (hours)" xref="duration"/>
+                <column dataType="double" format="F12.2" label="Speed (knots)" xref="speed_kn"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds832" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_SOUTHSEAFOOD_ANIM','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:18.065Z">
+            <columns>
+                <column dataType="datetime" format="DATETIME0" label="time" xref="time"/>
+                <column dataType="double" format="BEST12." label="target_longitude" xref="longitude"/>
+                <column dataType="double" format="BEST12." label="target_latitude" xref="latitude"/>
+                <column dataType="string" label="location" xref="location"/>
+                <column dataType="string" label="vessel" xref="vessel"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds1152" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_SHARED_LOCATIONS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:15.800Z">
+            <columns>
+                <column dataType="string" label="Location" xref="location"/>
+                <column dataType="string" label="Vessel A" xref="vessel_a"/>
+                <column dataType="string" label="Vessel B" xref="vessel_b"/>
+                <column dataType="string" label="Vessel Type A" xref="vessel_type_a"/>
+                <column dataType="string" label="Vessel Type B" xref="vessel_type_b"/>
+                <column dataType="string" label="Vessel Company A" xref="company_a"/>
+                <column dataType="string" label="Vessel Company B" xref="company_b"/>
+                <column dataType="datetime" format="DATETIME0" label="Meeting Start Time" xref="meeting_start_time"/>
+                <column dataType="datetime" format="DATETIME0" label="Meeting End Time" xref="meeting_end_time"/>
+                <column dataType="double" format="COMMA12.1" label="Meeting duration (min)" xref="overlap_min"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds1488" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_VISITS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:17.325Z">
+            <columns>
+                <column dataType="string" label="Record Type" xref="record_type"/>
+                <column dataType="string" label="Vessel" xref="vessel"/>
+                <column dataType="string" label="Company" xref="company"/>
+                <column dataType="string" label="Vessel Type" xref="vessel_type"/>
+                <column dataType="string" label="Harbour" xref="harbour"/>
+                <column dataType="datetime" format="DATETIME0" label="Arrival Time" xref="arrival_time"/>
+                <column dataType="datetime" format="DATETIME0" label="Departure Time" xref="departure_time"/>
+                <column dataType="double" format="COMMA12.1" label="Duration (days)" xref="duration_days"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds1498" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_EXPORTS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:17.882Z">
+            <columns>
+                <column dataType="datetime" format="DATETIME0" label="Date" xref="date"/>
+                <column dataType="string" label="Cargo" xref="cargo"/>
+                <column dataType="string" label="Harbour" xref="harbour"/>
+                <column dataType="double" format="COMMA12." label="Delivery Quantity/tons" xref="qty"/>
+                <column dataType="string" label="Commodity (Fish)" xref="commodity"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds1925" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_IMPORTS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:18.550Z">
+            <columns>
+                <column dataType="datetime" format="DATETIME0" label="Date" xref="date"/>
+                <column dataType="string" label="Harbour" xref="harbour"/>
+                <column dataType="string" label="Cargo" xref="cargo"/>
+                <column dataType="string" label="Commodity (Fish)" xref="commodity"/>
+                <column dataType="double" format="COMMA12.1" label="Total Quantity (tons)" xref="qty"/>
+                <column dataType="string" label="Vessel" xref="vessel"/>
+                <column dataType="string" label="Company" xref="company"/>
+                <column dataType="string" label="Location" xref="location"/>
+                <column dataType="double" format="COMMA12.1" label="Duration (days) at location" xref="location_duration"/>
+                <column dataType="double" format="COMMA12.1" label="Quantity (tons) per vessel" xref="qty_dist"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds2361" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_PATHS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:17.626Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="Transaction Identifier" xref="transid"/>
+                <column dataType="double" format="BEST12." label="Sequence Order" xref="sequence"/>
+                <column dataType="string" label="Record Type" xref="record"/>
+                <column dataType="datetime" format="DATETIME0" label="Start time of the visit" xref="time"/>
+                <column dataType="string" label="Location Type" xref="kind"/>
+                <column dataType="string" label="location" xref="location"/>
+                <column dataType="string" label="Fish Species" xref="fish_species"/>
+                <column dataType="string" label="Vessel" xref="vessel"/>
+                <column dataType="string" label="Company" xref="company"/>
+                <column dataType="double" format="COMMA12.1" label="Duration (days)" xref="duration_days"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds4205" resourceIdentifier="'cas-shared-default','Public','VAST2024_OCEANUS_REGIONS_SPECIES','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:18.293Z">
+            <columns>
+                <column dataType="string" label="Fish Species" xref="fish_species"/>
+                <column dataType="string" label="Ecological Preserve" xref="ecological_preserve"/>
+                <column dataType="string" label="Fishing Ground" xref="fishing_ground"/>
+                <column dataType="string" label="Region" xref="region"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>

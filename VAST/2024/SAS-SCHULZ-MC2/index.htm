@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SAS-SCHULZ-MC1</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      async
+      src="https://cdn.developer.sas.com/packages/va-report-components/latest/dist/umd/va-report-components.js"
+    ></script>
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      sas-report,
+      sas-report-page,
+      sas-report-object {
+        height: 80vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main">
+      <header>
+        <h1><strong class="wrapblock">SAS-SCHULZ-MC2</strong></h1>
+        <p>VAST Challenge 2024</p>
+        <p>Challenge 2</p>
+
+        <nav>
+          <a href="#team_information">Team Information</a> |
+          <a href="#video">Video</a> |
+          <a href="#questions">Questions</a>
+        </nav>
+      </header>
+
+      <h2 id="team_information">Team Information</h2>
+
+      <h3>Team members:</h3>
+      <ul>
+        <li>
+          Falko Schulz, SAS Institute,
+          <a href="mailto:Falko.Schulz@sas.com">Falko.Schulz@sas.com</a>
+          (PRIMARY)
+        </li>
+        <li>
+          Steven Harenberg, SAS Institute,
+          <a href="mailto:Steven.Harenberg@sas.com">Steven.Harenberg@sas.com</a>
+        </li>
+        <li>
+          Brandon Reese, SAS Institute,
+          <a href="mailto:Brandon.Reese@sas.com">Brandon.Reese@sas.com</a>
+        </li>
+        <li>
+          Amy Becker, SAS Institute,
+          <a href="mailto:Amy.Becker@sas.com">Amy.Becker@sas.com</a>
+        </li>
+      </ul>
+
+      <h3>Student team?</h3>
+      <p>No</p>
+
+      <h3>Analytics tools used:</h3>
+      <ul>
+        <li>
+          <a href="https://www.sas.com/en_us/software/visual-analytics.html"
+            >SAS® Visual Analytics</a
+          >
+        </li>
+        <li>
+          <a href="https://www.sas.com/en_us/software/viya.html">SAS® Viya®</a>
+        </li>
+        <li>
+          <a
+            href="https://go.documentation.sas.com/doc/en/pgmsascdc/v_028/casmlnetwork/casmlnetwork_network_details.htm"
+            >NETWORK Procedure</a
+          >
+          from
+          <a
+            href="https://support.sas.com/en/software/visual-data-mining-and-machine-learning-support.html"
+            >SAS® Visual Data Mining and Machine Learning</a
+          >
+        </li>
+      </ul>
+
+      <h3>
+        Approximately how many hours were spent working on this submission in
+        total?
+      </h3>
+      <p>100 hours</p>
+
+      <h3>
+        May we post your submission in the Visual Analytics Benchmark Repository
+        after VAST Challenge 2024 is complete?
+      </h3>
+      <p>Yes</p>
+
+      <h2 id="video">Video</h2>
+      <div class="darkpane">
+        <div class="vidwrap">
+          <iframe
+            width="784"
+            height="480"
+            src="https://www.youtube.com/embed/lzx_9zhJVAU?theme=light&modestbranding=1&controls=2&rel=0&showinfo=0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <p class="centered">
+        <a href="https://youtu.be/lzx_9zhJVAU">Watch Video on YouTube</a>
+      </p>
+
+      <h2 id="questions">Questions</h2>
+
+      <p class="centered">
+        <a href="#q1">Question 1</a> | <a href="#q2">Question 2</a> |
+        <a href="#q3">Question 3</a> |
+        <a href="#q4">Question 4</a>
+      </p>
+
+      <p>
+        FishEye analysts need your help to perform geographic and temporal
+        analysis of the CatchNet data so they can prevent illegal fishing from
+        happening again. Your task is to develop new visual analytics tools and
+        workflows that can be used to discover and understand signatures of
+        different types of behavior. Can you use your tool to visualize a
+        signature of SouthSeafood Express Corp’s illegal behavior? FishEye needs
+        your help to develop a workflow to find other instances of illegal
+        behavior.
+      </p>
+      <p>
+        <small
+          >Note: the VAST challenge is focused on visual analytics and graphical
+          figures should be included with your response to each question. Please
+          include a reasonable number of figures for each question (no more than
+          about 6) and keep written responses as brief as possible (around 250
+          words per question). Participants are encouraged to new visual
+          representations rather than relying on traditional or existing
+          approaches.
+        </small>
+      </p>
+      <div
+        class="centered darkpane brochure"
+        style="font-size: large; background-image: none"
+      >
+        <h3 style="font-weight: bold; font-size: 2rem; margin-top: 1rem">
+          NOTE
+        </h3>
+        <p>
+          The answer form contains interactive visualizations that rely on
+          content hosted on GitHub pages and CDNs. If you encounter issues with
+          these visualizations first try viewing in Chrome and disabling any ad
+          blocking. If the interactive visuals still do not work a static
+          fallback version can be forced by clicking this link:
+        </p>
+        <p>
+          <a style="color: #329ff7; font-weight: bold" href="index.htm?static"
+            >Static Answer Form</a
+          >
+        </p>
+      </div>
+
+      <br />
+      <br />
+
+      <h3>
+        <span id="q1" class="question-number">1</span> FishEye analysts have
+        long wanted to better understand the flow of commercially caught fish
+        through Oceanus’s many ports. But as they were loading data into
+        CatchNet, they discovered they had purchased the wrong port records.
+        They wanted to get the ship off-load records, but they instead got the
+        port-exit records (essentially trucks/trains leaving the port area).
+        Port exit records do not include which vessel that delivered the
+        products. Given this limitation, develop a visualization system to
+        associate vessels with their probable cargos. Which vessels deliver
+        which products and when? What are the seasonal trends and anomalies in
+        the port exit records?
+      </h3>
+
+      <p>
+        To better understand the flow of commercially caught fish through
+        Oceanus, the team analyzed the cargo exports. The visualizations below
+        provide insights into fishing seasons and harbor distribution.
+        Interestingly, some fish species are exported only during very narrow
+        time frames, such as Tuna, which is available only in late October.
+        Additionally, we observe cargos exporting commodities exclusive to
+        ecological preserves. Analyzing the distribution by harbor, we find that
+        some, like Himark, are busy year-round, whereas others, such as Lomark
+        and South Packland, show activity only in the second half of the year.
+        Finally, a quantity distribution shows that we also have negative values
+        recorded in the data. Further investigation may be required to determine
+        the meaning of such values.
+      </p>
+
+      <figure>
+        <figcaption>cargo patterns</figcaption>
+        <sas-report-page
+          class="dynamic remove tall"
+          packageUri="./packages/q1/cargo_patterns/"
+          pageName="vi1922"
+        ></sas-report-page
+        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <p>
+        By considering vessels present at the time of cargo export (or at most
+        one day earlier) and only including vessels that visited the fishing
+        grounds for a specific cargo commodity, we can narrow down the potential
+        list of matching vessels for that cargo. Although we don't always expect
+        a single vessel match—since multiple vessels could deliver fish of the
+        same species on a given day—the data does show a number of 1:1 matches.
+        The following visualization enables users to select a commodity for a
+        given month and examine the related cargos and probable vessel matches.
+      </p>
+
+      <figure>
+        <figcaption>cargo matching</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q1/cargo_matching/"
+          pageName="vi6772"
+        ></sas-report-page
+        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <!-- QUESTION #2 -->
+
+      <h3>
+        <span id="q2" class="question-number">2</span> Develop visualizations
+        that illustrate the inappropriate behavior of SouthSeafood Express Corp
+        vessels. How do their movement and catch contents compare to other
+        fishing vessels? When and where did SouthSeafood Express Corp vessels
+        perform their illegal fishing? How many different types of suspicious
+        behaviors are observed? Use visual evidence to justify your conclusions.
+      </h3>
+
+      <p>
+        Data provided, shows that SouthSeafood Express Corp owns two vessels:
+      </p>
+      <ol>
+        <li>Roach Robber, a large 130m long and 11,700 t heavy ship</li>
+        <li>Snapper Snatcher, a small 20m long and 100 t ship</li>
+      </ol>
+      Vessels enter the Oceanus region via the East Exit buoy and primarily
+      travel between Nav C buoy and Wrasse Beds fishing grounds and off-load
+      their catch in either Himark or Lomark harbor or outside the country.
+      Secondary fishing ground Cod Table is also visited frequently though
+      mostly by Snapper Snatcher:
+
+      <figure>
+        <figcaption>Map of vessel movements</figcaption>
+        <sas-report-object
+          class="dynamic remove small"
+          packageUri="./packages/q2/routes/"
+          objectName="ve9344"
+        ></sas-report-object>
+        <img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <p>
+        SouthSeafood Express vessels typically start their journey in either the
+        City of Himark or Lomark. Vessels typically fish in Wrasse Beds or Cod
+        Table, two of the legal fishing grounds. Note, that there is no data
+        available for the second half of the year, assumingly due to the company
+        closure as a result of the illegal fishing acitivites.
+      </p>
+
+      <figure>
+        <figcaption>Travel Paths</figcaption>
+        <sas-report-page
+          class="dynamic remove tall"
+          packageUri="./packages/q2/movement_comparision/"
+          pageName="vi3824"
+        ></sas-report-page>
+        <img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <h4>
+        When and where did SouthSeafood Express Corp vessels perform their
+        illegal fishing?
+      </h4>
+
+      <p>
+        To gain a better understanding of vessel movement patterns, we analyzed
+        the locations visited over a one-year period. While both vessels spent
+        considerable time at Wrasse Beds fishing ground, a legal fishing area,
+        the small vessel Snapper Snatcher was also recorded spending three
+        consecutive days on multiple occasions at Ghoti Preserve, an ecological
+        preserve. This could potentially indicate illegal fishing activities.
+        The three recorded events occurred from February 2<sup>nd</sup> to
+        5<sup>th</sup>, February 9<sup>th</sup> to 12<sup>th</sup>, and February
+        16<sup>th</sup> to 19<sup>th</sup>, with an additional short visit of
+        two hours on March 15<sup>th</sup>.
+      </p>
+
+      <figure>
+        <figcaption>Locations and route schedule</figcaption>
+        <sas-report-page
+          class="dynamic remove tall"
+          packageUri="./packages/q2/locations/"
+          pageName="vi9695"
+        ></sas-report-page>
+        <img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <p>
+        To more accurately determine the activities of a given vessel, we
+        analyzed its movement and speed data. Using the GPS transponder signal,
+        we obtained information about the vessel's location and time, allowing
+        us to calculate the speed needed to reach various destinations. By
+        examining the speed at different types of locations, we expect higher
+        speeds at navigational points and ecological preserves, as these are
+        typically transit areas. Lower speeds would suggest fishing activities.
+        When examining the speed distribution for ecological preserves, we found
+        that most vessels travel at high speeds. However, a small subset travels
+        at 5 knots or slower.
+      </p>
+
+      <figure>
+        <figcaption>Vessel speeds by geographical area</figcaption>
+        <sas-report-page
+          class="dynamic remove small"
+          packageUri="./packages/q2/speed/"
+          pageName="vi9796"
+        ></sas-report-page>
+        <img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <p>
+        By applying the speed data to the schedule chart for the SouthSeafood
+        vessels, we observe that the Snapper Snatcher and other vessels travel
+        at very low speeds in the Ghoti Preserve, indicating fishing activities.
+        The fact that they stay at this location for three days warrants further
+        analysis.
+      </p>
+
+      <figure>
+        <figcaption>Vessels filtered by travel speed</figcaption>
+        <sas-report-page
+          class="dynamic remove tall"
+          packageUri="./packages/q2/speed_comparison/"
+          pageName="vi3201"
+        ></sas-report-page>
+        <img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <h4>How many different types of suspicious behaviors are observed?</h4>
+      <p>
+        In addition to identifying suspicious behavior by Snapper Snatcher
+        regarding fishing in ecological preserves, we further investigated
+        transponder signals. Analyzing the detailed data and ping intervals
+        reveals blackout periods for both SouthSeafood vessels while traveling
+        in the Ghoti Preserve. For example, during all three visits to Ghoti,
+        CatchNet data shows a longer stay than what is measured using the GPS
+        transponder signal timestamps. Snapper Snatcher records an arrival at
+        the next navigation point (Nav 1) that is 7 hours earlier than expected.
+        Additionally, the second vessel, Roach Robber, has more than a day of
+        unaccounted records for Snapper Snatcher's third Ghoti visit on February
+        18th, potentially suggesting a secret meet-up for cargo exchange.
+        <br /><br />
+        <i
+          >Hint: Select both of the SouthSeafood vessels and compare transponder
+          delays on Feburary 19<sup>th</sup></i
+        >
+      </p>
+
+      <figure>
+        <figcaption>Transponder signals and offsets</figcaption>
+        <sas-report-page
+          class="dynamic remove tall"
+          packageUri="./packages/q2/transponders/"
+          pageName="vi8793"
+        ></sas-report-page>
+        <img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <!-- QUESTION #3 -->
+
+      <h3>
+        <span id="q3" class="question-number">3</span> To support further
+        Fisheye investigations, develop visual analytics workflows that allow
+        you to discover other vessels engaging in behaviors similar to
+        SouthSeafood Express Corp’s illegal activities? Provide visual evidence
+        of the similarities.
+      </h3>
+
+      <p>
+        Given the knowledge that slow moving vessels in preserves may indicate
+        illegal fishing activties, we can filter the data for other vessels
+        across preserves. The following visualization shows vessel operators
+        sorted by the average duration at the selected preserve.
+      </p>
+
+      <figure>
+        <figcaption>Long preserve stays</figcaption>
+        <sas-report-page
+          class="dynamic remove tall"
+          packageUri="./packages/q3/long_stays/"
+          pageName="vi10921"
+        ></sas-report-page
+        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <p>
+        Every vessel traveling in Oceanus follows a temporal pattern based on
+        its type and activities in the region. For example, this pattern helps
+        distinguish fishing vessels from touring vessels. The following
+        visualization enables a comparison of these patterns between two company
+        vessels. A fishing vessel typically exhibits frequent loops between the
+        harbor and fishing grounds, with the latter usually traversed slowly.
+        High speeds are expected at navigational points and ecological
+        preserves, as these represent transit waypoints.
+      </p>
+
+      <figure>
+        <figcaption>temporal fingerprint</figcaption>
+        <sas-report-page
+          class="dynamic remove tall"
+          packageUri="./packages/q3/fingerprint/"
+          pageName="vi11716"
+        ></sas-report-page
+        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <!-- QUESTION #4 -->
+
+      <h3>
+        <span id="q4" class="question-number">4</span> How did fishing activity
+        change after SouthSeafood Express Corp was caught? What new behaviors in
+        the Oceanus commercial fishing community are most suspicious and why?
+      </h3>
+
+      <p>
+        SouthSeafood Express Corp has been caught illegal fishing earlier in the
+        year. As a result of the companies actions, data shows that none of the
+        companies vessels operated after May 2035. Interesingly, new companies
+        emerge in the months after (highlighted <b style="color: red">red</b>),
+        potentially warrant further analysis.
+      </p>
+
+      <figure>
+        <figcaption>recorded vessels by month</figcaption>
+        <sas-report-page
+          class="dynamic remove tall"
+          packageUri="./packages/q4/closure/"
+          pageName="vi10503"
+        ></sas-report-page
+        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <p>
+        Analyzing vessel movements and the duration of their stays at specific
+        locations provides insights into where vessels are located throughout
+        the year. When focusing on visits to ecological preserves, there is a
+        noticeable declining trend in stays of half a day or longer during the
+        second half of the year. This decline may be linked to SouthSeafood's
+        illegal fishing activities earlier in the year.
+      </p>
+
+      <figure>
+        <figcaption>Number of vessels with half-day stay or longer</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q4/trends/"
+          pageName="vi10072"
+        ></sas-report-page
+        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <p>
+        Analyzing cargo imports into Oceanus reveals that harbors process more
+        frequent cargo imports in the second half of the year. However, the
+        tonnage per cargo is lower, leading to a comparable overall fishing
+        quantity. Interestingly, fish exclusively found in ecological preserves
+        are only recorded after May, following the closure of SouthSeafood
+        Express Corp. This suggests that records before this date might have
+        been unreported.
+      </p>
+
+      <figure>
+        <figcaption>cargo is brought into Oceanus</figcaption>
+        <sas-report-page
+          class="dynamic remove tall"
+          packageUri="./packages/q4/cargos/"
+          pageName="vi10825"
+        ></sas-report-page
+        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <script>
+        const statics = document.querySelectorAll(".static");
+        const dynamics = document.querySelectorAll(".dynamic");
+        window.addEventListener("vaReportComponents.loaded", function () {
+          vaReportComponents.setLoadingTheme({
+            baseTheme: "dark",
+          });
+          // vaReportComponents.setUseZoomOverlay(true);
+          if (!window.location.href.includes("?static")) {
+            for (let static of statics) {
+              static.classList.add("remove");
+            }
+            for (let dynamic of dynamics) {
+              dynamic.classList.remove("remove");
+            }
+          }
+        });
+        const embeds = document.querySelectorAll("sas-report-page");
+        const observer = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              element = entry.target;
+              if (!element.getAttribute("packageUri")) {
+                const key = element.getAttribute("reportContextKey");
+                element.setAttribute("packageUri", key);
+              }
+            }
+          }
+        });
+        embeds.forEach((element) => {
+          observer.observe(element);
+        });
+      </script>
+    </div>
+  </body>
+</html>

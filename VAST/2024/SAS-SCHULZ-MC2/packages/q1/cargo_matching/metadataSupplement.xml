@@ -107,7 +107,7 @@
                 <column dataType="string" label="Commodity (Fish)" xref="commodity"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds1925" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_IMPORTS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:18.550Z">
+        <table dataLocale="en_US" dataSources="ds1925" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_IMPORTS','en_US'" tableModifiedTimeStamp="2024-06-20T03:59:11.294Z">
             <columns>
                 <column dataType="datetime" format="DATETIME0" label="Date" xref="date"/>
                 <column dataType="string" label="Harbour" xref="harbour"/>

@@ -238,13 +238,13 @@
     <div class="side-panel">
     <div role="navigation">
       <ul class="link-pad">
-      <li>VAST 2024 - MC2 - Analysis V4 (Falko)
+      <li>VAST 2024 - MC2 - Analysis V6 (Falko)
       <ul>
       <li class="link" data-type="sas-report-page" data-element="vi6772">Q1 Cargo Matching
       <ul>
-      <li class="link" data-type="sas-report-object" data-element="ve7442">Bar - Month 2
+      <li class="link" data-type="sas-report-object" data-element="ve14342">Dual axis time - Date 1
       </li>
-      <li class="link" data-type="sas-report-object" data-element="ve12709">Crosstab - Cargo - Company - Vessel - Date 1
+      <li class="link" data-type="sas-report-object" data-element="ve14089">Bar - Date 5
       </li>
       </ul>
       </li>
@@ -267,9 +267,9 @@
       </div>
     </div>
     <div id="report-container" class="main-content" role="main">
-    <h1>VAST 2024 - MC2 - Analysis V4 (Falko)</h1>
+    <h1>VAST 2024 - MC2 - Analysis V6 (Falko)</h1>
     <h3>View exported content and code reference to customize your webpage. See the <a target='_blank' href='https://github.com/sassoftware/sas-viya-sdk-js/tree/main/sdk/va-report-components/examples'>examples</a> on GitHub</h3>
-    <h3>Exported from SAS&reg;Visual Analytics on June 19, 2024 at 08:52 AM UTC</h3>
+    <h3>Exported from SAS&reg;Visual Analytics on June 21, 2024 at 01:12 AM UTC</h3>
     <br>
     <hr>
     <h3 id="reportlabel"></h3>
@@ -313,7 +313,7 @@
     const reportContainer = document.getElementById("report-container");
     const status = document.getElementById("status");
     const statusContent = document.getElementById("status-content")
-    const reportStatus = [{"msgs":["  Interactivity for this object is limited for the following reasons:","    * The data to support actions could not be retrieved. Time out exceeded.","  These reasons might only be a problem because of these data complexities:","    * This object uses an aggregate measure."],"label":"Crosstab - Cargo - Company - Vessel - Date 1"}];
+    const reportStatus = null;
     const liItems = document.querySelectorAll("li[data-type]");
     if (liItems.length) {
        setView(liItems[0].firstChild.textContent.replace(/\s+/g, ' ').trim(), liItems[0].getAttribute("data-type"), liItems[0].getAttribute("data-element"));

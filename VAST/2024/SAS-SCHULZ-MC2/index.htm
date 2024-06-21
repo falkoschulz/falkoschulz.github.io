@@ -209,6 +209,33 @@
       </figure>
 
       <p>
+        Given the travel details of each vessel and knowledge of their locations
+        in the hours prior to arriving at a harbor, we can identify which
+        vessels could have delivered a commodity on a specific day and time. By
+        considering the available fish species at the locations visited before
+        arriving at the harbor, we can further narrow down the list of potential
+        vessel matches.
+        <br /><br />
+        The following visualizations display the overall confidence in
+        successful matches. A high score indicates a low number of vessels
+        associated with a cargo, with 100% representing a 1:1 mapping. The
+        analysis reveals that we had higher confidence in the first half of the
+        year, with more 1:1 mappings, compared to the second half, where
+        multiple potential matches made it challenging to determine exact vessel
+        associations.
+      </p>
+
+      <figure>
+        <figcaption>cargo matching</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q1/cargo_matching/"
+          pageName="vi6772"
+        ></sas-report-page
+        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+      </figure>
+
+      <p>
         By considering vessels present at the time of cargo export (or at most
         one day earlier) and only including vessels that visited the fishing
         grounds for a specific cargo commodity, we can narrow down the potential
@@ -220,11 +247,11 @@
       </p>
 
       <figure>
-        <figcaption>cargo matching</figcaption>
+        <figcaption>probable cargos</figcaption>
         <sas-report-page
           class="dynamic remove medium"
-          packageUri="./packages/q1/cargo_matching/"
-          pageName="vi6772"
+          packageUri="./packages/q1/cargo_match_details/"
+          pageName="vi13876"
         ></sas-report-page
         ><img src="img/fig-c1-q2-1-alt.png" class="static" />
       </figure>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <metadataSupplement>
     <tables>
-        <table dataLocale="en_US" dataSources="ds7" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_MOVEMENTS_GRAPH','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:08.659Z">
+        <table dataLocale="en_US" dataSources="ds7" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_MOVEMENTS_GRAPH','en_US'" tableModifiedTimeStamp="2024-07-08T14:45:27.112Z">
             <columns>
                 <column dataType="string" label="Type (Edge)" xref="edge_type"/>
                 <column dataType="string" label="Source (Edge)" xref="source"/>
@@ -45,7 +45,7 @@
                 <column dataType="date" format="DATE9" label="Date Last Modified (Target)" xref="target_last_edited_date"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds603" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_MOVEMENTS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:12.492Z">
+        <table dataLocale="en_US" dataSources="ds603" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_MOVEMENTS','en_US'" tableModifiedTimeStamp="2024-07-08T14:45:32.848Z">
             <columns>
                 <column dataType="string" label="Source Location" xref="source"/>
                 <column dataType="string" label="Target Location" xref="target"/>
@@ -63,7 +63,7 @@
                 <column dataType="double" format="F12.2" label="Speed (knots)" xref="speed_kn"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds832" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_SOUTHSEAFOOD_ANIM','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:18.065Z">
+        <table dataLocale="en_US" dataSources="ds832" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_SOUTHSEAFOOD_ANIM','en_US'" tableModifiedTimeStamp="2024-07-08T14:45:32.095Z">
             <columns>
                 <column dataType="datetime" format="DATETIME0" label="time" xref="time"/>
                 <column dataType="double" format="BEST12." label="target_longitude" xref="longitude"/>
@@ -72,7 +72,7 @@
                 <column dataType="string" label="vessel" xref="vessel"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds1152" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_SHARED_LOCATIONS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:15.800Z">
+        <table dataLocale="en_US" dataSources="ds1152" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_SHARED_LOCATIONS','en_US'" tableModifiedTimeStamp="2024-07-08T14:45:32.857Z">
             <columns>
                 <column dataType="string" label="Location" xref="location"/>
                 <column dataType="string" label="Vessel A" xref="vessel_a"/>
@@ -86,7 +86,7 @@
                 <column dataType="double" format="COMMA12.1" label="Meeting duration (min)" xref="overlap_min"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds1488" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_VISITS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:17.325Z">
+        <table dataLocale="en_US" dataSources="ds1488" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_VISITS','en_US'" tableModifiedTimeStamp="2024-07-08T14:45:29.838Z">
             <columns>
                 <column dataType="string" label="Record Type" xref="record_type"/>
                 <column dataType="string" label="Vessel" xref="vessel"/>
@@ -98,7 +98,7 @@
                 <column dataType="double" format="COMMA12.1" label="Duration (days)" xref="duration_days"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds1498" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_EXPORTS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:17.882Z">
+        <table dataLocale="en_US" dataSources="ds1498" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_EXPORTS','en_US'" tableModifiedTimeStamp="2024-07-08T14:45:31.615Z">
             <columns>
                 <column dataType="datetime" format="DATETIME0" label="Date" xref="date"/>
                 <column dataType="string" label="Cargo" xref="cargo"/>
@@ -107,7 +107,7 @@
                 <column dataType="string" label="Commodity (Fish)" xref="commodity"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds1925" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_IMPORTS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:18.550Z">
+        <table dataLocale="en_US" dataSources="ds1925" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_IMPORTS','en_US'" tableModifiedTimeStamp="2024-07-08T14:45:25.512Z">
             <columns>
                 <column dataType="datetime" format="DATETIME0" label="Date" xref="date"/>
                 <column dataType="string" label="Harbour" xref="harbour"/>
@@ -121,7 +121,7 @@
                 <column dataType="double" format="COMMA12.1" label="Quantity (tons) per vessel" xref="qty_dist"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds2361" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_PATHS','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:17.626Z">
+        <table dataLocale="en_US" dataSources="ds2361" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC2_HARBOUR_PATHS','en_US'" tableModifiedTimeStamp="2024-07-08T14:45:30.413Z">
             <columns>
                 <column dataType="double" format="BEST12." label="Transaction Identifier" xref="transid"/>
                 <column dataType="double" format="BEST12." label="Sequence Order" xref="sequence"/>
@@ -135,7 +135,7 @@
                 <column dataType="double" format="COMMA12.1" label="Duration (days)" xref="duration_days"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds4205" resourceIdentifier="'cas-shared-default','Public','VAST2024_OCEANUS_REGIONS_SPECIES','en_US'" tableModifiedTimeStamp="2024-06-16T21:49:18.293Z">
+        <table dataLocale="en_US" dataSources="ds4205" resourceIdentifier="'cas-shared-default','Public','VAST2024_OCEANUS_REGIONS_SPECIES','en_US'" tableModifiedTimeStamp="2024-07-08T14:45:31.110Z">
             <columns>
                 <column dataType="string" label="Fish Species" xref="fish_species"/>
                 <column dataType="string" label="Ecological Preserve" xref="ecological_preserve"/>

@@ -38,6 +38,10 @@
 #ve12329 .GraphSkin {
   data-skin: CRISP;
 }
+#ve12709 .tableColumnbi13477 {
+  width: 148px;
+  fill-color: #C7E3F9;
+}
 #ve171 .GraphDataStyle4 {
   fill-color: #FFCC32;
 }
@@ -55,9 +59,6 @@
 }
 #ve171 .GraphDataStyle1 {
   fill-color: #DD5757;
-}
-#ve7522 .Table {
-  border-style: solid;
 }
 #ve2772 .GraphSkin {
   data-skin: CRISP;
@@ -83,7 +84,10 @@
   vertical-alignment: top;
 }
 #ve44 .GraphDataStyleDefault {
+  marker-color: #2470AD;
+  text-color: #2470AD;
   fill-color: #7DC3FC;
+  line-color: #2470AD;
 }
 #ve9627 .HeaderFill {
   transparency: 0.5;
@@ -97,13 +101,16 @@
   fill-color: #EBEDEF;
 }
 #ve44 .GraphDataStyle1 {
+  marker-color: #2470AD;
+  text-color: #2470AD;
   fill-color: #7DC3FC;
+  line-color: #2470AD;
 }
 #ve44 .GraphDataStyle4 {
-  fill-color: #0E538C;
+  fill-color: #33A3FF;
 }
-#ve12386 .GraphSkin {
-  data-skin: NONE;
+#ve12709 .measurebi13493 {
+  width: 98px;
 }
 #ve3260 .GraphSkin {
   data-skin: CRISP;
@@ -155,6 +162,10 @@
   wrap-text: normal;
   border-style: solid;
 }
+#ve14089 .GridLines {
+  line-thickness: 1px;
+  line-color: #F9FAFB;
+}
 #ve3137 .HeaderFill {
   transparency: 1;
   fill-color: #EBEDEF;
@@ -177,9 +188,6 @@
 }
 #ve1370 .GraphSkin {
   data-skin: CRISP;
-}
-#ve7507 .Table {
-  border-style: solid;
 }
 #ve10747 .GraphSkin {
   data-skin: NONE;
@@ -231,6 +239,9 @@
   text-color: #71EBBF;
   line-color: #71EBBF;
 }
+#ve12709 .hierarchybi13693 {
+  width: 142px;
+}
 #ve12059 .GraphDataStyle1 {
   marker-color: #17785F;
   text-color: #17785F;
@@ -246,6 +257,9 @@
 #ve11373 .GraphSkin {
   data-skin: NONE;
 }
+#ve12709 .measurebi13874 {
+  width: 113px;
+}
 #ve881 .LegendFill {
   frame-border: false;
 }
@@ -257,8 +271,11 @@
   transparency: 0.84;
   fill-color: #EBEDEF;
 }
-#cd12382 .If {
-  background-color: #CC6F2A;
+#ve12709 .hierarchybi13465 {
+  width: 278px;
+}
+#ve12709 .MeasureHeader {
+  background-color: #545B66;
 }
 #ve2631 .ReportElementContainer {
   padding: 0px;
@@ -272,6 +289,9 @@
 }
 #ve1955 .Table {
   border-style: solid;
+}
+#cd13674 .If {
+  background-color: #98863C;
 }
 #ve2945 .GraphSkin {
   data-skin: CRISP;
@@ -317,15 +337,15 @@
   wrap-text: normal;
   display-opts: retainnewline;
 }
-#ve7442 .GraphSkin {
-  data-skin: NONE;
-}
 #ve2882 .GraphSkin {
   data-skin: CRISP;
 }
 #ve9641 .HeaderFill {
   transparency: 0.5;
   fill-color: #3C444F;
+}
+#ve44 .GraphSkin {
+  data-skin: CRISP;
 }
 #ve9726 .GraphSkin {
   data-skin: NONE;
@@ -334,11 +354,11 @@
   background-color: #FFFFFF;
   transparency: 0.31;
 }
+#cd13672 .If {
+  background-color: #16976D;
+}
 #ve9736 .GraphSkin {
   data-skin: NONE;
-}
-#cd12380 .If {
-  background-color: #84A366;
 }
 #cd986 .If {
   color: #F9EDC6;
@@ -356,17 +376,21 @@
   wrap-text: normal;
   display-opts: retainnewline;
 }
+#ve12709 .Table {
+  border-style: solid;
+  alt-row-color: #011829;
+}
 #ve9627 .GraphSkin {
   data-skin: CRISP;
+}
+#ve14089 .GraphSkin {
+  data-skin: NONE;
 }
 #ve691 .GraphSkin {
   data-skin: CRISP;
 }
 #ve9641 .GraphSkin {
   data-skin: NONE;
-}
-#cd12378 .If {
-  background-color: #16976D;
 }
 #ve307 .Table {
   wrap-text: normal;
@@ -383,6 +407,12 @@
   wrap-text: normal;
   display-opts: retainnewline;
 }
+#ve12709 .hierarchybi13482 {
+  width: 121px;
+}
+#cd13678 .If {
+  background-color: #84414B;
+}
 #ve11718 .HeaderFill {
   transparency: 0.5;
   fill-color: #3C444F;
@@ -390,11 +420,17 @@
 #ve3820 .GraphSkin {
   data-skin: CRISP;
 }
+#ve14635 .span1 {
+  font-size: 40px;
+}
 #ve9014 .GraphSkin {
   data-skin: CRISP;
 }
 #ve10301 .GraphSkin {
   data-skin: CRISP;
+}
+#ve14635 .paragraph1 {
+  text-align: center;
 }
 #ve1880 .GraphSkin {
   data-skin: NONE;
@@ -419,18 +455,15 @@
   text-color: #17785F;
   line-color: #17785F;
 }
+#cd13676 .If {
+  background-color: #CC6F2A;
+}
 #ve8474 .GraphSkin {
   data-skin: CRISP;
 }
 #ve12319 .Container {
   background-color: #E9ECEF;
   transparency: 0.9;
-}
-#cd12384 .If {
-  background-color: #B14C51;
-}
-#ve7507 .tableColumnbi7502 {
-  fill-color: #B0B7C2;
 }
 #ve1770 .Table {
   wrap-text: normal;

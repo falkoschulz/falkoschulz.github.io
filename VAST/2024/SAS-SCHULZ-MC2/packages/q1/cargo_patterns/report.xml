@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.42.0" label="VAST 2024 - MC2 - Analysis V4 (Falko)" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.41.0" dateCreated="2024-05-06T03:55:22Z" dateModified="2024-06-19T03:49:23Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="12555">
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.42.0" label="VAST 2024 - MC2 - Analysis V6 (Falko)" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.41.0" dateCreated="2024-05-06T03:55:22Z" dateModified="2024-07-10T06:12:24Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="14917">
 	<Results>
-		<Result ref="dd1891" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-06-16T21:49:17.882Z">
+		<Result ref="dd1891" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-08T14:45:31.615Z">
 			<Variables>
 				<NumericVariable format="COMMA12." usage="categorical" label="Delivery Quantity/tons" ref="bi1892" varname="bi1892" column="c0"/>
 				<NumericVariable format="COMMA12." usage="categorical" label="Delivery Quantity/tons (lower)" ref="bi1893" varname="bi1893" column="c1"/>
@@ -41,7 +41,7 @@
 107.5,107.5,112.5,1.0
 ]]></Data>
 		</Result>
-		<Result ref="dd1884" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-06-16T21:49:17.882Z">
+		<Result ref="dd1884" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-08T14:45:31.615Z">
 			<Variables>
 				<NumericVariable format="DTDATE9" usage="categorical" label="Date" ref="bi1882" varname="bi1882" column="c0"/>
 				<StringVariable label="Harbour" ref="bi1883" varname="bi1883" column="c1"/>
@@ -64,7 +64,7 @@
 			<DataFile contentKey="5EVUCA7FFTYOEWBCBLU4XJFUN3VE3Q7T" size="45380" format="CSV" rowCount="2014" grandTotal="false" dataLayout="minimal" file="dd1884.csv" isIndexed="true" availableRowCount="2014"/>
 			<StringTableFile contentKey="KE4EHUSAKKUUYYBMCAX3W7M333ZM4EFE" size="145" format="CSV" rowCount="8" file="dd1884index.csv"/>
 		</Result>
-		<Result ref="dd1875" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-06-16T21:49:17.882Z">
+		<Result ref="dd1875" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-08T14:45:31.615Z">
 			<Variables>
 				<NumericVariable format="DTDATE9" usage="categorical" label="Date" ref="bi1873" varname="bi1873" column="c0"/>
 				<StringVariable label="Commodity (Fish/short)" ref="bi6281" varname="bi6281" column="c1"/>
@@ -396,7 +396,7 @@
 				<RelationalDataItem binOption="formatBin" maxCardinality="300" minCardinality="150" name="bi3524" base="bi3523"/>
 				<RelationalDataItem name="bi3525" base="bi3523"/>
 				<RelationalDataItem name="bi3526" base="bi41"/>
-				<RelationalDataItem name="bi12458" base="bi38"/>
+				<RelationalDataItem name="bi14826" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd1117">
 				<MultidimensionalQuery detail="false">
@@ -542,7 +542,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1488" name="dd1643">
 			<BusinessItems>
 				<RelationalDataItem name="bi1646" base="bi1524"/>
-				<RelationalDataItem name="bi12459" base="bi1493"/>
+				<RelationalDataItem name="bi14827" base="bi1493"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1488" type="relational" name="dd1644">
 				<RelationalQuery detail="false">
@@ -565,8 +565,8 @@
 				<RelationalDataItem name="bi1656" base="bi1495"/>
 				<RelationalDataItem name="bi1657" base="bi1494"/>
 				<RelationalDataItem name="bi1758" base="bi1492"/>
-				<RelationalDataItem name="bi12460" base="bi1524"/>
-				<RelationalDataItem name="bi12461" base="bi1493"/>
+				<RelationalDataItem name="bi14828" base="bi1524"/>
+				<RelationalDataItem name="bi14829" base="bi1493"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1488" type="relational" name="dd1652">
 				<RelationalQuery detail="false">
@@ -589,8 +589,8 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1488" name="dd1660">
 			<BusinessItems>
 				<RelationalDataItem name="bi1666" base="bi1492"/>
-				<RelationalDataItem name="bi12462" base="bi1524"/>
-				<RelationalDataItem name="bi12463" base="bi1493"/>
+				<RelationalDataItem name="bi14830" base="bi1524"/>
+				<RelationalDataItem name="bi14831" base="bi1493"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1488" type="relational" name="dd1661">
 				<RelationalQuery detail="false">
@@ -735,7 +735,7 @@
 					</EditorProperties>
 					<Expression>notMissing(${bi23,binned})</Expression>
 				</RelationalFilterItem>
-				<RelationalDataItem name="bi12466" base="bi26"/>
+				<RelationalDataItem name="bi14834" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="relational" name="dd1769">
 				<RelationalQuery omitTotalItems="bi1764 bi1766" detail="false">
@@ -1394,7 +1394,7 @@
 					</EditorProperties>
 					<Expression>or(in(${bi2864,binned},&apos;Event.HarborReport&apos;),ismissing(${bi2864,binned}))</Expression>
 				</RelationalFilterItem>
-				<RelationalDataItem name="bi12468" base="bi1492"/>
+				<RelationalDataItem name="bi14836" base="bi1492"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1488" type="multidimensional" name="dd2792">
 				<MultidimensionalQuery detail="false">
@@ -1437,7 +1437,7 @@
 				</RelationalFilterItem>
 				<RelationalDataItem name="bi2804" base="bi1500"/>
 				<RelationalDataItem name="bi8500" base="bi1502"/>
-				<RelationalDataItem name="bi12469" base="bi1724"/>
+				<RelationalDataItem name="bi14837" base="bi1724"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1498" type="multidimensional" name="dd2798">
 				<MultidimensionalQuery detail="false">
@@ -1472,10 +1472,10 @@
 				<RelationalDataItem name="bi2918" base="bi1926"/>
 				<RelationalDataItem name="bi6768" base="bi3669"/>
 				<RelationalDataItem name="bi7432" base="bi6756"/>
-				<RelationalDataItem name="bi12470" base="bi1929"/>
-				<RelationalDataItem name="bi12471" base="bi3040"/>
-				<RelationalDataItem name="bi12472" base="bi3672"/>
-				<RelationalDataItem name="bi12473" base="bi4373"/>
+				<RelationalDataItem name="bi14838" base="bi1929"/>
+				<RelationalDataItem name="bi14839" base="bi3040"/>
+				<RelationalDataItem name="bi14840" base="bi3672"/>
+				<RelationalDataItem name="bi14841" base="bi4373"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1925" type="multidimensional" name="dd2925">
 				<MultidimensionalQuery detail="false">
@@ -1548,7 +1548,7 @@
 					<Item purpose="standardDeviation" name="bi2995"/>
 					<Item purpose="upperWhisker" name="bi2996"/>
 				</SyntheticItems>
-				<RelationalDataItem name="bi12474" base="bi3669"/>
+				<RelationalDataItem name="bi14842" base="bi3669"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1925" type="procedural" name="dd2947">
 				<ProceduralQuery type="heatBox">
@@ -1583,9 +1583,9 @@
 			<BusinessItems>
 				<RelationalDataItem name="bi2886" base="bi1929"/>
 				<RelationalDataItem name="bi7433" base="bi6756"/>
-				<RelationalDataItem name="bi12475" base="bi3040"/>
-				<RelationalDataItem name="bi12476" base="bi3672"/>
-				<RelationalDataItem name="bi12477" base="bi4373"/>
+				<RelationalDataItem name="bi14843" base="bi3040"/>
+				<RelationalDataItem name="bi14844" base="bi3672"/>
+				<RelationalDataItem name="bi14845" base="bi4373"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1925" type="multidimensional" name="dd2884">
 				<MultidimensionalQuery detail="false">
@@ -1611,8 +1611,8 @@
 			<BusinessItems>
 				<RelationalDataItem name="bi3054" base="bi3040"/>
 				<RelationalDataItem name="bi7434" base="bi6756"/>
-				<RelationalDataItem name="bi12478" base="bi3672"/>
-				<RelationalDataItem name="bi12479" base="bi4373"/>
+				<RelationalDataItem name="bi14846" base="bi3672"/>
+				<RelationalDataItem name="bi14847" base="bi4373"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1925" type="multidimensional" name="dd3048">
 				<MultidimensionalQuery detail="false">
@@ -1639,7 +1639,7 @@
 				<RelationalDataItem name="bi2939" base="bi1927"/>
 				<RelationalDataItem name="bi2936" base="bi1926"/>
 				<RelationalDataItem name="bi3673" base="bi3672"/>
-				<RelationalDataItem name="bi12480" base="bi3669"/>
+				<RelationalDataItem name="bi14848" base="bi3669"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1925" type="multidimensional" name="dd3060">
 				<MultidimensionalQuery detail="false">
@@ -1748,8 +1748,8 @@
 					<Expression>or(pathContains(${bi3237,binned},&apos;Don Limpet Preserve&apos;),pathContains(${bi3237,binned},&apos;Ghoti Preserve&apos;),pathContains(${bi3237,binned},&apos;Nemo Reef&apos;))</Expression>
 				</AggregateFilterItem>
 				<RelationalDataItem name="bi3767" base="bi2362"/>
-				<RelationalDataItem name="bi12481" base="bi2368"/>
-				<RelationalDataItem name="bi12482" base="bi3202"/>
+				<RelationalDataItem name="bi14849" base="bi2368"/>
+				<RelationalDataItem name="bi14850" base="bi3202"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds2361" type="procedural" name="dd3247">
 				<ProceduralQuery type="sankey">
@@ -1855,7 +1855,7 @@
 					<Item purpose="standardDeviation" name="bi3311"/>
 					<Item purpose="upperWhisker" name="bi3312"/>
 				</SyntheticItems>
-				<RelationalDataItem name="bi12483" base="bi38"/>
+				<RelationalDataItem name="bi14851" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="procedural" name="dd3262">
 				<ProceduralQuery type="heatBox">
@@ -1894,7 +1894,7 @@
 				<RelationalDataItem name="bi3489" base="bi26"/>
 				<RelationalDataItem name="bi3490" base="bi36"/>
 				<RelationalDataItem name="bi3520" base="bi40"/>
-				<RelationalDataItem name="bi12484" base="bi38"/>
+				<RelationalDataItem name="bi14852" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd3486">
 				<MultidimensionalQuery detail="false">
@@ -1933,8 +1933,8 @@
 				<LookupDataItem property="polygonId" lookup="bi2363" name="bi3562"/>
 				<LookupDataItem property="mapId" lookup="bi2363" name="bi3563"/>
 				<RelationalDataItem name="bi3566" base="bi2362"/>
-				<RelationalDataItem name="bi12485" base="bi2368"/>
-				<RelationalDataItem name="bi12486" base="bi3202"/>
+				<RelationalDataItem name="bi14853" base="bi2368"/>
+				<RelationalDataItem name="bi14854" base="bi3202"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds2361" type="procedural" name="dd3533">
 				<ProceduralQuery type="geoMap" scoreCodeNumber="3542">
@@ -2052,7 +2052,7 @@
 				<RelationalDataItem name="bi3503" base="bi1927"/>
 				<RelationalDataItem name="bi3519" base="bi1928"/>
 				<RelationalDataItem name="bi4259" base="bi3672"/>
-				<RelationalDataItem name="bi12487" base="bi3040"/>
+				<RelationalDataItem name="bi14855" base="bi3040"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1925" type="multidimensional" name="dd3505">
 				<MultidimensionalQuery detail="false">
@@ -2156,7 +2156,7 @@
 					</EditorProperties>
 					<Expression>in(${bi6276,binned},&apos;Entity.Vessel.FishingVessel&apos;)</Expression>
 				</RelationalFilterItem>
-				<RelationalDataItem name="bi12488" base="bi19"/>
+				<RelationalDataItem name="bi14856" base="bi19"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="procedural" name="dd6123">
 				<ProceduralQuery type="heatMap">
@@ -2252,7 +2252,7 @@
 				<RelationalDataItem name="bi3153" base="bi504"/>
 				<RelationalDataItem name="bi3154" base="bi30"/>
 				<RelationalDataItem name="bi6769" base="bi19"/>
-				<RelationalDataItem name="bi12489" base="bi38"/>
+				<RelationalDataItem name="bi14857" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd3135">
 				<MultidimensionalQuery detail="true">
@@ -2298,7 +2298,7 @@
 				<RelationalDataItem name="bi6526" base="bi19"/>
 				<RelationalDataItem name="bi6527" base="bi504"/>
 				<RelationalDataItem name="bi6528" base="bi26"/>
-				<RelationalDataItem name="bi12490" base="bi38"/>
+				<RelationalDataItem name="bi14858" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd6513">
 				<MultidimensionalQuery detail="false">
@@ -2365,35 +2365,6 @@
 				</ResultDefinitions>
 			</DataDefinition>
 			<AppliedFilters/>
-		</ParentDataDefinition>
-		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1925" name="dd7520">
-			<BusinessItems>
-				<RelationalDataItem name="bi7529" base="bi1929"/>
-				<RelationalDataItem name="bi7530" base="bi6756"/>
-				<RelationalDataItem name="bi7536" base="bi3040"/>
-				<RelationalDataItem name="bi12491" base="bi2998"/>
-				<RelationalDataItem name="bi12492" base="bi3672"/>
-				<RelationalDataItem name="bi12493" base="bi1964"/>
-				<RelationalDataItem name="bi12494" base="bi1926"/>
-				<RelationalDataItem name="bi12495" base="bi3669"/>
-			</BusinessItems>
-			<DataDefinition dataSource="ds1925" type="relational" name="dd7521">
-				<RelationalQuery omitTotalItems="bi7536 bi7529 bi7530" detail="false">
-					<Axes>
-						<Axis type="column">
-							<BusinessItem ref="bi7536"/>
-							<BusinessItem ref="bi7529"/>
-							<BusinessItem ref="bi7530"/>
-						</Axis>
-					</Axes>
-					<SortItems>
-						<SortItem ref="bi7529" sortDirection="ascending"/>
-					</SortItems>
-				</RelationalQuery>
-				<ResultDefinitions>
-					<ResultDefinition purpose="primary" maxRowsLookup="listTable" maxRowsBehavior="truncate" name="dd7517"/>
-				</ResultDefinitions>
-			</DataDefinition>
 		</ParentDataDefinition>
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds603" name="dd7677">
 			<BusinessItems>
@@ -2489,7 +2460,7 @@
 					</EditorProperties>
 					<Expression>notMissing(${bi7765,binned})</Expression>
 				</RelationalFilterItem>
-				<RelationalDataItem name="bi12496" base="bi9319"/>
+				<RelationalDataItem name="bi14859" base="bi9319"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds832" type="procedural" name="dd883">
 				<ProceduralQuery type="geoMap" scoreCodeNumber="901">
@@ -2575,8 +2546,8 @@
 					<Item purpose="direction" name="bi543"/>
 					<Item purpose="directionLabel" name="bi544"/>
 					<Item purpose="itemTypeLabel" name="bi545"/>
-					<Item purpose="latitude" root="bi9325" name="bi12271"/>
-					<Item purpose="longitude" root="bi9326" name="bi12272"/>
+					<Item purpose="latitude" root="bi9325" name="bi14817"/>
+					<Item purpose="longitude" root="bi9326" name="bi14818"/>
 				</SyntheticItems>
 				<SyntheticItems name="si546">
 					<Item purpose="textSummary" name="bi547"/>
@@ -2646,8 +2617,8 @@
 			<BusinessItems>
 				<RelationalDataItem name="bi8224" base="bi8185"/>
 				<RelationalDataItem name="bi8436" base="bi8435"/>
-				<RelationalDataItem name="bi12497" base="bi607"/>
-				<RelationalDataItem name="bi12498" base="bi8156"/>
+				<RelationalDataItem name="bi14860" base="bi607"/>
+				<RelationalDataItem name="bi14861" base="bi8156"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds603" type="relational" name="dd8222">
 				<RelationalQuery detail="false">
@@ -2670,7 +2641,7 @@
 			<BusinessItems>
 				<RelationalDataItem name="bi8235" base="bi607"/>
 				<RelationalDataItem name="bi8472" base="bi8435"/>
-				<RelationalDataItem name="bi12499" base="bi8156"/>
+				<RelationalDataItem name="bi14862" base="bi8156"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds603" type="relational" name="dd8233">
 				<RelationalQuery detail="false">
@@ -2716,8 +2687,8 @@
 				<RelationalDataItem name="bi8481" base="bi1155"/>
 				<RelationalDataItem name="bi9011" base="bi8979"/>
 				<RelationalDataItem name="bi9012" base="bi9006"/>
-				<RelationalDataItem name="bi12500" base="bi9003"/>
-				<RelationalDataItem name="bi12501" base="bi1289"/>
+				<RelationalDataItem name="bi14863" base="bi9003"/>
+				<RelationalDataItem name="bi14864" base="bi1289"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1152" type="multidimensional" name="dd8476">
 				<MultidimensionalQuery detail="true">
@@ -2753,8 +2724,8 @@
 				<RelationalDataItem name="bi8980" base="bi8979"/>
 				<RelationalDataItem name="bi9005" base="bi9003"/>
 				<RelationalDataItem name="bi9007" base="bi9006"/>
-				<RelationalDataItem name="bi12504" base="bi1289"/>
-				<RelationalDataItem name="bi12505" base="bi1155"/>
+				<RelationalDataItem name="bi14867" base="bi1289"/>
+				<RelationalDataItem name="bi14868" base="bi1155"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1152" type="relational" name="dd8491">
 				<RelationalQuery omitTotalItems="bi8493 bi8494 bi8980 bi9005 bi9007 bi8498" detail="false">
@@ -2805,7 +2776,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1152" name="dd8968">
 			<BusinessItems>
 				<RelationalDataItem name="bi8973" base="bi1157"/>
-				<RelationalDataItem name="bi12508" base="bi8782"/>
+				<RelationalDataItem name="bi14871" base="bi8782"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1152" type="relational" name="dd8969">
 				<RelationalQuery detail="false">
@@ -2899,7 +2870,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd9244">
 			<BusinessItems>
 				<RelationalDataItem name="bi9248" base="bi26"/>
-				<RelationalDataItem name="bi12510" base="bi38"/>
+				<RelationalDataItem name="bi14873" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="relational" name="dd9245">
 				<RelationalQuery detail="false">
@@ -2944,9 +2915,11 @@
 					<Item purpose="nodeColor" root="bi91" name="bi92"/>
 					<Item purpose="linkWidth" root="bi89" name="bi90"/>
 					<Item purpose="linkColor" root="bi273" name="bi274"/>
+					<Item purpose="nodeLabel" root="bi14612" name="bi14613"/>
 					<Item purpose="dataTip" root="bi74" name="bi77"/>
 					<Item purpose="dataTip" root="bi81" name="bi82"/>
 					<Item purpose="dataTip" root="bi91" name="bi93"/>
+					<Item purpose="dataTip" root="bi14612" name="bi14614"/>
 					<Item purpose="itemType" name="bi50"/>
 					<Item purpose="uniqueId" name="bi51"/>
 					<Item purpose="uniqueIdLabel" name="bi52"/>
@@ -2968,6 +2941,7 @@
 				<RelationalDataItem name="bi89" base="bi41"/>
 				<RelationalDataItem name="bi91" base="bi31"/>
 				<RelationalDataItem name="bi273" base="bi30"/>
+				<RelationalDataItem name="bi14612" base="bi25"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="procedural" name="dd46">
 				<ProceduralQuery type="networkDiagram" scoreCodeNumber="48">
@@ -3001,9 +2975,6 @@
 						</Argument>
 						<Argument purpose="useGeographicLocation">
 							<BooleanValue>false</BooleanValue>
-						</Argument>
-						<Argument purpose="savedLayout">
-							<ExpressionValue>[[&apos;cargo_2035_25067560&apos;,6035.86376953125,5652.42138671875]]</ExpressionValue>
 						</Argument>
 					</Arguments>
 				</ProceduralQuery>
@@ -3098,7 +3069,7 @@
 					<Item purpose="standardDeviation" name="bi9621"/>
 					<Item purpose="upperWhisker" name="bi9622"/>
 				</SyntheticItems>
-				<RelationalDataItem name="bi12511" base="bi38"/>
+				<RelationalDataItem name="bi14874" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="procedural" name="dd9624">
 				<ProceduralQuery type="heatBox">
@@ -3141,7 +3112,7 @@
 				<RelationalDataItem name="bi9635" base="bi19"/>
 				<RelationalDataItem name="bi9717" base="bi3523"/>
 				<RelationalDataItem name="bi9719" base="bi9718"/>
-				<RelationalDataItem name="bi12512" base="bi38"/>
+				<RelationalDataItem name="bi14875" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd9638">
 				<MultidimensionalQuery detail="true">
@@ -3178,7 +3149,7 @@
 				<SyntheticDataItem name="bi9730"/>
 				<SyntheticDataItem name="bi9731"/>
 				<RelationalDataItem name="bi9732" base="bi609"/>
-				<RelationalDataItem name="bi12513" base="bi8156"/>
+				<RelationalDataItem name="bi14876" base="bi8156"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds603" type="procedural" name="dd9734">
 				<ProceduralQuery type="histogram">
@@ -3210,9 +3181,9 @@
 				<RelationalDataItem name="bi9867" base="bi606"/>
 				<RelationalDataItem name="bi9869" base="bi8246"/>
 				<RelationalDataItem name="bi9873" base="bi7895"/>
-				<RelationalDataItem name="bi12514" base="bi8185"/>
-				<RelationalDataItem name="bi12515" base="bi607"/>
-				<RelationalDataItem name="bi12516" base="bi8156"/>
+				<RelationalDataItem name="bi14877" base="bi8185"/>
+				<RelationalDataItem name="bi14878" base="bi607"/>
+				<RelationalDataItem name="bi14879" base="bi8156"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds603" type="multidimensional" name="dd9861">
 				<MultidimensionalQuery detail="false">
@@ -3251,9 +3222,9 @@
 				<RelationalDataItem name="bi9309" base="bi9308"/>
 				<RelationalDataItem name="bi10052" base="bi10050"/>
 				<RelationalDataItem name="bi10053" base="bi10051"/>
-				<RelationalDataItem name="bi12517" base="bi3266"/>
-				<RelationalDataItem name="bi12518" base="bi26"/>
-				<RelationalDataItem name="bi12519" base="bi38"/>
+				<RelationalDataItem name="bi14880" base="bi3266"/>
+				<RelationalDataItem name="bi14881" base="bi26"/>
+				<RelationalDataItem name="bi14882" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="relational" name="dd9290">
 				<RelationalQuery omitTotalItems="bi10052 bi10053 bi9294 bi9306 bi9293 bi9309" detail="false">
@@ -3292,8 +3263,8 @@
 					</EditorProperties>
 					<Expression>notMissing(${bi3266,binned})</Expression>
 				</RelationalFilterItem>
-				<RelationalDataItem name="bi12520" base="bi26"/>
-				<RelationalDataItem name="bi12521" base="bi38"/>
+				<RelationalDataItem name="bi14883" base="bi26"/>
+				<RelationalDataItem name="bi14884" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="relational" name="dd10078">
 				<RelationalQuery detail="false">
@@ -3409,7 +3380,7 @@
 					</EditorProperties>
 					<Expression>pathBeginsWith(${bi10287,binned},&apos;City of Lomark&apos;)</Expression>
 				</AggregateFilterItem>
-				<RelationalDataItem name="bi12522" base="bi6384"/>
+				<RelationalDataItem name="bi14885" base="bi6384"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds2361" type="procedural" name="dd10297">
 				<ProceduralQuery type="sankey">
@@ -3548,7 +3519,7 @@
 					</EditorProperties>
 					<Expression>in(${bi3202,binned},&apos;SouthSeafood Express Corp&apos;)</Expression>
 				</RelationalFilterItem>
-				<RelationalDataItem name="bi12523" base="bi6384"/>
+				<RelationalDataItem name="bi14886" base="bi6384"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds2361" type="procedural" name="dd3816">
 				<ProceduralQuery type="sankey">
@@ -3618,9 +3589,9 @@
 				</RelationalFilterItem>
 				<RelationalDataItem name="bi9267" base="bi30"/>
 				<RelationalDataItem name="bi11477" base="bi6402"/>
-				<RelationalDataItem name="bi12524" base="bi3266"/>
-				<RelationalDataItem name="bi12525" base="bi26"/>
-				<RelationalDataItem name="bi12526" base="bi38"/>
+				<RelationalDataItem name="bi14887" base="bi3266"/>
+				<RelationalDataItem name="bi14888" base="bi26"/>
+				<RelationalDataItem name="bi14889" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd10679">
 				<MultidimensionalQuery detail="false">
@@ -3661,9 +3632,9 @@
 					<Expression>in(${bi9285,binned},&apos;Event.TransportEvent.TransponderPing&apos;)</Expression>
 				</RelationalFilterItem>
 				<RelationalDataItem name="bi9285" base="bi30"/>
-				<RelationalDataItem name="bi12527" base="bi26"/>
-				<RelationalDataItem name="bi12528" base="bi38"/>
-				<RelationalDataItem name="bi12529" base="bi3266"/>
+				<RelationalDataItem name="bi14890" base="bi26"/>
+				<RelationalDataItem name="bi14891" base="bi38"/>
+				<RelationalDataItem name="bi14892" base="bi3266"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd10683">
 				<MultidimensionalQuery detail="false">
@@ -3776,8 +3747,8 @@
 				<RelationalDataItem name="bi10898" base="bi8246"/>
 				<RelationalDataItem name="bi10942" base="bi7897"/>
 				<RelationalDataItem name="bi10945" base="bi10849"/>
-				<RelationalDataItem name="bi12530" base="bi8185"/>
-				<RelationalDataItem name="bi12531" base="bi607"/>
+				<RelationalDataItem name="bi14893" base="bi8185"/>
+				<RelationalDataItem name="bi14894" base="bi607"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds603" type="multidimensional" name="dd10918">
 				<MultidimensionalQuery detail="false">
@@ -3805,7 +3776,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds603" name="dd10924">
 			<BusinessItems>
 				<RelationalDataItem name="bi10927" base="bi8185"/>
-				<RelationalDataItem name="bi12532" base="bi607"/>
+				<RelationalDataItem name="bi14895" base="bi607"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds603" type="relational" name="dd10925">
 				<RelationalQuery detail="false">
@@ -3881,8 +3852,8 @@
 				<RelationalDataItem name="bi11120" base="bi1501"/>
 				<RelationalDataItem name="bi11123" base="bi7010"/>
 				<RelationalDataItem name="bi11470" base="bi8642"/>
-				<RelationalDataItem name="bi12533" base="bi6278"/>
-				<RelationalDataItem name="bi12534" base="bi1724"/>
+				<RelationalDataItem name="bi14896" base="bi6278"/>
+				<RelationalDataItem name="bi14897" base="bi1724"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1498" type="multidimensional" name="dd11466">
 				<MultidimensionalQuery detail="false">
@@ -3955,7 +3926,7 @@
 					<Item purpose="standardDeviation" name="bi11422"/>
 					<Item purpose="upperWhisker" name="bi11423"/>
 				</SyntheticItems>
-				<RelationalDataItem name="bi12535" base="bi1724"/>
+				<RelationalDataItem name="bi14898" base="bi1724"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1498" type="procedural" name="dd11375">
 				<ProceduralQuery type="heatBox">
@@ -3994,8 +3965,8 @@
 				<RelationalDataItem binOption="formatBin" name="bi11491" base="bi1501"/>
 				<RelationalDataItem name="bi11492" base="bi1504"/>
 				<RelationalDataItem name="bi11499" base="bi8642"/>
-				<RelationalDataItem name="bi12536" base="bi6278"/>
-				<RelationalDataItem name="bi12537" base="bi1724"/>
+				<RelationalDataItem name="bi14899" base="bi6278"/>
+				<RelationalDataItem name="bi14900" base="bi1724"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1498" type="multidimensional" name="dd11487">
 				<MultidimensionalQuery detail="false">
@@ -4032,7 +4003,7 @@
 					<Expression>in(${bi12046,binned},&apos;SouthSeafood Express Corp&apos;)</Expression>
 				</RelationalFilterItem>
 				<RelationalDataItem name="bi12094" base="bi8185"/>
-				<RelationalDataItem name="bi12538" base="bi10849"/>
+				<RelationalDataItem name="bi14901" base="bi10849"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds603" type="multidimensional" name="dd11720">
 				<MultidimensionalQuery detail="false">
@@ -4072,7 +4043,7 @@
 				<RelationalDataItem name="bi12052" base="bi7899"/>
 				<RelationalDataItem name="bi12049" base="bi7897"/>
 				<RelationalDataItem name="bi12095" base="bi8185"/>
-				<RelationalDataItem name="bi12539" base="bi10849"/>
+				<RelationalDataItem name="bi14902" base="bi10849"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds603" type="multidimensional" name="dd12057">
 				<MultidimensionalQuery detail="false">
@@ -4126,7 +4097,7 @@
 					<ResultDefinition purpose="primary" maxRowsLookup="dropdown" maxRowsBehavior="truncate" name="dd12069"/>
 				</ResultDefinitions>
 			</DataDefinition>
-			<AppliedFilters>
+			<AppliedFilters ignoreDataSourceFilters="false">
 				<DetailFilters>
 					<BusinessItem ref="bi12072"/>
 				</DetailFilters>
@@ -4151,7 +4122,7 @@
 					<ResultDefinition purpose="primary" maxRowsLookup="dropdown" maxRowsBehavior="truncate" name="dd12077"/>
 				</ResultDefinitions>
 			</DataDefinition>
-			<AppliedFilters/>
+			<AppliedFilters ignoreDataSourceFilters="false"/>
 		</ParentDataDefinition>
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds603" name="dd12086">
 			<BusinessItems>
@@ -4170,63 +4141,6 @@
 				</RelationalQuery>
 				<ResultDefinitions>
 					<ResultDefinition purpose="primary" maxRowsLookup="buttonBar" maxRowsBehavior="truncate" name="dd12088"/>
-				</ResultDefinitions>
-			</DataDefinition>
-		</ParentDataDefinition>
-		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1925" name="dd7439">
-			<BusinessItems>
-				<RelationalDataItem name="bi7447" base="bi2998"/>
-				<RelationalDataItem name="bi7450" base="bi3672"/>
-				<RelationalDataItem name="bi12289" base="bi1927"/>
-			</BusinessItems>
-			<DataDefinition dataSource="ds1925" type="multidimensional" name="dd7440">
-				<MultidimensionalQuery detail="false">
-					<Axes>
-						<Axis type="column">
-							<BusinessItem ref="bi7447"/>
-							<BusinessItem ref="bi7450"/>
-						</Axis>
-						<Axis type="row">
-							<BusinessItem ref="bi12289"/>
-						</Axis>
-					</Axes>
-					<ColumnSortItems>
-						<SortItem ref="bi7447" sortDirection="ascending"/>
-						<SortItem ref="bi7450" sortDirection="ascending"/>
-					</ColumnSortItems>
-				</MultidimensionalQuery>
-				<ResultDefinitions>
-					<ResultDefinition purpose="primary" maxRowsLookup="graphDefault" maxRowsBehavior="truncate" name="dd7435"/>
-				</ResultDefinitions>
-			</DataDefinition>
-		</ParentDataDefinition>
-		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1925" name="dd7514">
-			<BusinessItems>
-				<RelationalDataItem name="bi7500" base="bi1964"/>
-				<RelationalDataItem name="bi7502" base="bi7452"/>
-				<RelationalDataItem name="bi7533" base="bi1926"/>
-				<RelationalDataItem name="bi8503" base="bi8502"/>
-				<RelationalDataItem name="bi12277" base="bi3669"/>
-				<RelationalDataItem name="bi12540" base="bi2998"/>
-				<RelationalDataItem name="bi12541" base="bi3672"/>
-			</BusinessItems>
-			<DataDefinition dataSource="ds1925" type="relational" name="dd7515">
-				<RelationalQuery omitTotalItems="bi7500 bi7533 bi7502" detail="false">
-					<Axes>
-						<Axis type="column">
-							<BusinessItem ref="bi7500"/>
-							<BusinessItem ref="bi7533"/>
-							<BusinessItem ref="bi7502"/>
-							<BusinessItem ref="bi8503"/>
-							<BusinessItem ref="bi12277"/>
-						</Axis>
-					</Axes>
-					<SortItems>
-						<SortItem ref="bi7533" sortDirection="ascending"/>
-					</SortItems>
-				</RelationalQuery>
-				<ResultDefinitions>
-					<ResultDefinition purpose="primary" maxRowsLookup="listTable" maxRowsBehavior="truncate" name="dd7516"/>
 				</ResultDefinitions>
 			</DataDefinition>
 		</ParentDataDefinition>
@@ -4290,8 +4204,8 @@
 				<SyntheticDataItem name="bi12313"/>
 				<SyntheticDataItem name="bi12314"/>
 				<RelationalDataItem name="bi12315" base="bi1504"/>
-				<RelationalDataItem name="bi12542" base="bi7006"/>
-				<RelationalDataItem name="bi12543" base="bi6278"/>
+				<RelationalDataItem name="bi14903" base="bi7006"/>
+				<RelationalDataItem name="bi14904" base="bi6278"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1498" type="procedural" name="dd12317">
 				<ProceduralQuery type="histogram">
@@ -4325,8 +4239,8 @@
 				<SyntheticDataItem name="bi12323"/>
 				<SyntheticDataItem name="bi12324"/>
 				<RelationalDataItem name="bi12325" base="bi1930"/>
-				<RelationalDataItem name="bi12544" base="bi2998"/>
-				<RelationalDataItem name="bi12545" base="bi3672"/>
+				<RelationalDataItem name="bi14905" base="bi2998"/>
+				<RelationalDataItem name="bi14906" base="bi3672"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1925" type="procedural" name="dd12327">
 				<ProceduralQuery type="histogram">
@@ -4361,8 +4275,8 @@
 				<RelationalDataItem name="bi12337" base="bi1926"/>
 				<RelationalDataItem name="bi12339" base="bi8502"/>
 				<RelationalDataItem name="bi12340" base="bi3669"/>
-				<RelationalDataItem name="bi12546" base="bi2998"/>
-				<RelationalDataItem name="bi12547" base="bi3672"/>
+				<RelationalDataItem name="bi14907" base="bi2998"/>
+				<RelationalDataItem name="bi14908" base="bi3672"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1925" type="relational" name="dd12342">
 				<RelationalQuery omitTotalItems="bi12336 bi12337 bi12338" detail="false">
@@ -4389,11 +4303,11 @@
 				<RelationalDataItem name="bi12348" base="bi1929"/>
 				<RelationalDataItem name="bi12349" base="bi6756"/>
 				<RelationalDataItem name="bi12347" base="bi3040"/>
-				<RelationalDataItem name="bi12548" base="bi2998"/>
-				<RelationalDataItem name="bi12549" base="bi3672"/>
-				<RelationalDataItem name="bi12550" base="bi1964"/>
-				<RelationalDataItem name="bi12551" base="bi1926"/>
-				<RelationalDataItem name="bi12552" base="bi3669"/>
+				<RelationalDataItem name="bi14909" base="bi2998"/>
+				<RelationalDataItem name="bi14910" base="bi3672"/>
+				<RelationalDataItem name="bi14911" base="bi1964"/>
+				<RelationalDataItem name="bi14912" base="bi1926"/>
+				<RelationalDataItem name="bi14913" base="bi3669"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds1925" type="relational" name="dd12351">
 				<RelationalQuery omitTotalItems="bi12347 bi12348 bi12349" detail="false">
@@ -4413,43 +4327,137 @@
 				</ResultDefinitions>
 			</DataDefinition>
 		</ParentDataDefinition>
-		<ParentDataDefinition childQueryRelationship="synchronized" status="executable" dataSource="ds1925" name="dd12387">
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1925" name="dd14090">
 			<BusinessItems>
-				<SyntheticDataItem name="bi12390"/>
-				<SyntheticDataItem name="bi12391"/>
-				<SyntheticDataItem name="bi12392"/>
-				<SyntheticDataItem name="bi12393"/>
-				<RelationalDataItem name="bi12398" base="bi1964"/>
-				<RelationalDataItem name="bi12400" base="bi7452"/>
-				<RelationalDataItem name="bi12435" base="bi3669"/>
-				<RelationalDataItem name="bi12553" base="bi2998"/>
-				<RelationalDataItem name="bi12554" base="bi3672"/>
+				<RelationalDataItem name="bi14094" base="bi1926"/>
+				<RelationalDataItem name="bi14104" base="bi3669"/>
+				<RelationalDataItem name="bi14105" base="bi1930"/>
 			</BusinessItems>
-			<DataDefinition dataSource="ds1925" type="procedural" name="dd12451">
-				<ProceduralQuery type="heatMap">
-					<Arguments>
-						<Argument purpose="binCount">
-							<IntValue>75</IntValue>
-						</Argument>
-						<Argument purpose="aggregatedMeasure">
-							<ReferenceValue>bi12400</ReferenceValue>
-						</Argument>
-						<ArgumentGroup group="column">
-							<Argument purpose="inputVariable">
-								<ReferenceValue>bi12398</ReferenceValue>
-							</Argument>
-						</ArgumentGroup>
-						<ArgumentGroup group="row">
-							<Argument purpose="inputVariable">
-								<ReferenceValue>bi12435</ReferenceValue>
-							</Argument>
-						</ArgumentGroup>
-					</Arguments>
-				</ProceduralQuery>
+			<DataDefinition dataSource="ds1925" type="multidimensional" name="dd14091">
+				<MultidimensionalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi14094"/>
+							<BusinessItem ref="bi14104"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi14105"/>
+						</Axis>
+					</Axes>
+					<ColumnSortItems>
+						<SortItem ref="bi14094" sortDirection="ascending"/>
+						<SortItem ref="bi14104" sortDirection="ascending"/>
+					</ColumnSortItems>
+				</MultidimensionalQuery>
 				<ResultDefinitions>
-					<ResultDefinition purpose="primary" maxRowsLookup="heatmap" maxRowsBehavior="noData" name="dd12452"/>
+					<ResultDefinition purpose="primary" maxRowsLookup="graphDefault" maxRowsBehavior="truncate" name="dd14092"/>
 				</ResultDefinitions>
 			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1925" name="dd14352">
+			<BusinessItems>
+				<RelationalDataItem binOption="formatBin" name="bi14347" base="bi1926"/>
+				<RelationalDataItem name="bi14350" base="bi13492"/>
+				<RelationalDataItem name="bi14351" base="bi8502"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds1925" type="multidimensional" name="dd14353">
+				<MultidimensionalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi14347"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi14350"/>
+							<BusinessItem ref="bi14351"/>
+						</Axis>
+					</Axes>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="dualAxisTimeSeries" maxRowsBehavior="noData" name="dd14354"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1925" name="dd14385">
+			<BusinessItems>
+				<RelationalDataItem name="bi14388" base="bi3669"/>
+				<RelationalDataItem name="bi14407" base="bi8502"/>
+				<RelationalDataItem name="bi14914" base="bi1966"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds1925" type="relational" name="dd14386">
+				<RelationalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi14388"/>
+							<BusinessItem ref="bi14407"/>
+						</Axis>
+					</Axes>
+					<SortItems>
+						<SortItem ref="bi14388" sortDirection="ascending"/>
+					</SortItems>
+				</RelationalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="dropdown" maxRowsBehavior="truncate" name="dd14387"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1925" name="dd14393">
+			<BusinessItems>
+				<RelationalDataItem name="bi14401" base="bi1966"/>
+				<RelationalDataItem name="bi14402" base="bi8502"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds1925" type="relational" name="dd14394">
+				<RelationalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi14401"/>
+							<BusinessItem ref="bi14402"/>
+						</Axis>
+					</Axes>
+					<SortItems>
+						<SortItem ref="bi14401" sortDirection="ascending"/>
+					</SortItems>
+				</RelationalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="dropdown" maxRowsBehavior="truncate" name="dd14395"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds1925" name="dd13468">
+			<BusinessItems>
+				<RelationalDataItem name="bi13465" base="bi1929"/>
+				<RelationalDataItem name="bi13477" base="bi6756"/>
+				<RelationalDataItem name="bi13482" base="bi13481"/>
+				<RelationalDataItem name="bi13493" base="bi13492"/>
+				<RelationalDataItem name="bi13693" base="bi1926"/>
+				<RelationalDataItem name="bi13874" base="bi6755"/>
+				<RelationalDataItem name="bi14915" base="bi3669"/>
+				<RelationalDataItem name="bi14916" base="bi1966"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds1925" type="multidimensional" name="dd13469">
+				<MultidimensionalQuery rowSubtotals="false" columnSubtotals="true" rowTotals="false" columnTotals="false" detail="false" omitTotalItems="bi13493">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi13477"/>
+							<BusinessItem ref="bi13493"/>
+							<BusinessItem ref="bi13874"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi13693"/>
+							<BusinessItem ref="bi13482"/>
+							<BusinessItem ref="bi13465"/>
+						</Axis>
+					</Axes>
+					<RowSortItems>
+						<SortItem ref="bi13693" sortDirection="ascending"/>
+						<SortItem ref="bi13482" sortDirection="ascending"/>
+						<SortItem ref="bi13465" sortDirection="ascending"/>
+					</RowSortItems>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="crosstab" maxRowsBehavior="noData" name="dd13470"/>
+				</ResultDefinitions>
+			</DataDefinition>
+			<AppliedFilters/>
 		</ParentDataDefinition>
 	</DataDefinitions>
 	<DataSources>
@@ -4964,11 +4972,42 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 						<GroupingParameter parameter="bi3672" variable="var4371"/>
 					</GroupingParameters>
 				</GroupedItem>
-				<DataItem name="bi6755" xref="location_duration"/>
+				<DataItem name="bi6755" label="Duration (hours) at fishing location" xref="location_duration"/>
 				<DataItem name="bi6756" label="Distributed quantity (tons) given time spent at fishing ground" xref="qty_dist"/>
 				<DataItem name="bi7452" label="Total Quantity (tons/avg)" xref="qty" aggregation="average"/>
+				<CalculatedItem dataType="string" name="bi12454" label="Cargo ID" usage="categorical" format="$." aggregation="sum">
+					<Expression>substring(${bi1964,binned},12,length(${bi1964,binned}))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Substring(Cargo, 12, GetLength(Cargo))</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<Hierarchy name="bi12670" label="Cargo - Company - Vessel - Date">
+					<Level ref="bi1964"/>
+					<Level ref="bi3040"/>
+					<Level ref="bi1929"/>
+					<Level ref="bi1926"/>
+				</Hierarchy>
 				<AggregateCalculatedItem dataType="double" name="bi8502" label="Vessel (Distinct count)" format="COMMA12.">
 					<Expression>aggregate(countDistinct,group,${bi1929,binned})</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Distinct(ByGroup, Vessel)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<CalculatedItem dataType="string" name="bi13481" label="Harbor/Cargo/Commodity" usage="categorical" format="$." aggregation="sum">
+					<Expression>concatenate(&apos; 🧭&apos;,concatenate(${bi3669,binned},concatenate(concatenate(&apos; 🚚&apos;,${bi12454,binned}),concatenate(&apos; 🐟&apos;,${bi3672,binned}))))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Concatenate(&apos; 🧭&apos;, Concatenate(&apos;Harbour (short)&apos;n,Concatenate( Concatenate(&apos; 🚚&apos;, &apos;Cargo ID&apos;n), Concatenate(&apos; 🐟&apos;, &apos;Commodity (Fish/short)&apos;n))))</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi13492" label="Match confidence" format="PERCENT12.1">
+					<Expression>aggregate(average,group,div(${bi6756,raw},${bi7452,raw}))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Avg(
+    ByGroup,
+    &apos;Distributed quantity (tons) given time spent at fishing ground&apos;n /
+    &apos;Total Quantity (tons/avg)&apos;n
+)</Property>
+					</EditorProperties>
 				</AggregateCalculatedItem>
 			</BusinessItemFolder>
 		</DataSource>
@@ -5559,7 +5598,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="timeSeriesBinOption">formatBin</Property>
 				<Property key="timeSeriesFixedBinCardinality">300</Property>
-				<Property key="addedInteractionQueryDataItems">bi12458</Property>
+				<Property key="addedInteractionQueryDataItems">bi14826</Property>
 			</EditorProperties>
 			<Title><P><Span>Activity plot for vessels (transponder ping/day)</Span></P></Title>
 			<Conditions>
@@ -5749,7 +5788,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12459</Property>
+				<Property key="addedInteractionQueryDataItems">bi14827</Property>
 			</EditorProperties>
 			<Title><P><Span>Day of Harbour Visit</Span></P></Title>
 			<ComboBox valueVariable="bi1646"/>
@@ -5757,7 +5796,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Table columnSizing="autoFill" resultDefinitions="dd1653" name="ve1650" data="dd1651" label="List table - Vessel Type 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi1656 bi1657 bi1758">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12460,bi12461</Property>
+				<Property key="addedInteractionQueryDataItems">bi14828,bi14829</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessels in Harbour</Span></P></Title>
 			<Conditions>
@@ -5782,7 +5821,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12462,bi12463</Property>
+				<Property key="addedInteractionQueryDataItems">bi14830,bi14831</Property>
 			</EditorProperties>
 			<Title><P><Span>Harbour</Span></P></Title>
 			<ComboBox valueVariable="bi1666"/>
@@ -5856,7 +5895,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Table columnSizing="autoFill" resultDefinitions="dd1762" name="ve1770" data="dd1768" label="List table - Source (Edge) 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi1764 bi1766">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12466</Property>
+				<Property key="addedInteractionQueryDataItems">bi14834</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessels fishing grounds - 3x days prior</Span></P></Title>
 			<Conditions>
@@ -6214,7 +6253,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
     <LayoutDataMatrix name="LayoutDataMatrix_238" cellHeightMin="1px" cellWidthMin="1px" includeMissingClass="true" headerLabelAppearance="auto" rowVars="ROW" columnVars="COLUMN" rowVarsSortOrder="ascending_unformatted">
         <LayoutPrototypeOverlay2D>
             <BarChartParm name="BarChart" tipListPolicy="replace" _stmt="barchart" compactLabelFormats="true" groupDisplay="stack" groupOrder="data" orient="vertical" stat="none" tip="TIP" category="CATEGORY" responseVars="RESPONSE" group="GROUP"/>
-            <XAxisOpts display="TICKVALUES" reverse="false">
+            <XAxisOpts display="LABEL TICKVALUES" reverse="false">
                 <DiscreteOpts tickValueFitPolicy="staggertruncatedrop" sortOrder="ascending_unformatted" tickValueAppearance="auto"/>
                 <LinearOpts>
                     <TickValueFormatOpts extractScale="true"/>
@@ -6306,7 +6345,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
     <LayoutDataMatrix name="LayoutDataMatrix_238" cellHeightMin="1px" cellWidthMin="1px" includeMissingClass="true" headerLabelAppearance="auto" rowVars="ROW" columnVars="COLUMN" rowVarsSortOrder="ascending_unformatted">
         <LayoutPrototypeOverlay2D>
             <BarChartParm name="BarChart" tipListPolicy="replace" _stmt="barchart" compactLabelFormats="true" groupDisplay="stack" groupOrder="data" orient="vertical" stat="none" tip="TIP" category="CATEGORY" responseVars="RESPONSE" group="GROUP"/>
-            <XAxisOpts display="TICKVALUES" reverse="false">
+            <XAxisOpts display="LABEL TICKVALUES" reverse="false">
                 <DiscreteOpts tickValueFitPolicy="staggertruncatedrop" sortOrder="ascending_unformatted" tickValueAppearance="auto"/>
                 <LinearOpts>
                     <TickValueFormatOpts extractScale="true"/>
@@ -6812,7 +6851,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="bar" supplementalVisuals="ve2794" resultDefinitions="dd2793" name="ve2763" data="dd2791" label="Bar - Arrival Date 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi2769 bi2789 bi2803">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12468</Property>
+				<Property key="addedInteractionQueryDataItems">bi14836</Property>
 			</EditorProperties>
 			<Title><P><Span>Number of vessels arriving in harbour</Span></P></Title>
 			<Conditions>
@@ -6903,7 +6942,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi2779</Property>
-				<Property key="addedInteractionQueryDataItems">bi12469</Property>
+				<Property key="addedInteractionQueryDataItems">bi14837</Property>
 			</EditorProperties>
 			<Title><P><Span>Number of cargo imports</Span></P></Title>
 			<Conditions>
@@ -7000,7 +7039,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="bar" supplementalVisuals="ve2927" resultDefinitions="dd2926" name="ve2913" data="dd2924" label="Bar - Date 3" applyDynamicBrushes="yes" sourceInteractionVariables="bi2918 bi6768">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12470,bi12471,bi12472,bi12473</Property>
+				<Property key="addedInteractionQueryDataItems">bi14838,bi14839,bi14840,bi14841</Property>
 			</EditorProperties>
 			<Title><P><Span>When was the cargo delivered to the port?</Span></P></Title>
 			<Conditions>
@@ -7098,7 +7137,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="boxDirection">vertical</Property>
 				<Property key="showAverages">true</Property>
 				<Property key="axisTickValueFitPolicy">STAGGERTRUNCATEDROP</Property>
-				<Property key="addedInteractionQueryDataItems">bi12474</Property>
+				<Property key="addedInteractionQueryDataItems">bi14842</Property>
 			</EditorProperties>
 			<Title auto="true"><P><DynamicSpan key="bird.autotitle.template.oneByTwo.fmt.txt"><Substitutions><Substitution valueType="label" variables="bi1927"/><Substitution valueType="label" variables="bi2998"/></Substitutions></DynamicSpan></P></Title>
 			<Conditions>
@@ -7116,11 +7155,11 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 <![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel" displayOptionPolicy="union">
     <Meta>
         <DataNameMap>
-            <Entry model="LayoutOverlay_110" data="dd2949"/>
+            <Entry model="LayoutOverlay_27" data="dd2949"/>
         </DataNameMap>
     </Meta>
-    <LayoutOverlay cycleAttrs="true" name="LayoutOverlay_110">
-        <HeatBoxParm name="HeatBoxParm_9" tipListPolicy="replace" orient="vertical" display="MEAN OUTLIERS" connect="mean" boxWidth="0.800000011" binWidth="0.800000011" binDisplay="FILL OUTLINE" discreteOffset="0" tip="x Role1 min Q1 mean median Q3 max Role2 STD N" x="dd2949#bi2999" analysisLabel="dd2949#bi2958" dataMin="dd2949#bi2965" dataMax="dd2949#bi2966" min="dd2949#bi2956" max="dd2949#bi2964" Q1="dd2949#bi2961" Q3="dd2949#bi2962" mean="dd2949#bi2954" median="dd2949#bi2959" STD="dd2949#bi2963" N="dd2949#bi2955" binMin="dd2949#bi2967" binMax="dd2949#bi2976" binStartMin="dd2949#bi2974" binStartMax="dd2949#bi2983" binSizeMin="dd2949#bi2975" binSizeMax="dd2949#bi2984" group="dd2949#bi2958" fillAttrs="GraphDataStyle1" outlineAttrs="OutlinesUnfilled" meanAttrs="BoxMean" medianAttrs="BoxMedian" outlierAttrs="Outlier" whiskerAttrs="BoxWhisker" connectAttrs="ConnectLine">
+    <LayoutOverlay cycleAttrs="true" name="LayoutOverlay_27">
+        <HeatBoxParm name="HeatBoxParm_8" tipListPolicy="replace" orient="vertical" display="MEAN OUTLIERS" connect="mean" boxWidth="0.800000011" binWidth="0.800000011" binDisplay="FILL OUTLINE" discreteOffset="0" tip="x Role1 min Q1 mean median Q3 max Role2 STD N" x="dd2949#bi2999" analysisLabel="dd2949#bi2958" dataMin="dd2949#bi2965" dataMax="dd2949#bi2966" min="dd2949#bi2956" max="dd2949#bi2964" Q1="dd2949#bi2961" Q3="dd2949#bi2962" mean="dd2949#bi2954" median="dd2949#bi2959" STD="dd2949#bi2963" N="dd2949#bi2955" binMin="dd2949#bi2967" binMax="dd2949#bi2976" binStartMin="dd2949#bi2974" binStartMax="dd2949#bi2983" binSizeMin="dd2949#bi2975" binSizeMax="dd2949#bi2984" group="dd2949#bi2958" fillAttrs="GraphDataStyle1" outlineAttrs="OutlinesUnfilled" meanAttrs="BoxMean" medianAttrs="BoxMedian" outlierAttrs="Outlier" whiskerAttrs="BoxWhisker" connectAttrs="ConnectLine">
             <OutlierMinVars>
                 <Value>dd2949#bi2968</Value>
                 <Value>dd2949#bi2969</Value>
@@ -7157,7 +7196,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
     <LayoutGlobalLegend hAlign="right" vAlign="top" position="top" allowCollapsed="false" visible="off">
         <AutoLegend opaque="false">
             <GraphNames>
-                <Value>HeatBoxParm_9</Value>
+                <Value>HeatBoxParm_8</Value>
             </GraphNames>
         </AutoLegend>
     </LayoutGlobalLegend>
@@ -7181,7 +7220,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="bar" supplementalVisuals="ve2888" resultDefinitions="dd2885" name="ve2882" data="dd2883" label="Bar - Vessel 3" applyDynamicBrushes="yes" sourceInteractionVariables="bi2886">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12475,bi12476,bi12477</Property>
+				<Property key="addedInteractionQueryDataItems">bi14843,bi14844,bi14845</Property>
 			</EditorProperties>
 			<Title><P><Span>Which vessels delivered the selected cargo and what amount (estimated tons)?</Span></P></Title>
 			<Conditions>
@@ -7263,7 +7302,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="bar" supplementalVisuals="ve3049" resultDefinitions="dd3044" name="ve3050" data="dd3047" label="Bar - Company 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi3054">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12478,bi12479</Property>
+				<Property key="addedInteractionQueryDataItems">bi14846,bi14847</Property>
 			</EditorProperties>
 			<Title><P><Span>Which company delivered the selected cargo and what amount (tons)?</Span></P></Title>
 			<Conditions>
@@ -7345,7 +7384,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="bar" supplementalVisuals="ve3062" resultDefinitions="dd3061" name="ve2930" data="dd3059" label="Bar - Date 4" applyDynamicBrushes="yes" sourceInteractionVariables="bi2936 bi3673">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12480</Property>
+				<Property key="addedInteractionQueryDataItems">bi14848</Property>
 			</EditorProperties>
 			<Title><P><Span>Delivery by fish species</Span></P></Title>
 			<Conditions>
@@ -7444,7 +7483,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="nodeLabels">true</Property>
 				<Property key="linkWidthAggregation">weight</Property>
 				<Property key="linkColor">path</Property>
-				<Property key="addedInteractionQueryDataItems">bi12481,bi12482</Property>
+				<Property key="addedInteractionQueryDataItems">bi14849,bi14850</Property>
 			</EditorProperties>
 			<Title><P><Span>Paths travelled with one or more stops at a Preserve</Span></P></Title>
 <![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
@@ -7488,7 +7527,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="boxDirection">horizontal</Property>
 				<Property key="showAverages">true</Property>
 				<Property key="axisTickValueFitPolicy">STAGGERTRUNCATEDROP</Property>
-				<Property key="addedInteractionQueryDataItems">bi12483</Property>
+				<Property key="addedInteractionQueryDataItems">bi14851</Property>
 			</EditorProperties>
 			<Title><P><Span>Average time (days) spent at location</Span></P></Title>
 			<Conditions>
@@ -7584,7 +7623,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="previousShowCategoryValue">true</Property>
 				<Property key="previousShowCategoryLabel">true</Property>
 				<Property key="previousShowAggregation">false</Property>
-				<Property key="addedInteractionQueryDataItems">bi12484</Property>
+				<Property key="addedInteractionQueryDataItems">bi14852</Property>
 			</EditorProperties>
 			<Title><P><Span>Registered vessels</Span></P></Title>
 			<Conditions>
@@ -7646,7 +7685,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="derivedVisualType">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12485,bi12486</Property>
+				<Property key="addedInteractionQueryDataItems">bi14853,bi14854</Property>
 			</EditorProperties>
 			<Title><P><Span>Regions visited (days)</Span></P></Title>
 			<Conditions>
@@ -7785,7 +7824,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="bar" supplementalVisuals="ve3506" resultDefinitions="dd3501" name="ve3507" data="dd3504" label="Bar - Vessel 4" applyDynamicBrushes="yes" sourceInteractionVariables="bi3502 bi3519 bi4259">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12487</Property>
+				<Property key="addedInteractionQueryDataItems">bi14855</Property>
 			</EditorProperties>
 			<Title><P><Span>Amount (tons) of cargo delivered to ports</Span></P></Title>
 			<Conditions>
@@ -8038,7 +8077,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="axisItemRoleVarNames">bi4414,bi4468</Property>
 				<Property key="colorRoleVarName">bi6110</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi6110</Property>
-				<Property key="addedInteractionQueryDataItems">bi12488</Property>
+				<Property key="addedInteractionQueryDataItems">bi14856</Property>
 			</EditorProperties>
 			<Title><P><Span>Fishing vessels travel activity by hour</Span></P></Title>
 <![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel">
@@ -8111,7 +8150,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="schedule" supplementalVisuals="ve3136" resultDefinitions="dd3125" name="ve3137" data="dd3133" label="Schedule - Name (Source) 1" applyDynamicBrushes="yes">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12489</Property>
+				<Property key="addedInteractionQueryDataItems">bi14857</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessel schedule</Span></P></Title>
 			<Conditions>
@@ -8216,7 +8255,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="bar" supplementalVisuals="ve6515" resultDefinitions="dd6514" name="ve6511" data="dd6512" label="Bar - Start date of the visit (Edge) 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi6516 bi6519 bi6526 bi6528">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12490</Property>
+				<Property key="addedInteractionQueryDataItems">bi14858</Property>
 			</EditorProperties>
 			<Title><P><Span>Duration (days) at locations</Span></P></Title>
 			<Conditions>
@@ -8402,37 +8441,6 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Column variable="bi1830"/>
 			</Columns>
 		</Table>
-		<Table columnSizing="autoFill" resultDefinitions="dd7517" name="ve7522" data="dd7520" label="List table - Company 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi7529 bi7536">
-			<EditorProperties>
-				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12491,bi12492,bi12493,bi12494,bi12495</Property>
-			</EditorProperties>
-			<Title><P><Span>Vessels associated to selected cargo</Span></P></Title>
-			<Conditions>
-				<Condition ref="rg10687">
-					<ConditionParameters>
-						<ConditionParameter parameter="*"/>
-					</ConditionParameters>
-				</Condition>
-				<Condition ref="rg11475">
-					<ConditionParameters>
-						<ConditionParameter parameter="*"/>
-					</ConditionParameters>
-				</Condition>
-			</Conditions>
-			<RowNumbers visible="true" headerVisible="false"/>
-			<Columns>
-				<Column variable="bi7536" isVisible="true"/>
-				<Column variable="bi7529" isVisible="true"/>
-				<Column variable="bi7530" isVisible="true" compactFormat="false">
-					<Cell>
-						<CellVisuals nestedElementPosition="left">
-							<SparkValue type="bar" response="bi7530" name="cv7534"/>
-						</CellVisuals>
-					</Cell>
-				</Column>
-			</Columns>
-		</Table>
 		<Graph graphType="schedule" supplementalVisuals="ve7680" resultDefinitions="dd7679" name="ve7676" data="dd7677" label="Schedule - Vessel by Speed Category" applyDynamicBrushes="yes">
 			<EditorProperties>
 				<Property key="isAutoLabel">false</Property>
@@ -8538,7 +8546,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="derivedVisualType">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12496</Property>
+				<Property key="addedInteractionQueryDataItems">bi14859</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessel movements</Span></P></Title>
 			<Conditions>
@@ -8749,7 +8757,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12497,bi12498</Property>
+				<Property key="addedInteractionQueryDataItems">bi14860,bi14861</Property>
 			</EditorProperties>
 			<Title><P><Span>Speed category</Span></P></Title>
 			<LinkBar valueVariable="bi8224" measureVariable="bi8436"/>
@@ -8758,7 +8766,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12499</Property>
+				<Property key="addedInteractionQueryDataItems">bi14862</Property>
 			</EditorProperties>
 			<Title><P><Span>Location</Span></P></Title>
 			<LinkBar valueVariable="bi8235" measureVariable="bi8472"/>
@@ -8774,7 +8782,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="schedule" supplementalVisuals="ve8478" resultDefinitions="dd8477" name="ve8474" data="dd8475" label="Schedule - Location 1" applyDynamicBrushes="yes">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12500,bi12501</Property>
+				<Property key="addedInteractionQueryDataItems">bi14863,bi14864</Property>
 			</EditorProperties>
 			<Title auto="true"><P><DynamicSpan key="bird.autotitle.template.oneFromTwoToThree.fmt.txt"><Substitutions><Substitution valueType="label" variables="bi1155"/><Substitution valueType="label" variables="bi1154"/><Substitution valueType="label" variables="bi1153"/></Substitutions></DynamicSpan></P></Title>
 			<Conditions>
@@ -8872,7 +8880,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Table columnSizing="autoFill" resultDefinitions="dd8492" name="ve8489" data="dd8490" label="List table - Meeting Start Time 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi8493 bi8494 bi8980 bi9005 bi9007">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12504,bi12505</Property>
+				<Property key="addedInteractionQueryDataItems">bi14867,bi14868</Property>
 			</EditorProperties>
 			<Title><P><Span>Meeting schedule</Span></P></Title>
 			<Conditions>
@@ -8914,7 +8922,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12508</Property>
+				<Property key="addedInteractionQueryDataItems">bi14871</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessel</Span></P></Title>
 			<ComboBox valueVariable="bi8973"/>
@@ -9023,7 +9031,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12510</Property>
+				<Property key="addedInteractionQueryDataItems">bi14873</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessel</Span></P></Title>
 			<ComboBox valueVariable="bi9248"/>
@@ -9036,7 +9044,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<Title><P><Span>Month of travel</Span></P></Title>
 			<ComboBox valueVariable="bi9320"/>
 		</Prompt>
-		<Image scaleType="scale" file="/files/files/f5569675-32b9-4ff7-aa78-103c9ed6590e" name="ve9332" label="Image 1" selectionDisabled="true"/>
+		<Image scaleType="scale" file="/files/files/3a4f4c1e-43e7-40a6-a8a2-77b83fb81498" name="ve9332" label="Image 1" selectionDisabled="true"/>
 		<VisualContainer containerType="standard" name="ve9344" label="Container - Vessel Movement" selectionDisabled="true">
 			<EditorProperties>
 				<Property key="isAutoLabel">false</Property>
@@ -9068,7 +9076,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
     </Meta>
     <LayoutOverlayMap name="LayoutOverlayMap">
         <Overview hAlign="right" vAlign="top" visible="true"/>
-        <NetworkPlot name="NetworkPlot" compactLabelFormats="true" display="NODEOUTLINE NODEFILL" linkType="arc" nodeScaleFactor="0.400000005" tip="none" fromId="dd47#bi55" linkColorGroup="dd47#bi274" linkDirection="dd47#bi59" linkId="dd47#bi51" linkWidthResponse="dd47#bi90" nodeGroup="dd47#bi92" nodeId="dd47#bi51" nodeLabelPriority_type="NUMERIC" nodeLabelPriority="1" nodeX="dd47#bi57" nodeY="dd47#bi58" toId="dd47#bi56" type="dd47#bi50" x="dd47#bi57" y="dd47#bi58">
+        <NetworkPlot name="NetworkPlot" compactLabelFormats="true" display="NODEOUTLINE NODEFILL" linkType="arc" nodeScaleFactor="0.349999994" tip="none" fromId="dd47#bi55" linkColorGroup="dd47#bi274" linkDirection="dd47#bi59" linkId="dd47#bi51" linkWidthResponse="dd47#bi90" nodeGroup="dd47#bi92" nodeId="dd47#bi51" nodeLabel="dd47#bi14613" nodeLabelPriority_type="NUMERIC" nodeLabelPriority="1" nodeX="dd47#bi57" nodeY="dd47#bi58" toId="dd47#bi56" type="dd47#bi50" x="dd47#bi57" y="dd47#bi58">
             <ArcOpts curvatureFactor="1.25" type="clockwise"/>
             <LinkTip>
                 <Value>dd47#bi52</Value>
@@ -9081,12 +9089,13 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
                 <Value>dd47#bi77</Value>
                 <Value>dd47#bi82</Value>
                 <Value>dd47#bi93</Value>
-                <Value>dd47#bi52</Value>
+                <Value>dd47#bi14614</Value>
+                <Value>dd47#bi14613</Value>
             </NodeTip>
-            <NodeLabelAttrs size="10.5pt" transparency="1"/>
+            <NodeLabelAttrs size="18pt"/>
         </NetworkPlot>
     </LayoutOverlayMap>
-    <LayoutGlobalLegend border="false" legendTitlePosition="top" allowCollapsed="true">
+    <LayoutGlobalLegend border="false" hAlign="center" vAlign="top" legendTitlePosition="top" position="top" allowCollapsed="true">
         <SizeLegend border="false" opaque="false" hAlign="left" vAlign="bottom" orient="horizontal" extractScale="true" type="shape" title_type="KEYWORD" title="AUTO">
             <GraphNames>
                 <Value>NetworkPlot</Value>
@@ -9131,6 +9140,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Column variable="bi92"/>
 				<Column variable="bi90"/>
 				<Column variable="bi274"/>
+				<Column variable="bi14613"/>
 				<Column variable="bi77"/>
 				<Column variable="bi82"/>
 			</Columns>
@@ -9155,7 +9165,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="boxDirection">horizontal</Property>
 				<Property key="showAverages">true</Property>
 				<Property key="axisTickValueFitPolicy">STAGGERTRUNCATEDROP</Property>
-				<Property key="addedInteractionQueryDataItems">bi12511</Property>
+				<Property key="addedInteractionQueryDataItems">bi14874</Property>
 			</EditorProperties>
 			<Title><P><Span>Average time (days) spent at location</Span></P></Title>
 			<Conditions>
@@ -9246,7 +9256,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="schedule" supplementalVisuals="ve9639" resultDefinitions="dd9629" name="ve9641" data="dd9637" label="Schedule - Name (Source) 2" applyDynamicBrushes="yes">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12512</Property>
+				<Property key="addedInteractionQueryDataItems">bi14875</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessel schedule</Span></P></Title>
 			<Conditions>
@@ -9347,7 +9357,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi9732</Property>
-				<Property key="addedInteractionQueryDataItems">bi12513</Property>
+				<Property key="addedInteractionQueryDataItems">bi14876</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessel speed (knots) distribution</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel">
@@ -9405,7 +9415,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="measureAxisLayout">separateAxes</Property>
-				<Property key="addedInteractionQueryDataItems">bi12514,bi12515,bi12516</Property>
+				<Property key="addedInteractionQueryDataItems">bi14877,bi14878,bi14879</Property>
 			</EditorProperties>
 			<Title><P><Span>Average duration and speed travelled</Span></P></Title>
 			<Conditions>
@@ -9510,7 +9520,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Table columnSizing="autoFill" resultDefinitions="dd9291" name="ve9288" data="dd9289" label="Travel journal" applyDynamicBrushes="yes" sourceInteractionVariables="bi9294 bi10052 bi10053">
 			<EditorProperties>
 				<Property key="isAutoLabel">false</Property>
-				<Property key="addedInteractionQueryDataItems">bi12517,bi12518,bi12519</Property>
+				<Property key="addedInteractionQueryDataItems">bi14880,bi14881,bi14882</Property>
 			</EditorProperties>
 			<Conditions>
 				<Condition ref="rg10687">
@@ -9555,7 +9565,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12520,bi12521</Property>
+				<Property key="addedInteractionQueryDataItems">bi14883,bi14884</Property>
 			</EditorProperties>
 			<Title><P><Span>Month</Span></P></Title>
 			<LinkBar orientation="vertical" valueVariable="bi10080"/>
@@ -9665,7 +9675,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="nodeLabels">true</Property>
 				<Property key="linkWidthAggregation">weight</Property>
 				<Property key="linkColor">event</Property>
-				<Property key="addedInteractionQueryDataItems">bi12522</Property>
+				<Property key="addedInteractionQueryDataItems">bi14885</Property>
 			</EditorProperties>
 			<Title><P><Span>Other vessel travel paths</Span></P></Title>
 <![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
@@ -9736,7 +9746,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="nodeLabels">true</Property>
 				<Property key="linkWidthAggregation">weight</Property>
 				<Property key="linkColor">event</Property>
-				<Property key="addedInteractionQueryDataItems">bi12523</Property>
+				<Property key="addedInteractionQueryDataItems">bi14886</Property>
 			</EditorProperties>
 			<Title><P><Span>SouthSeafood Express vessel travel paths</Span></P></Title>
 <![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
@@ -9792,7 +9802,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="needle" supplementalVisuals="ve10681" resultDefinitions="dd10680" name="ve8804" data="dd10678" label="Needle - Start time of the visit 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi9283 bi10242 bi11477">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12524,bi12525,bi12526</Property>
+				<Property key="addedInteractionQueryDataItems">bi14887,bi14888,bi14889</Property>
 			</EditorProperties>
 			<Title><P><Span>Offset (hours) between transponder signal and claimed departure time</Span></P></Title>
 			<Conditions>
@@ -9888,7 +9898,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="isAutoLabel">false</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi8801</Property>
-				<Property key="addedInteractionQueryDataItems">bi12527,bi12528,bi12529</Property>
+				<Property key="addedInteractionQueryDataItems">bi14890,bi14891,bi14892</Property>
 			</EditorProperties>
 			<Conditions>
 				<Condition ref="rg10687">
@@ -10156,7 +10166,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="bar" supplementalVisuals="ve10920" resultDefinitions="dd10919" name="ve10890" data="dd10917" label="Bar - Company 3" applyDynamicBrushes="yes" sourceInteractionVariables="bi10942 bi10945">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12530,bi12531</Property>
+				<Property key="addedInteractionQueryDataItems">bi14893,bi14894</Property>
 			</EditorProperties>
 			<Title><P><Span>Average duration (hours) by company</Span></P></Title>
 			<Conditions>
@@ -10245,7 +10255,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12532</Property>
+				<Property key="addedInteractionQueryDataItems">bi14895</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessel speed</Span></P></Title>
 			<LinkBar valueVariable="bi10927"/>
@@ -10274,7 +10284,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="step" supplementalVisuals="ve11468" resultDefinitions="dd11467" name="ve11115" data="dd11465" label="Quantity (tons) imported over time" applyDynamicBrushes="yes" sourceInteractionVariables="bi11120 bi11470">
 			<EditorProperties>
 				<Property key="isAutoLabel">false</Property>
-				<Property key="addedInteractionQueryDataItems">bi12533,bi12534</Property>
+				<Property key="addedInteractionQueryDataItems">bi14896,bi14897</Property>
 			</EditorProperties>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
@@ -10359,7 +10369,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="boxDirection">vertical</Property>
 				<Property key="showAverages">true</Property>
 				<Property key="axisTickValueFitPolicy">STAGGERTRUNCATEDROP</Property>
-				<Property key="addedInteractionQueryDataItems">bi12535</Property>
+				<Property key="addedInteractionQueryDataItems">bi14898</Property>
 			</EditorProperties>
 			<Title><P><Span>Quantity (tons) imported by commodity </Span></P></Title>
 			<Conditions>
@@ -10377,12 +10387,12 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 <![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel" displayOptionPolicy="union">
     <Meta>
         <DataNameMap>
-            <Entry model="LayoutDataMatrix_45" data="dd11377"/>
+            <Entry model="LayoutDataMatrix_75" data="dd11377"/>
         </DataNameMap>
     </Meta>
-    <LayoutDataMatrix name="LayoutDataMatrix_45" headerLabelAppearance="auto" columnVarsSortOrder="ascending_unformatted">
+    <LayoutDataMatrix name="LayoutDataMatrix_75" headerLabelAppearance="auto" columnVarsSortOrder="ascending_unformatted">
         <LayoutPrototypeOverlay2D cycleAttrs="true">
-            <HeatBoxParm name="HeatBoxParm_9" tipListPolicy="replace" orient="vertical" display="MEAN OUTLIERS" connect="mean" boxWidth="0.800000011" binWidth="0.800000011" binDisplay="FILL OUTLINE" discreteOffset="0" tip="x Role1 min Q1 mean median Q3 max Role2 STD N" x="dd11377#bi11462" analysisLabel="dd11377#bi11432" dataMin="dd11377#bi11439" dataMax="dd11377#bi11440" min="dd11377#bi11430" max="dd11377#bi11438" Q1="dd11377#bi11435" Q3="dd11377#bi11436" mean="dd11377#bi11428" median="dd11377#bi11433" STD="dd11377#bi11437" N="dd11377#bi11429" binMin="dd11377#bi11441" binMax="dd11377#bi11450" binStartMin="dd11377#bi11448" binStartMax="dd11377#bi11457" binSizeMin="dd11377#bi11449" binSizeMax="dd11377#bi11458" group="dd11377#bi11432" fillAttrs="GraphDataStyle1" outlineAttrs="OutlinesUnfilled" meanAttrs="BoxMean" medianAttrs="BoxMedian" outlierAttrs="Outlier" whiskerAttrs="BoxWhisker" connectAttrs="ConnectLine">
+            <HeatBoxParm name="HeatBoxParm_8" tipListPolicy="replace" orient="vertical" display="MEAN OUTLIERS" connect="mean" boxWidth="0.800000011" binWidth="0.800000011" binDisplay="FILL OUTLINE" discreteOffset="0" tip="x Role1 min Q1 mean median Q3 max Role2 STD N" x="dd11377#bi11462" analysisLabel="dd11377#bi11432" dataMin="dd11377#bi11439" dataMax="dd11377#bi11440" min="dd11377#bi11430" max="dd11377#bi11438" Q1="dd11377#bi11435" Q3="dd11377#bi11436" mean="dd11377#bi11428" median="dd11377#bi11433" STD="dd11377#bi11437" N="dd11377#bi11429" binMin="dd11377#bi11441" binMax="dd11377#bi11450" binStartMin="dd11377#bi11448" binStartMax="dd11377#bi11457" binSizeMin="dd11377#bi11449" binSizeMax="dd11377#bi11458" group="dd11377#bi11432" fillAttrs="GraphDataStyle1" outlineAttrs="OutlinesUnfilled" meanAttrs="BoxMean" medianAttrs="BoxMedian" outlierAttrs="Outlier" whiskerAttrs="BoxWhisker" connectAttrs="ConnectLine">
                 <OutlierMinVars>
                     <Value>dd11377#bi11442</Value>
                     <Value>dd11377#bi11443</Value>
@@ -10425,7 +10435,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
     <LayoutGlobalLegend hAlign="right" vAlign="top" position="top" allowCollapsed="false" visible="off">
         <AutoLegend opaque="false">
             <GraphNames>
-                <Value>HeatBoxParm_9</Value>
+                <Value>HeatBoxParm_8</Value>
             </GraphNames>
         </AutoLegend>
     </LayoutGlobalLegend>
@@ -10453,7 +10463,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="timeSeriesBinOption">formatBin</Property>
 				<Property key="timeSeriesFixedBinCardinality">300</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi11492</Property>
-				<Property key="addedInteractionQueryDataItems">bi12536,bi12537</Property>
+				<Property key="addedInteractionQueryDataItems">bi14899,bi14900</Property>
 			</EditorProperties>
 			<Conditions>
 				<Condition ref="rg10687">
@@ -10541,7 +10551,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="step" supplementalVisuals="ve11722" resultDefinitions="dd11721" name="ve11718" data="dd11719" label="Step - Arrival date/time 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi11725 bi11730 bi11975 bi12094">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12538</Property>
+				<Property key="addedInteractionQueryDataItems">bi14901</Property>
 			</EditorProperties>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
@@ -10635,7 +10645,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		<Graph graphType="step" supplementalVisuals="ve12058" resultDefinitions="dd12048" name="ve12059" data="dd12056" label="Step - Arrival date/time 2" applyDynamicBrushes="yes" sourceInteractionVariables="bi12051 bi12050 bi12052 bi12095">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12539</Property>
+				<Property key="addedInteractionQueryDataItems">bi14902</Property>
 			</EditorProperties>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
@@ -10765,149 +10775,6 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<Title><P><Span>Time Period</Span></P></Title>
 			<LinkBar valueVariable="bi12089"/>
 		</Prompt>
-		<Graph graphType="bar" supplementalVisuals="ve7441" resultDefinitions="dd7435" name="ve7442" data="dd7439" label="Bar - Month 2" applyDynamicBrushes="yes" sourceInteractionVariables="bi7447 bi7450">
-			<EditorProperties>
-				<Property key="isAutoLabel">true</Property>
-			</EditorProperties>
-			<Title><P><Span>Cargo Export Quantity (tons) by month</Span></P></Title>
-			<Conditions>
-				<Condition ref="rg10687">
-					<ConditionParameters>
-						<ConditionParameter parameter="*"/>
-					</ConditionParameters>
-				</Condition>
-				<Condition ref="rg11475">
-					<ConditionParameters>
-						<ConditionParameter parameter="*"/>
-					</ConditionParameters>
-				</Condition>
-			</Conditions>
-<![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel">
-    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
-    <Meta>
-        <DynVars>
-            <DynVar name="CATEGORY" description="CATEGORY_VAR" required="true" assignedType="time" type="character">
-                <DefaultValues>
-                    <Value>dd7435.bi7447</Value>
-                </DefaultValues>
-            </DynVar>
-            <DynVar name="RESPONSE" description="MEASURE_VAR" required="true" assignedType="numeric" type="numeric" multiplesAllowed="true">
-                <DefaultValues>
-                    <Value>dd7435.bi12289</Value>
-                </DefaultValues>
-            </DynVar>
-            <DynVar name="GROUP" description="SUBGROUP_VAR" required="false" assignedType="character" type="character">
-                <DefaultValues>
-                    <Value>dd7435.bi7450</Value>
-                </DefaultValues>
-            </DynVar>
-            <DynVar name="COLUMN" description="HORIZONTAL_SERIES_VAR" required="false" type="character" multiplesAllowed="true"/>
-            <DynVar name="ROW" description="VERTICAL_SERIES_VAR" required="false" type="character" multiplesAllowed="true"/>
-            <DynVar name="TIP" description="TIP_VAR" required="false" assignedType="numeric" type="any" multiplesAllowed="true">
-                <DefaultValues>
-                    <Value>dd7435.bi7447</Value>
-                    <Value>dd7435.bi7450</Value>
-                    <Value>dd7435.bi12289</Value>
-                </DefaultValues>
-            </DynVar>
-            <DynVar name="KEY_FRAME" description="ANIMATION" required="false" type="time" multiplesAllowed="false"/>
-            <DynVar name="HIDDEN" description="HIDDEN_VAR" required="false" type="character" multiplesAllowed="true"/>
-        </DynVars>
-        <DataNameMap>
-            <Entry model="LayoutDataMatrix_110" data="dd7435"/>
-        </DataNameMap>
-    </Meta>
-    <LayoutDataMatrix name="LayoutDataMatrix_110" cellHeightMin="1px" cellWidthMin="1px" includeMissingClass="true" rowVars="ROW" columnVars="COLUMN">
-        <LayoutPrototypeOverlay2D>
-            <BarChartParm name="BarChart" tipListPolicy="replace" _stmt="barchart" compactLabelFormats="true" groupDisplay="stack" groupOrder="data" orient="horizontal" stat="none" segmentLabel="true" tip="TIP" category="CATEGORY" responseVars="RESPONSE" group="GROUP" categoryOrderRole="response"/>
-            <XAxisOpts name="categoryAxis" display="NONE" gridDisplay="off">
-                <DiscreteOpts sortOrder="data"/>
-                <LinearOpts>
-                    <TickValueFormatOpts extractScale="true"/>
-                </LinearOpts>
-            </XAxisOpts>
-            <YAxisOpts display="TICKVALUES" gridDisplay="off" reverse="true">
-                <DiscreteOpts tickValueFitPolicy="staggertruncatedrop" sortOrder="data" tickValueAppearance="auto"/>
-                <LinearOpts>
-                    <TickValueFormatOpts extractScale="true"/>
-                </LinearOpts>
-            </YAxisOpts>
-        </LayoutPrototypeOverlay2D>
-    </LayoutDataMatrix>
-    <LayoutGlobalLegend hAlign="right" vAlign="top" legendTitlePosition="top" position="top" allowCollapsed="true">
-        <AutoLegend sortOrder="ascending">
-            <GraphNames>
-                <Value>BarChart</Value>
-            </GraphNames>
-        </AutoLegend>
-    </LayoutGlobalLegend>
-    <Animation keyFrameSortOrder="ascending_unformatted" keyFrame="KEY_FRAME"/>
-    <OverviewAxis maxPlotSize="60px" minPlotSize="35px" visible="off" axis="categoryAxis"/>
-</StatGraph>]]>
-		</Graph>
-		<Table columnSizing="autoFill" resultDefinitions="dd7435" name="ve7441" data="dd7439" applyDynamicBrushes="yes" sourceInteractionVariables="bi7447 bi7450">
-			<Columns>
-				<Column variable="bi7447"/>
-				<Column variable="bi12289"/>
-				<Column variable="bi7450"/>
-			</Columns>
-		</Table>
-		<Table columnSizing="autoFill" resultDefinitions="dd7516" name="ve7507" data="dd7514" label="List table - Cargo 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi7500 bi7533 bi12277">
-			<EditorProperties>
-				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12540,bi12541</Property>
-			</EditorProperties>
-			<Title><P><Span>Cargos leaving the harbour</Span></P></Title>
-			<Conditions>
-				<Condition ref="rg10687">
-					<ConditionParameters>
-						<ConditionParameter parameter="*"/>
-					</ConditionParameters>
-				</Condition>
-				<Condition ref="rg11475">
-					<ConditionParameters>
-						<ConditionParameter parameter="*"/>
-					</ConditionParameters>
-				</Condition>
-			</Conditions>
-			<RowNumbers visible="false"/>
-			<Columns>
-				<Column variable="bi7500" isVisible="true"/>
-				<Column variable="bi7533" isVisible="true"/>
-				<Column class="tableColumnbi7502" variable="bi7502" isVisible="true" compactFormat="false">
-					<Cell>
-						<CellVisuals nestedElementPosition="left">
-							<SparkValue type="bar" response="bi7502" name="cv12290"/>
-						</CellVisuals>
-					</Cell>
-				</Column>
-				<Column variable="bi8503" isVisible="true" compactFormat="false">
-					<Conditions>
-						<Condition ref="cd12378">
-							<ConditionParameters>
-								<ConditionParameter variable="bi1" parameter="bi8503"/>
-							</ConditionParameters>
-						</Condition>
-						<Condition ref="cd12380" nonVisual="false">
-							<ConditionParameters>
-								<ConditionParameter variable="bi1" parameter="bi8503"/>
-							</ConditionParameters>
-						</Condition>
-						<Condition ref="cd12382">
-							<ConditionParameters>
-								<ConditionParameter variable="bi1" parameter="bi8503"/>
-							</ConditionParameters>
-						</Condition>
-						<Condition ref="cd12384">
-							<ConditionParameters>
-								<ConditionParameter variable="bi1" parameter="bi8503"/>
-							</ConditionParameters>
-						</Condition>
-					</Conditions>
-				</Column>
-				<Column variable="bi12277" isVisible="true"/>
-			</Columns>
-		</Table>
 		<VisualContainer containerType="layout" name="ve12357" label="Layout Container 25 (1)" selectionDisabled="true">
 			<EditorProperties>
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
@@ -10923,7 +10790,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
 			</EditorProperties>
 		</VisualContainer>
-		<Graph graphType="bar" supplementalVisuals="ve12297" resultDefinitions="dd12291" name="ve12298" data="dd12295" label="Bar - Month 1 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi12292 bi12293">
+		<Graph graphType="bar" supplementalVisuals="ve12297" resultDefinitions="dd12291" name="ve12298" data="dd12295" label="Bar - Month 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi12292 bi12293">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 			</EditorProperties>
@@ -11010,7 +10877,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Column variable="bi12293"/>
 			</Columns>
 		</Table>
-		<Graph graphType="bar" supplementalVisuals="ve12306" resultDefinitions="dd12300" name="ve12307" data="dd12304" label="Bar - Month 2 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi12301 bi12302">
+		<Graph graphType="bar" supplementalVisuals="ve12306" resultDefinitions="dd12300" name="ve12307" data="dd12304" label="Bar - Month 3" applyDynamicBrushes="yes" sourceInteractionVariables="bi12301 bi12302">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 			</EditorProperties>
@@ -11102,11 +10969,11 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
 			</EditorProperties>
 		</VisualContainer>
-		<Graph graphType="histogram" supplementalVisuals="ve12318" resultDefinitions="dd12311" name="ve12319" data="dd12316" label="Histogram - Delivery Quantity/tons 1 (1)" applyDynamicBrushes="no">
+		<Graph graphType="histogram" supplementalVisuals="ve12318" resultDefinitions="dd12311" name="ve12319" data="dd12316" label="Histogram - Delivery Quantity/tons 1" applyDynamicBrushes="no">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi12315</Property>
-				<Property key="addedInteractionQueryDataItems">bi12542,bi12543</Property>
+				<Property key="addedInteractionQueryDataItems">bi14903,bi14904</Property>
 			</EditorProperties>
 			<Title><P><Span>Distribution cargo delivery</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel">
@@ -11155,11 +11022,11 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Column variable="bi12315"/>
 			</Columns>
 		</Table>
-		<Graph graphType="histogram" supplementalVisuals="ve12328" resultDefinitions="dd12321" name="ve12329" data="dd12326" label="Histogram - Total Quantity (tons/avg) 1 (1)" applyDynamicBrushes="no">
+		<Graph graphType="histogram" supplementalVisuals="ve12328" resultDefinitions="dd12321" name="ve12329" data="dd12326" label="Histogram - Total Quantity (tons/avg) 1" applyDynamicBrushes="no">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi12325</Property>
-				<Property key="addedInteractionQueryDataItems">bi12544,bi12545</Property>
+				<Property key="addedInteractionQueryDataItems">bi14905,bi14906</Property>
 			</EditorProperties>
 			<Title><P><Span>Distribution cargo delivery</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel">
@@ -11213,10 +11080,10 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
 			</EditorProperties>
 		</VisualContainer>
-		<Table columnSizing="autoFill" resultDefinitions="dd12335" name="ve12343" data="dd12341" label="List table - Cargo 1 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi12336 bi12337 bi12340">
+		<Table columnSizing="autoFill" resultDefinitions="dd12335" name="ve12343" data="dd12341" label="List table - Cargo 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi12336 bi12337 bi12340">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12546,bi12547</Property>
+				<Property key="addedInteractionQueryDataItems">bi14907,bi14908</Property>
 			</EditorProperties>
 			<Title><P><Span>Cargos leaving the harbour</Span></P></Title>
 			<Conditions>
@@ -11245,10 +11112,10 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Column variable="bi12340" isVisible="true"/>
 			</Columns>
 		</Table>
-		<Table columnSizing="autoFill" resultDefinitions="dd12346" name="ve12352" data="dd12350" label="List table - Company 1 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi12348 bi12347">
+		<Table columnSizing="autoFill" resultDefinitions="dd12346" name="ve12352" data="dd12350" label="List table - Company 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi12348 bi12347">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi12548,bi12549,bi12550,bi12551,bi12552</Property>
+				<Property key="addedInteractionQueryDataItems">bi14909,bi14910,bi14911,bi14912,bi14913</Property>
 			</EditorProperties>
 			<Title><P><Span>Vessels associated to selected cargo</Span></P></Title>
 			<Conditions>
@@ -11275,84 +11142,251 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				</Column>
 			</Columns>
 		</Table>
-		<VisualContainer containerType="layout" name="ve12374" label="Layout Container 27" selectionDisabled="true">
-			<EditorProperties>
-				<Property key="visualType">LAYOUT_CONTAINER</Property>
-			</EditorProperties>
-		</VisualContainer>
-		<Graph graphType="heatMap" supplementalVisuals="ve12453" resultDefinitions="dd12452" name="ve12386" data="dd12387" label="Heat - Harbour (short) 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi12398 bi12435">
+		<Graph graphType="bar" supplementalVisuals="ve14093" resultDefinitions="dd14092" name="ve14089" data="dd14090" label="Bar - Date 5" applyDynamicBrushes="yes" sourceInteractionVariables="bi14094 bi14104">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="binCount">75</Property>
-				<Property key="showBorders">false</Property>
-				<Property key="axisTickValueFitPolicy">STAGGERTRUNCATEDROP</Property>
-				<Property key="squareTransparency">0</Property>
-				<Property key="fitlineTransparency">0</Property>
-				<Property key="colorRoleVarName">bi12400</Property>
-				<Property key="axisItemRoleVarNames">bi12435,bi12398</Property>
-				<Property key="addedInteractionQueryDataItems">bi12553,bi12554</Property>
 			</EditorProperties>
-			<Title auto="true"><P><DynamicSpan key="bird.autotitle.template.oneByTwo.fmt.txt"><Substitutions><Substitution valueType="label" variables="bi7452"/><Substitution valueType="label" variables="bi3669 bi1964"/></Substitutions></DynamicSpan></P></Title>
-<![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel">
+			<Title><P><Span>Matched vessels (count) by harbour</Span></P></Title>
+			<Conditions>
+				<Condition ref="rg10687">
+					<ConditionParameters>
+						<ConditionParameter parameter="*"/>
+					</ConditionParameters>
+				</Condition>
+				<Condition ref="rg11475">
+					<ConditionParameters>
+						<ConditionParameter parameter="*"/>
+					</ConditionParameters>
+				</Condition>
+			</Conditions>
+<![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
     <Meta>
+        <DynVars>
+            <DynVar name="CATEGORY" description="CATEGORY_VAR" required="true" assignedType="time" type="character">
+                <DefaultValues>
+                    <Value>dd14092.bi14094</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="RESPONSE" description="MEASURE_VAR" required="true" assignedType="numeric" type="numeric" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd14092.bi14105</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="GROUP" description="SUBGROUP_VAR" required="false" assignedType="character" type="character">
+                <DefaultValues>
+                    <Value>dd14092.bi14104</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="COLUMN" description="HORIZONTAL_SERIES_VAR" required="false" assignedType="character" type="character" multiplesAllowed="true"/>
+            <DynVar name="ROW" description="VERTICAL_SERIES_VAR" required="false" type="character" multiplesAllowed="true"/>
+            <DynVar name="TIP" description="TIP_VAR" required="false" assignedType="numeric" type="any" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd14092.bi14094</Value>
+                    <Value>dd14092.bi14104</Value>
+                    <Value>dd14092.bi14105</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="KEY_FRAME" description="ANIMATION" required="false" type="time" multiplesAllowed="false"/>
+            <DynVar name="HIDDEN" description="HIDDEN_VAR" required="false" type="character" multiplesAllowed="true"/>
+        </DynVars>
         <DataNameMap>
-            <Entry model="HeatmapParm_22" data="dd12452"/>
+            <Entry model="LayoutDataMatrix_61" data="dd14092"/>
         </DataNameMap>
     </Meta>
-    <LayoutLattice rowDataRange="union" columnDataRange="union" order="column_major" rows="1" columns="1">
-        <Cell>
-            <LayoutOverlay border="false">
-                <HeatmapParm name="HeatmapParm_22" dataTransparency="0" tipListPolicy="replace" showMissingValuesInTips="true" xGap="0px" yGap="0px" tip="x y colorResponse" x="dd12452#bi12435" y="dd12452#bi12398" colorResponse="dd12452#bi12400" colorModel="TwoColorRamp"/>
-                <XAxisOpts type="discrete">
-                    <DiscreteOpts sortOrder="ascending"/>
-                </XAxisOpts>
-                <YAxisOpts type="discrete">
-                    <DiscreteOpts sortOrder="ascending"/>
-                </YAxisOpts>
-                <BorderAttrs thickness="3px" color="4210752" pattern="36"/>
-            </LayoutOverlay>
-        </Cell>
-        <ColumnAxes>
-            <ColumnAxis type="discrete" display="LABEL LINE TICKS TICKVALUES" gridDisplay="off">
-                <DiscreteOpts tickValueFitPolicy="staggertruncatedrop" sortOrder="ascending" tickValueAppearance="auto"/>
+    <LayoutDataMatrix name="LayoutDataMatrix_61" cellHeightMin="1px" cellWidthMin="1px" includeMissingClass="true" headerLabelAppearance="auto" rowVars="ROW" columnVars="COLUMN" columnVarsSortOrder="ascending_unformatted">
+        <LayoutPrototypeOverlay2D>
+            <BarChartParm name="BarChart" tipListPolicy="replace" _stmt="barchart" compactLabelFormats="true" groupDisplay="stack" groupOrder="data" orient="vertical" stat="none" segmentLabel="true" tip="TIP" category="CATEGORY" responseVars="RESPONSE" group="GROUP" categoryOrderRole="response"/>
+            <XAxisOpts display="TICKVALUES" gridDisplay="off" reverse="false">
+                <DiscreteOpts tickValueFitPolicy="staggertruncatedrop" sortOrder="data" tickValueAppearance="auto"/>
                 <LinearOpts>
-                    <TickValueFormatOpts maxWidth="2" extractScale="true"/>
+                    <TickValueFormatOpts extractScale="true"/>
                 </LinearOpts>
-                <TimeOpts tickValueFormat="DATA"/>
-            </ColumnAxis>
-        </ColumnAxes>
-        <RowAxes>
-            <RowAxis type="discrete" display="LABEL LINE TICKS TICKVALUES" gridDisplay="off" reverse="true">
-                <DiscreteOpts sortOrder="ascending" tickValueAppearance="auto"/>
+            </XAxisOpts>
+            <YAxisOpts name="categoryAxis" display="NONE" gridDisplay="on">
+                <DiscreteOpts sortOrder="data"/>
                 <LinearOpts>
-                    <TickValueFormatOpts maxWidth="2" extractScale="true"/>
+                    <TickValueFormatOpts extractScale="true"/>
                 </LinearOpts>
-                <TimeOpts tickValueFormat="DATA"/>
-            </RowAxis>
-        </RowAxes>
-    </LayoutLattice>
-    <LayoutGlobalLegend hAlign="right" vAlign="center" position="right" allowCollapsed="true">
-        <ContinuousLegend border="false" opaque="false" vAlign="bottom" valueStyle="inflections" displayMissing="automatic" extractScale="true" title_type="KEYWORD" title="AUTO">
-            <PadAttrs top="2px" bottom="2px" left="2px" right="2px"/>
+            </YAxisOpts>
+        </LayoutPrototypeOverlay2D>
+    </LayoutDataMatrix>
+    <LayoutGlobalLegend hAlign="right" vAlign="top" legendTitlePosition="top" position="top" allowCollapsed="true">
+        <AutoLegend sortOrder="ascending">
             <GraphNames>
-                <Value>HeatmapParm_22</Value>
+                <Value>BarChart</Value>
             </GraphNames>
-        </ContinuousLegend>
+        </AutoLegend>
     </LayoutGlobalLegend>
+    <Animation keyFrameSortOrder="ascending_unformatted" keyFrame="KEY_FRAME"/>
+    <OverviewAxis maxPlotSize="60px" minPlotSize="35px" visible="off" axis="categoryAxis"/>
 </StatGraph>]]>
 		</Graph>
-		<VisualContainer containerType="layout" name="ve12431" label="Layout Container 24" selectionDisabled="true">
+		<Table columnSizing="autoFill" resultDefinitions="dd14092" name="ve14093" data="dd14090" applyDynamicBrushes="yes" sourceInteractionVariables="bi14094 bi14104">
+			<Columns>
+				<Column variable="bi14094"/>
+				<Column variable="bi14105"/>
+				<Column variable="bi14104"/>
+			</Columns>
+		</Table>
+		<Graph graphType="dualAxisTimeSeries" supplementalVisuals="ve14356" resultDefinitions="dd14354" name="ve14342" data="dd14352" label="Dual axis time - Date 1" applyDynamicBrushes="yes">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+				<Property key="timeSeriesBinOption">formatBin</Property>
+				<Property key="timeSeriesFixedBinCardinality">300</Property>
+			</EditorProperties>
+			<Title><P><Span>Match confidence vs vessel match count</Span></P></Title>
+<![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Meta>
+        <DynVars>
+            <DynVar name="TIME" description="TIME_VAR" required="true" assignedType="time" type="time">
+                <DefaultValues>
+                    <Value>dd14354.bi14347</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="RESPONSE" description="RESPONSE1_VAR" required="true" assignedType="numeric" type="numeric">
+                <DefaultValues>
+                    <Value>dd14354.bi14350</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="RESPONSE2" description="RESPONSE2_VAR" required="true" assignedType="numeric" type="numeric">
+                <DefaultValues>
+                    <Value>dd14354.bi14351</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="TIP" description="TIP_VAR" required="false" assignedType="numeric" type="any" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd14354.bi14347</Value>
+                    <Value>dd14354.bi14350</Value>
+                    <Value>dd14354.bi14351</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="HIDDEN" description="HIDDEN_VAR" required="false" type="character" multiplesAllowed="true"/>
+        </DynVars>
+    </Meta>
+    <LayoutDataMatrix cellHeightMin="1px" cellWidthMin="1px" includeMissingClass="true">
+        <LayoutPrototypeOverlay2D cycleAttrs="true" alignVerticalAxisTicks="true">
+            <TimeSeriesPlot name="TimeSeriesPlot1" tipListPolicy="replace" _stmt="timeseriesplot" compactLabelFormats="true" fadeType="auto" display="NOMARKERS FILL" groupDisplay="overlay" tip="TIP" time="TIME" responseVars="RESPONSE">
+                <LineAttrs thickness="1px"/>
+            </TimeSeriesPlot>
+            <TimeSeriesPlot name="TimeSeriesPlot2" tipListPolicy="replace" _stmt="timeseriesplot" compactLabelFormats="true" yAxis="y2" fadeType="auto" display="NOMARKERS FILL" groupDisplay="overlay" tip="TIP" time="TIME" responseVars="RESPONSE2">
+                <LineAttrs thickness="1px"/>
+            </TimeSeriesPlot>
+            <XAxisOpts name="categoryAxis" display="TICKVALUES">
+                <DiscreteOpts tickValueAppearance="auto"/>
+                <TimeOpts splitTickValue="false" tickValueFormat="DATA"/>
+            </XAxisOpts>
+            <YAxisOpts display="TICKVALUES">
+                <LinearOpts>
+                    <TickValueFormatOpts extractScale="true"/>
+                </LinearOpts>
+            </YAxisOpts>
+            <Y2AxisOpts display="TICKVALUES">
+                <LinearOpts>
+                    <TickValueFormatOpts extractScale="true"/>
+                </LinearOpts>
+            </Y2AxisOpts>
+        </LayoutPrototypeOverlay2D>
+    </LayoutDataMatrix>
+    <LayoutGlobalLegend hAlign="right" vAlign="top" legendTitlePosition="top" position="top" allowCollapsed="true">
+        <AutoLegend>
+            <GraphNames>
+                <Value>TimeSeriesPlot1</Value>
+                <Value>TimeSeriesPlot2</Value>
+            </GraphNames>
+        </AutoLegend>
+    </LayoutGlobalLegend>
+    <OverviewAxis maxPlotSize="60px" minPlotSize="35px" visible="off" axis="categoryAxis"/>
+</StatGraph>]]>
+		</Graph>
+		<Table columnSizing="autoFill" resultDefinitions="dd14354" name="ve14356" data="dd14352" applyDynamicBrushes="yes" sourceInteractionVariables="bi14347">
+			<Columns>
+				<Column variable="bi14347"/>
+				<Column variable="bi14350"/>
+				<Column variable="bi14351"/>
+			</Columns>
+		</Table>
+		<VisualContainer containerType="layout" name="ve14377" label="Layout Container 25" selectionDisabled="true">
 			<EditorProperties>
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
 			</EditorProperties>
 		</VisualContainer>
-		<Table columnSizing="autoFill" resultDefinitions="dd12452" name="ve12453" data="dd12387" applyDynamicBrushes="yes">
-			<Columns>
-				<Column variable="bi12435"/>
-				<Column variable="bi12398"/>
-				<Column variable="bi12400"/>
-			</Columns>
-		</Table>
+		<Prompt required="false" resultDefinitions="dd14387" name="ve14384" data="dd14385" label="Drop-down list - Harbour (short) 1" selectionDisabled="true" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi14388">
+			<EditorProperties>
+				<Property key="autoChartCategory">CONTROL</Property>
+				<Property key="isAutoLabel">true</Property>
+				<Property key="addedInteractionQueryDataItems">bi14914</Property>
+			</EditorProperties>
+			<Title><P><Span>Harbour</Span></P></Title>
+			<ComboBox valueVariable="bi14388" measureVariable="bi14407"/>
+		</Prompt>
+		<Prompt resultDefinitions="dd14395" name="ve14396" data="dd14393" label="Drop-down list - Location 1" selectionDisabled="true" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi14401">
+			<EditorProperties>
+				<Property key="autoChartCategory">CONTROL</Property>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Title><P><Span>Fishing Location</Span></P></Title>
+			<ComboBox valueVariable="bi14401" measureVariable="bi14402"/>
+		</Prompt>
+		<Crosstab layout="level" measureSizing="autoFill" resultDefinitions="dd13470" name="ve12709" data="dd13468" label="Crosstab - Date 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi13465 bi13482 bi13693">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+				<Property key="addedInteractionQueryDataItems">bi14915,bi14916</Property>
+			</EditorProperties>
+			<Title><P><Span>Vessels associated to selected cargo</Span></P></Title>
+			<Axes>
+				<Axis type="row">
+					<Hierarchy name="ve13694" class="hierarchybi13693" variable="bi13693"/>
+					<Hierarchy name="ve13483" class="hierarchybi13482" variable="bi13482"/>
+					<Hierarchy name="ve13474" class="hierarchybi13465" variable="bi13465"/>
+				</Axis>
+				<Axis type="column">
+					<Measures>
+						<Measure compactFormat="false" name="ve13478" class="tableColumnbi13477" variable="bi13477">
+							<Cell>
+								<CellVisuals nestedElementPosition="left">
+									<SparkValue type="bar" response="bi13477" name="cv13484"/>
+								</CellVisuals>
+							</Cell>
+						</Measure>
+						<Measure compactFormat="false" name="ve13494" class="measurebi13493" variable="bi13493">
+							<Conditions>
+								<Condition ref="cd13672">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi13493"/>
+									</ConditionParameters>
+								</Condition>
+								<Condition ref="cd13674">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi13493"/>
+									</ConditionParameters>
+								</Condition>
+								<Condition ref="cd13676">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi13493"/>
+									</ConditionParameters>
+								</Condition>
+								<Condition ref="cd13678">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi13493"/>
+									</ConditionParameters>
+								</Condition>
+							</Conditions>
+						</Measure>
+						<Measure compactFormat="false" name="ve13875" class="measurebi13874" variable="bi13874"/>
+					</Measures>
+				</Axis>
+			</Axes>
+			<RowNumbers visible="false"/>
+			<Summary>
+				<Total columnVisible="false" rowVisible="false"/>
+				<Subtotal columnVisible="false" rowVisible="false"/>
+			</Summary>
+		</Crosstab>
+		<Text name="ve14635" label="Text 1" selectionDisabled="true" applyDynamicBrushes="no">
+			<P class="paragraph1"><Span class="span1">⮩</Span></P>
+		</Text>
 	</VisualElements>
 	<PromptDefinitions>
 		<PromptDefinition label="Arrival Date Parameter" isParameter="true" format="DTDATE9" dataType="datetime" multiValued="false" name="pr1759">
@@ -12717,7 +12751,59 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 							<Weight value="100%"/>
 						</Weights>
 					</ResponsiveLayout>
-					<Container ref="ve12431" name="vi12430">
+					<Visual ref="ve14342" name="vi14341">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+					</Visual>
+					<Visual ref="ve14089" name="vi14088">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+					</Visual>
+				</MediaContainer>
+			</Body>
+		</Section>
+		<Section name="vi13876" label="Q1 Cargo Matching Filtered">
+			<Header>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="horizontal" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+				</MediaContainer>
+			</Header>
+			<Body>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+					<Container ref="ve14377" name="vi14376">
 						<ResponsiveConstraint>
 							<WidthConstraint>
 								<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
@@ -12727,58 +12813,47 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 							</HeightConstraint>
 						</ResponsiveConstraint>
 						<ResponsiveLayout orientation="vertical" overflow="grow"/>
-						<Visual ref="ve7442" name="vi7443">
+						<Visual ref="ve14396" name="vi14397">
 							<ResponsiveConstraint>
 								<WidthConstraint>
 									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
 								</WidthConstraint>
 								<HeightConstraint>
-									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
 								</HeightConstraint>
 							</ResponsiveConstraint>
 						</Visual>
-						<Visual ref="ve12386" name="vi12385">
+						<Visual ref="ve14635" name="vi14634">
+							<ResponsiveConstraint>
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="5%" flexibility="flexible"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
+								</HeightConstraint>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve14384" name="vi14383">
 							<ResponsiveConstraint>
 								<WidthConstraint>
 									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
 								</WidthConstraint>
 								<HeightConstraint>
-									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
 								</HeightConstraint>
 							</ResponsiveConstraint>
 						</Visual>
 					</Container>
-					<Container ref="ve12374" name="vi12373">
+					<Visual ref="ve12709" name="vi12708">
 						<ResponsiveConstraint>
 							<WidthConstraint>
-								<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+								<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
 							</WidthConstraint>
 							<HeightConstraint>
-								<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+								<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
 							</HeightConstraint>
 						</ResponsiveConstraint>
-						<ResponsiveLayout orientation="vertical" overflow="grow"/>
-						<Visual ref="ve7507" name="vi7512">
-							<ResponsiveConstraint>
-								<WidthConstraint>
-									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
-								</WidthConstraint>
-								<HeightConstraint>
-									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
-								</HeightConstraint>
-							</ResponsiveConstraint>
-						</Visual>
-						<Visual ref="ve7522" name="vi7523">
-							<ResponsiveConstraint>
-								<WidthConstraint>
-									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
-								</WidthConstraint>
-								<HeightConstraint>
-									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
-								</HeightConstraint>
-							</ResponsiveConstraint>
-						</Visual>
-					</Container>
+					</Visual>
 				</MediaContainer>
 			</Body>
 		</Section>
@@ -13865,7 +13940,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 	<Interactions>
 		<Interaction name="ia1673" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1642" variable="bi1646"/>
-			<InteractionElementReference purpose="target" ref="ve1663" variable="bi12462"/>
+			<InteractionElementReference purpose="target" ref="ve1663" variable="bi14830"/>
 		</Interaction>
 		<Interaction name="ia1674" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1663" variable="bi1666"/>
@@ -13873,19 +13948,19 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia1675" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve1642" variable="bi1646"/>
-			<InteractionElementReference purpose="target" ref="ve1650" variable="bi12460"/>
+			<InteractionElementReference purpose="target" ref="ve1650" variable="bi14828"/>
 		</Interaction>
 		<Interaction name="ia1698" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1693" variable="bi1697"/>
-			<InteractionElementReference purpose="target" ref="ve1642" variable="bi12459"/>
+			<InteractionElementReference purpose="target" ref="ve1642" variable="bi14827"/>
 		</Interaction>
 		<Interaction name="ia1699" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve1693" variable="bi1697"/>
-			<InteractionElementReference purpose="target" ref="ve1663" variable="bi12463"/>
+			<InteractionElementReference purpose="target" ref="ve1663" variable="bi14831"/>
 		</Interaction>
 		<Interaction name="ia1700" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve1693" variable="bi1697"/>
-			<InteractionElementReference purpose="target" ref="ve1650" variable="bi12461"/>
+			<InteractionElementReference purpose="target" ref="ve1650" variable="bi14829"/>
 		</Interaction>
 		<Interaction name="ia1721" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1663" variable="bi1666"/>
@@ -13917,7 +13992,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia1772" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1650" variable="bi1657"/>
-			<InteractionElementReference purpose="target" ref="ve1770" variable="bi12466"/>
+			<InteractionElementReference purpose="target" ref="ve1770" variable="bi14834"/>
 		</Interaction>
 		<Interaction name="ia1773" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve1663"/>
@@ -13937,27 +14012,27 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia2787" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve2782" variable="bi2786"/>
-			<InteractionElementReference purpose="target" ref="ve2763" variable="bi12468"/>
+			<InteractionElementReference purpose="target" ref="ve2763" variable="bi14836"/>
 		</Interaction>
 		<Interaction name="ia2788" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve2782" variable="bi2786"/>
-			<InteractionElementReference purpose="target" ref="ve2772" variable="bi12469"/>
+			<InteractionElementReference purpose="target" ref="ve2772" variable="bi14837"/>
 		</Interaction>
 		<Interaction name="ia2921" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve2882" variable="bi2886"/>
-			<InteractionElementReference purpose="target" ref="ve2913" variable="bi12470"/>
+			<InteractionElementReference purpose="target" ref="ve2913" variable="bi14838"/>
 		</Interaction>
 		<Interaction name="ia3056" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3050" variable="bi3054"/>
-			<InteractionElementReference purpose="target" ref="ve2882" variable="bi12475"/>
+			<InteractionElementReference purpose="target" ref="ve2882" variable="bi14843"/>
 		</Interaction>
 		<Interaction name="ia3057" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3050" variable="bi3054"/>
-			<InteractionElementReference purpose="target" ref="ve2913" variable="bi12471"/>
+			<InteractionElementReference purpose="target" ref="ve2913" variable="bi14839"/>
 		</Interaction>
 		<Interaction name="ia3492" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3156" variable="bi3163"/>
-			<InteractionElementReference purpose="target" ref="ve3484" variable="bi12484"/>
+			<InteractionElementReference purpose="target" ref="ve3484" variable="bi14852"/>
 		</Interaction>
 		<Interaction name="ia3493" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3484" variable="bi3489"/>
@@ -13965,7 +14040,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia3494" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3156" variable="bi3163"/>
-			<InteractionElementReference purpose="target" ref="ve691" variable="bi12458"/>
+			<InteractionElementReference purpose="target" ref="ve691" variable="bi14826"/>
 		</Interaction>
 		<Interaction name="ia3495" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3484" variable="bi3489"/>
@@ -13973,31 +14048,31 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia3496" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3156" variable="bi3163"/>
-			<InteractionElementReference purpose="target" ref="ve3260" variable="bi12483"/>
+			<InteractionElementReference purpose="target" ref="ve3260" variable="bi14851"/>
 		</Interaction>
 		<Interaction name="ia3499" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3484" variable="bi3489"/>
-			<InteractionElementReference purpose="target" ref="ve3251" variable="bi12481"/>
+			<InteractionElementReference purpose="target" ref="ve3251" variable="bi14849"/>
 		</Interaction>
 		<Interaction name="ia3500" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3156" variable="bi3163"/>
-			<InteractionElementReference purpose="target" ref="ve3251" variable="bi12482"/>
+			<InteractionElementReference purpose="target" ref="ve3251" variable="bi14850"/>
 		</Interaction>
 		<Interaction name="ia3564" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3484" variable="bi3489"/>
-			<InteractionElementReference purpose="target" ref="ve3531" variable="bi12485"/>
+			<InteractionElementReference purpose="target" ref="ve3531" variable="bi14853"/>
 		</Interaction>
 		<Interaction name="ia3565" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3156" variable="bi3163"/>
-			<InteractionElementReference purpose="target" ref="ve3531" variable="bi12486"/>
+			<InteractionElementReference purpose="target" ref="ve3531" variable="bi14854"/>
 		</Interaction>
 		<Interaction name="ia3668" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3663" variable="bi3670"/>
-			<InteractionElementReference purpose="target" ref="ve2945" variable="bi12474"/>
+			<InteractionElementReference purpose="target" ref="ve2945" variable="bi14842"/>
 		</Interaction>
 		<Interaction name="ia3671" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3663" variable="bi3670"/>
-			<InteractionElementReference purpose="target" ref="ve2930" variable="bi12480"/>
+			<InteractionElementReference purpose="target" ref="ve2930" variable="bi14848"/>
 		</Interaction>
 		<Interaction name="ia3516" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3484" variable="bi3489"/>
@@ -14005,19 +14080,19 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia3517" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3156" variable="bi3163"/>
-			<InteractionElementReference purpose="target" ref="ve3507" variable="bi12487"/>
+			<InteractionElementReference purpose="target" ref="ve3507" variable="bi14855"/>
 		</Interaction>
 		<Interaction name="ia4272" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve4263" variable="bi4268 bi4374"/>
-			<InteractionElementReference purpose="target" ref="ve3050" variable="bi12478 bi12479"/>
+			<InteractionElementReference purpose="target" ref="ve3050" variable="bi14846 bi14847"/>
 		</Interaction>
 		<Interaction name="ia4273" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve4263" variable="bi4268 bi4374"/>
-			<InteractionElementReference purpose="target" ref="ve2882" variable="bi12476 bi12477"/>
+			<InteractionElementReference purpose="target" ref="ve2882" variable="bi14844 bi14845"/>
 		</Interaction>
 		<Interaction name="ia4274" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve4263" variable="bi4268 bi4374"/>
-			<InteractionElementReference purpose="target" ref="ve2913" variable="bi12472 bi12473"/>
+			<InteractionElementReference purpose="target" ref="ve2913" variable="bi14840 bi14841"/>
 		</Interaction>
 		<Interaction name="ia4401" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve4394" variable="bi4388"/>
@@ -14025,19 +14100,19 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia4402" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve4394" variable="bi4388"/>
-			<InteractionElementReference purpose="target" ref="ve3050" variable="bi12479"/>
+			<InteractionElementReference purpose="target" ref="ve3050" variable="bi14847"/>
 		</Interaction>
 		<Interaction name="ia4403" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve4394" variable="bi4388"/>
-			<InteractionElementReference purpose="target" ref="ve2882" variable="bi12477"/>
+			<InteractionElementReference purpose="target" ref="ve2882" variable="bi14845"/>
 		</Interaction>
 		<Interaction name="ia4404" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve4394" variable="bi4388"/>
-			<InteractionElementReference purpose="target" ref="ve2913" variable="bi12473"/>
+			<InteractionElementReference purpose="target" ref="ve2913" variable="bi14841"/>
 		</Interaction>
 		<Interaction name="ia6154" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve6148" variable="bi6153"/>
-			<InteractionElementReference purpose="target" ref="ve4409" variable="bi12488"/>
+			<InteractionElementReference purpose="target" ref="ve4409" variable="bi14856"/>
 		</Interaction>
 		<Interaction name="ia3497" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3484" variable="bi3489"/>
@@ -14045,7 +14120,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia3498" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3156" variable="bi3163"/>
-			<InteractionElementReference purpose="target" ref="ve3137" variable="bi12489"/>
+			<InteractionElementReference purpose="target" ref="ve3137" variable="bi14857"/>
 		</Interaction>
 		<Interaction name="ia6522" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3484" variable="bi3489"/>
@@ -14053,59 +14128,59 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia6523" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3156" variable="bi3163"/>
-			<InteractionElementReference purpose="target" ref="ve6511" variable="bi12490"/>
+			<InteractionElementReference purpose="target" ref="ve6511" variable="bi14858"/>
 		</Interaction>
 		<Interaction name="ia8255" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve8231" variable="bi8235"/>
-			<InteractionElementReference purpose="target" ref="ve8220" variable="bi12497"/>
+			<InteractionElementReference purpose="target" ref="ve8220" variable="bi14860"/>
 		</Interaction>
 		<Interaction name="ia8254" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve8160" variable="bi8164"/>
-			<InteractionElementReference purpose="target" ref="ve8231" variable="bi12499"/>
+			<InteractionElementReference purpose="target" ref="ve8231" variable="bi14862"/>
 		</Interaction>
 		<Interaction name="ia8976" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve8962" variable="bi8966"/>
-			<InteractionElementReference purpose="target" ref="ve8971" variable="bi12508"/>
+			<InteractionElementReference purpose="target" ref="ve8971" variable="bi14871"/>
 		</Interaction>
 		<Interaction name="ia9010" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve8489" variable="bi8493 bi8494 bi8980 bi9005 bi9007"/>
-			<InteractionElementReference purpose="target" ref="ve8474" variable="bi8479 bi8480 bi9011 bi12500 bi9012"/>
+			<InteractionElementReference purpose="target" ref="ve8474" variable="bi8479 bi8480 bi9011 bi14863 bi9012"/>
 		</Interaction>
 		<Interaction name="ia9023" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9014" variable="bi9019 bi9025"/>
-			<InteractionElementReference purpose="target" ref="ve8489" variable="bi12504 bi12505"/>
+			<InteractionElementReference purpose="target" ref="ve8489" variable="bi14867 bi14868"/>
 		</Interaction>
 		<Interaction name="ia9024" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9014" variable="bi9019 bi9025"/>
-			<InteractionElementReference purpose="target" ref="ve8474" variable="bi12501 bi8481"/>
+			<InteractionElementReference purpose="target" ref="ve8474" variable="bi14864 bi8481"/>
 		</Interaction>
 		<Interaction name="ia9249" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9236" variable="bi9247"/>
-			<InteractionElementReference purpose="target" ref="ve9243" variable="bi12510"/>
+			<InteractionElementReference purpose="target" ref="ve9243" variable="bi14873"/>
 		</Interaction>
 		<Interaction name="ia9255" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9243" variable="bi9248"/>
-			<InteractionElementReference purpose="target" ref="ve8795" variable="bi12527"/>
+			<InteractionElementReference purpose="target" ref="ve8795" variable="bi14890"/>
 		</Interaction>
 		<Interaction name="ia9256" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve9236" variable="bi9247"/>
-			<InteractionElementReference purpose="target" ref="ve8795" variable="bi12528"/>
+			<InteractionElementReference purpose="target" ref="ve8795" variable="bi14891"/>
 		</Interaction>
 		<Interaction name="ia9321" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9315" variable="bi9320"/>
-			<InteractionElementReference purpose="target" ref="ve881" variable="bi12496"/>
+			<InteractionElementReference purpose="target" ref="ve881" variable="bi14859"/>
 		</Interaction>
 		<Interaction name="ia9714" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9504" variable="bi9499"/>
-			<InteractionElementReference purpose="target" ref="ve9627" variable="bi12511"/>
+			<InteractionElementReference purpose="target" ref="ve9627" variable="bi14874"/>
 		</Interaction>
 		<Interaction name="ia9715" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9504" variable="bi9499"/>
-			<InteractionElementReference purpose="target" ref="ve9641" variable="bi12512"/>
+			<InteractionElementReference purpose="target" ref="ve9641" variable="bi14875"/>
 		</Interaction>
 		<Interaction name="ia9798" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve8160" variable="bi8164"/>
-			<InteractionElementReference purpose="target" ref="ve8220" variable="bi12498"/>
+			<InteractionElementReference purpose="target" ref="ve8220" variable="bi14861"/>
 		</Interaction>
 		<Interaction name="ia9853" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve8220" variable="bi8224"/>
@@ -14121,15 +14196,15 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia9864" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve8220" variable="bi8224"/>
-			<InteractionElementReference purpose="target" ref="ve9859" variable="bi12514"/>
+			<InteractionElementReference purpose="target" ref="ve9859" variable="bi14877"/>
 		</Interaction>
 		<Interaction name="ia9865" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve8231" variable="bi8235"/>
-			<InteractionElementReference purpose="target" ref="ve9859" variable="bi12515"/>
+			<InteractionElementReference purpose="target" ref="ve9859" variable="bi14878"/>
 		</Interaction>
 		<Interaction name="ia9866" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve8160" variable="bi8164"/>
-			<InteractionElementReference purpose="target" ref="ve9859" variable="bi12516"/>
+			<InteractionElementReference purpose="target" ref="ve9859" variable="bi14879"/>
 		</Interaction>
 		<Interaction name="ia9870" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9859" variable="bi9867"/>
@@ -14137,83 +14212,83 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia10084" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9243" variable="bi9248"/>
-			<InteractionElementReference purpose="target" ref="ve10076" variable="bi12520"/>
+			<InteractionElementReference purpose="target" ref="ve10076" variable="bi14883"/>
 		</Interaction>
 		<Interaction name="ia10085" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve9236" variable="bi9247"/>
-			<InteractionElementReference purpose="target" ref="ve10076" variable="bi12521"/>
+			<InteractionElementReference purpose="target" ref="ve10076" variable="bi14884"/>
 		</Interaction>
 		<Interaction name="ia10090" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve10076" variable="bi10080"/>
-			<InteractionElementReference purpose="target" ref="ve9288" variable="bi12517"/>
+			<InteractionElementReference purpose="target" ref="ve9288" variable="bi14880"/>
 		</Interaction>
 		<Interaction name="ia10091" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve9243" variable="bi9248"/>
-			<InteractionElementReference purpose="target" ref="ve9288" variable="bi12518"/>
+			<InteractionElementReference purpose="target" ref="ve9288" variable="bi14881"/>
 		</Interaction>
 		<Interaction name="ia10092" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve9236" variable="bi9247"/>
-			<InteractionElementReference purpose="target" ref="ve9288" variable="bi12519"/>
+			<InteractionElementReference purpose="target" ref="ve9288" variable="bi14882"/>
 		</Interaction>
 		<Interaction name="ia10093" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve10076" variable="bi10080"/>
-			<InteractionElementReference purpose="target" ref="ve8795" variable="bi12529"/>
+			<InteractionElementReference purpose="target" ref="ve8795" variable="bi14892"/>
 		</Interaction>
 		<Interaction name="ia9797" type="filter" dataStage="detail" derived="false">
 			<InteractionElementReference purpose="source" ref="ve9726" variable="bi9721"/>
-			<InteractionElementReference purpose="target" ref="ve9736" variable="bi12513"/>
+			<InteractionElementReference purpose="target" ref="ve9736" variable="bi14876"/>
 		</Interaction>
 		<Interaction name="ia10082" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve10076" variable="bi10080"/>
-			<InteractionElementReference purpose="target" ref="ve8804" variable="bi12524"/>
+			<InteractionElementReference purpose="target" ref="ve8804" variable="bi14887"/>
 		</Interaction>
 		<Interaction name="ia10086" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve9243" variable="bi9248"/>
-			<InteractionElementReference purpose="target" ref="ve8804" variable="bi12525"/>
+			<InteractionElementReference purpose="target" ref="ve8804" variable="bi14888"/>
 		</Interaction>
 		<Interaction name="ia10088" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve9236" variable="bi9247"/>
-			<InteractionElementReference purpose="target" ref="ve8804" variable="bi12526"/>
+			<InteractionElementReference purpose="target" ref="ve8804" variable="bi14889"/>
 		</Interaction>
 		<Interaction name="ia10319" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve10313" variable="bi10317"/>
-			<InteractionElementReference purpose="target" ref="ve10301" variable="bi12522"/>
+			<InteractionElementReference purpose="target" ref="ve10301" variable="bi14885"/>
 		</Interaction>
 		<Interaction name="ia10318" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve10313" variable="bi10317"/>
-			<InteractionElementReference purpose="target" ref="ve3820" variable="bi12523"/>
+			<InteractionElementReference purpose="target" ref="ve3820" variable="bi14886"/>
 		</Interaction>
 		<Interaction name="ia10936" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve10931" variable="bi10939"/>
-			<InteractionElementReference purpose="target" ref="ve10923" variable="bi12532"/>
+			<InteractionElementReference purpose="target" ref="ve10923" variable="bi14895"/>
 		</Interaction>
 		<Interaction name="ia10937" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve10923" variable="bi10927"/>
-			<InteractionElementReference purpose="target" ref="ve10890" variable="bi12530"/>
+			<InteractionElementReference purpose="target" ref="ve10890" variable="bi14893"/>
 		</Interaction>
 		<Interaction name="ia10938" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve10931" variable="bi10939"/>
-			<InteractionElementReference purpose="target" ref="ve10890" variable="bi12531"/>
+			<InteractionElementReference purpose="target" ref="ve10890" variable="bi14894"/>
 		</Interaction>
 		<Interaction name="ia11461" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve11200" variable="bi11206"/>
-			<InteractionElementReference purpose="target" ref="ve11373" variable="bi12535"/>
+			<InteractionElementReference purpose="target" ref="ve11373" variable="bi14898"/>
 		</Interaction>
 		<Interaction name="ia11480" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve11373" variable="bi11462 bi11472"/>
-			<InteractionElementReference purpose="target" ref="ve11115" variable="bi12533 bi11470"/>
+			<InteractionElementReference purpose="target" ref="ve11115" variable="bi14896 bi11470"/>
 		</Interaction>
 		<Interaction name="ia11481" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve11200" variable="bi11206"/>
-			<InteractionElementReference purpose="target" ref="ve11115" variable="bi12534"/>
+			<InteractionElementReference purpose="target" ref="ve11115" variable="bi14897"/>
 		</Interaction>
 		<Interaction name="ia11493" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve11373" variable="bi11462 bi11472"/>
-			<InteractionElementReference purpose="target" ref="ve11485" variable="bi12536 bi11499"/>
+			<InteractionElementReference purpose="target" ref="ve11485" variable="bi14899 bi11499"/>
 		</Interaction>
 		<Interaction name="ia11494" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve11200" variable="bi11206"/>
-			<InteractionElementReference purpose="target" ref="ve11485" variable="bi12537"/>
+			<InteractionElementReference purpose="target" ref="ve11485" variable="bi14900"/>
 		</Interaction>
 		<Interaction name="ia12071" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve12066" variable="bi12070"/>
@@ -14221,31 +14296,19 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia12273" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve12085" variable="bi12089"/>
-			<InteractionElementReference purpose="target" ref="ve11718" variable="bi12538"/>
+			<InteractionElementReference purpose="target" ref="ve11718" variable="bi14901"/>
 		</Interaction>
 		<Interaction name="ia12274" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve12085" variable="bi12089"/>
-			<InteractionElementReference purpose="target" ref="ve12059" variable="bi12539"/>
+			<InteractionElementReference purpose="target" ref="ve12059" variable="bi14902"/>
 		</Interaction>
 		<Interaction name="ia12276" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve12078" variable="bi12073"/>
 			<InteractionElementReference purpose="target" ref="ve11718" variable="bi12046"/>
 		</Interaction>
-		<Interaction name="ia7526" type="filter" derived="true">
-			<InteractionElementReference purpose="source" ref="ve7442" variable="bi7447 bi7450"/>
-			<InteractionElementReference purpose="target" ref="ve7522" variable="bi12491 bi12492"/>
-		</Interaction>
-		<Interaction name="ia7513" type="filter" derived="false">
-			<InteractionElementReference purpose="source" ref="ve7442" variable="bi7447 bi7450"/>
-			<InteractionElementReference purpose="target" ref="ve7507" variable="bi12540 bi12541"/>
-		</Interaction>
-		<Interaction name="ia7525" type="filter" derived="false">
-			<InteractionElementReference purpose="source" ref="ve7507" variable="bi7500 bi7533 bi12277"/>
-			<InteractionElementReference purpose="target" ref="ve7522" variable="bi12493 bi12494 bi12495"/>
-		</Interaction>
 		<Interaction name="ia12360" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve12298" variable="bi12292 bi12293"/>
-			<InteractionElementReference purpose="target" ref="ve12319" variable="bi12542 bi12543"/>
+			<InteractionElementReference purpose="target" ref="ve12319" variable="bi14903 bi14904"/>
 		</Interaction>
 		<Interaction name="ia12361" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve12298"/>
@@ -14253,73 +14316,77 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 		</Interaction>
 		<Interaction name="ia12362" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve12307" variable="bi12301 bi12302"/>
-			<InteractionElementReference purpose="target" ref="ve12329" variable="bi12544 bi12545"/>
+			<InteractionElementReference purpose="target" ref="ve12329" variable="bi14905 bi14906"/>
 		</Interaction>
 		<Interaction name="ia12363" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve12307" variable="bi12301 bi12302"/>
-			<InteractionElementReference purpose="target" ref="ve12352" variable="bi12548 bi12549"/>
+			<InteractionElementReference purpose="target" ref="ve12352" variable="bi14909 bi14910"/>
 		</Interaction>
 		<Interaction name="ia12364" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve12307" variable="bi12301 bi12302"/>
-			<InteractionElementReference purpose="target" ref="ve12343" variable="bi12546 bi12547"/>
+			<InteractionElementReference purpose="target" ref="ve12343" variable="bi14907 bi14908"/>
 		</Interaction>
 		<Interaction name="ia12365" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve12343" variable="bi12336 bi12337 bi12340"/>
-			<InteractionElementReference purpose="target" ref="ve12352" variable="bi12550 bi12551 bi12552"/>
+			<InteractionElementReference purpose="target" ref="ve12352" variable="bi14911 bi14912 bi14913"/>
 		</Interaction>
-		<Interaction name="ia12428" type="filter" derived="false">
-			<InteractionElementReference purpose="source" ref="ve7442" variable="bi7447 bi7450"/>
-			<InteractionElementReference purpose="target" ref="ve12386" variable="bi12553 bi12554"/>
+		<Interaction name="ia14639" type="filter" derived="false">
+			<InteractionElementReference purpose="source" ref="ve14384" variable="bi14388"/>
+			<InteractionElementReference purpose="target" ref="ve12709" variable="bi14915"/>
 		</Interaction>
-		<Interaction name="ia12429" type="filter" derived="false">
-			<InteractionElementReference purpose="source" ref="ve12386" variable="bi12398 bi12435"/>
-			<InteractionElementReference purpose="target" ref="ve7522" variable="bi12493 bi12495"/>
+		<Interaction name="ia14640" type="filter" derived="false">
+			<InteractionElementReference purpose="source" ref="ve14396" variable="bi14401"/>
+			<InteractionElementReference purpose="target" ref="ve14384" variable="bi14914"/>
 		</Interaction>
-		<Interaction name="ia12454" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14641" type="filter" derived="true">
+			<InteractionElementReference purpose="source" ref="ve14396" variable="bi14401"/>
+			<InteractionElementReference purpose="target" ref="ve12709" variable="bi14916"/>
+		</Interaction>
+		<Interaction name="ia14822" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" ref="ve1642"/>
 			<InteractionElementReference purpose="target" variable="pr1759"/>
 		</Interaction>
-		<Interaction name="ia12455" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14823" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" ref="ve2392"/>
 			<InteractionElementReference purpose="target" variable="pr2399"/>
 		</Interaction>
-		<Interaction name="ia12456" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14824" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" ref="ve8971"/>
 			<InteractionElementReference purpose="target" variable="pr8977"/>
 		</Interaction>
-		<Interaction name="ia12457" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14825" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" ref="ve8962"/>
 			<InteractionElementReference purpose="target" variable="pr9004"/>
 		</Interaction>
-		<Interaction name="ia12464" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14832" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr1759"/>
 			<InteractionElementReference purpose="target" ref="ve1703" variable="pr1759"/>
 		</Interaction>
-		<Interaction name="ia12465" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14833" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr1759"/>
 			<InteractionElementReference purpose="target" ref="ve1677" variable="pr1759"/>
 		</Interaction>
-		<Interaction name="ia12467" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14835" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr1759"/>
 			<InteractionElementReference purpose="target" ref="ve1770" variable="pr1759"/>
 		</Interaction>
-		<Interaction name="ia12502" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14865" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr8977"/>
 			<InteractionElementReference purpose="target" ref="ve8474" variable="pr8977"/>
 		</Interaction>
-		<Interaction name="ia12503" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14866" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr9004"/>
 			<InteractionElementReference purpose="target" ref="ve8474" variable="pr9004"/>
 		</Interaction>
-		<Interaction name="ia12506" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14869" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr8977"/>
 			<InteractionElementReference purpose="target" ref="ve8489" variable="pr8977"/>
 		</Interaction>
-		<Interaction name="ia12507" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14870" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr9004"/>
 			<InteractionElementReference purpose="target" ref="ve8489" variable="pr9004"/>
 		</Interaction>
-		<Interaction name="ia12509" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia14872" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr8977"/>
 			<InteractionElementReference purpose="target" ref="ve9014" variable="pr8977"/>
 		</Interaction>
@@ -14374,36 +14441,36 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 				<Expression>ne(${bi1},${bi2})</Expression>
 			</If>
 		</Condition>
-		<Condition scope="local" name="cd12378">
+		<Condition scope="local" name="cd13672">
 			<ConditionVariables>
 				<ConditionVariable variable="bi1" type="numeric"/>
 			</ConditionVariables>
-			<If name="cc12377" class="If">
-				<Expression>eq(${bi1},1)</Expression>
+			<If name="cc13671" class="If">
+				<Expression>ge(${bi1},0.9)</Expression>
 			</If>
 		</Condition>
-		<Condition scope="local" name="cd12380">
+		<Condition scope="local" name="cd13674">
 			<ConditionVariables>
 				<ConditionVariable variable="bi1" type="numeric"/>
 			</ConditionVariables>
-			<If name="cc12379" class="If">
-				<Expression>between(${bi1},2,3)</Expression>
+			<If name="cc13673" class="If">
+				<Expression>between(${bi1},0.7,0.9)</Expression>
 			</If>
 		</Condition>
-		<Condition scope="local" name="cd12382">
+		<Condition scope="local" name="cd13676">
 			<ConditionVariables>
 				<ConditionVariable variable="bi1" type="numeric"/>
 			</ConditionVariables>
-			<If name="cc12381" class="If">
-				<Expression>eq(${bi1},3)</Expression>
+			<If name="cc13675" class="If">
+				<Expression>between(${bi1},0.5,0.7)</Expression>
 			</If>
 		</Condition>
-		<Condition scope="local" name="cd12384">
+		<Condition scope="local" name="cd13678">
 			<ConditionVariables>
 				<ConditionVariable variable="bi1" type="numeric"/>
 			</ConditionVariables>
-			<If name="cc12383" class="If">
-				<Expression>gt(${bi1},3)</Expression>
+			<If name="cc13677" class="If">
+				<Expression>lt(${bi1},0.5)</Expression>
 			</If>
 		</Condition>
 		<Range scope="global" name="rg10687">
@@ -14449,7 +14516,6 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 	</Conditions>
 	<DataStyleGroups>
 		<MeasureGroup variables="bi6110" name="sg6119"/>
-		<MeasureGroup variables="bi12400" name="sg12424"/>
 	</DataStyleGroups>
 	<MediaSchemes>
 		<MediaScheme name="ms1">
@@ -14771,7 +14837,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 	</Conversions>
 	<Editors>
 		<Editor applicationName="VA">
-			<Revision editorVersion="2020" lastDate="2024-06-19T03:49:23.108Z"/>
+			<Revision editorVersion="2020" lastDate="2024-07-10T06:12:24.745Z"/>
 			<Revision editorVersion="2024.05" lastDate="2024-05-24T03:27:37.369Z"/>
 		</Editor>
 	</Editors>
@@ -14796,11 +14862,7 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			</PromptState>
 			<PromptState element="ve2782"/>
 			<PromptState element="ve3156"/>
-			<PromptState element="ve3663">
-				<Selections>
-					<Selection resultDefinition="dd3666">eq(${bi3670},&apos;Haacklee&apos;)</Selection>
-				</Selections>
-			</PromptState>
+			<PromptState element="ve3663"/>
 			<PromptState element="ve6148"/>
 			<PromptState element="ve8220"/>
 			<PromptState element="ve8231"/>
@@ -14828,21 +14890,11 @@ ELSE (&apos;Vessel Type A&apos;n)</Property>
 			<PromptState element="ve10931"/>
 			<PromptState element="ve10923"/>
 			<PromptState element="ve11200"/>
-			<PromptState element="ve12066">
-				<Selections>
-					<Selection resultDefinition="dd12069">eq(${bi12070},&apos;Sutton PLC&apos;)</Selection>
-				</Selections>
-			</PromptState>
-			<PromptState element="ve12078">
-				<Selections>
-					<Selection resultDefinition="dd12077">eq(${bi12073},&apos;SouthSeafood Express Corp&apos;)</Selection>
-				</Selections>
-			</PromptState>
-			<PromptState element="ve12085">
-				<Selections>
-					<Selection resultDefinition="dd12088">eq(${bi12089},&apos;Feb-May 2035&apos;)</Selection>
-				</Selections>
-			</PromptState>
+			<PromptState element="ve12066"/>
+			<PromptState element="ve12078"/>
+			<PromptState element="ve12085"/>
+			<PromptState element="ve14384"/>
+			<PromptState element="ve14396"/>
 			<PromptState element="ve8160"/>
 		</VisualElements>
 		<View/>

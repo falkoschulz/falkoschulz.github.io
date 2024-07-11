@@ -217,12 +217,13 @@
         vessel matches.
         <br /><br />
         The following visualizations display the overall confidence in
-        successful matches. A high score indicates a low number of vessels
-        associated with a cargo, with 100% representing a 1:1 mapping. The
-        analysis reveals that we had higher confidence in the first half of the
-        year, with more 1:1 mappings, compared to the second half, where
-        multiple potential matches made it challenging to determine exact vessel
-        associations.
+        successful matches. A match confidence score is calculated based on the
+        number of vessels matched and related time spent at the sourcing fishing
+        ground. A high score indicates a low number of vessels associated with a
+        cargo, with 100% representing a 1:1 mapping. The analysis reveals that
+        we had higher confidence in the first half of the year, compared to the
+        second half, where multiple potential matches made it challenging to
+        determine exact vessel associations.
       </p>
 
       <figure>
@@ -236,16 +237,21 @@
       </figure>
 
       <p>
-        By considering vessels present at the time of cargo export (or at most
-        one day earlier) and only including vessels that visited the fishing
-        grounds for a specific cargo commodity, we can narrow down the potential
-        list of matching vessels for that cargo. Although we don't always expect
-        a single vessel match—since multiple vessels could deliver fish of the
-        same species on a given day—the data does show a number of 1:1 matches.
-        The following visualization enables users to select a harbour and
-        fishing location in order to examine related cargos and probable vessel
-        matches. A match confidence score is calculated based on the number of
-        vessels matched and related time spent at the sourcing fishing ground.
+        We matched vessels to commodities using SAS Viya's
+        <a
+          href="https://go.documentation.sas.com/doc/en/pgmsascdc/v_049/casmlnetwork/casmlnetwork_network_examples15.htm"
+          target="_blank"
+          >network analytics pattern match</a
+        >
+        algorithm. To narrow down potential vessels for a cargo, we considered
+        the vessel's movements and fish species available at locations visited
+        before arriving at a harbor. The vessel also had to be present at the
+        time of cargo export or up to one day earlier. The following
+        visualization enables users to select a harbour and fishing location in
+        order to examine related cargos and probable vessel matches. Although we
+        don't always expect a single vessel match—since multiple vessels could
+        deliver fish of the same species on a given day—the data does show a
+        number of 1:1 matches.
       </p>
 
       <figure>

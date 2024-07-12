@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <title>SAS-SCHULZ-MC1</title>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -11,7 +10,12 @@
       async
       src="https://cdn.developer.sas.com/packages/va-report-components/latest/dist/umd/va-report-components.js"
     ></script>
+
     <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
       sas-report,
       sas-report-page,
       sas-report-object {
@@ -46,6 +50,10 @@
         <li>
           Stu Sztukowski, SAS Institute,
           <a href="mailto:Stu.Sztukowski@sas.com">Stu.Sztukowski@sas.com</a>
+        </li>
+        <li>
+          Amy Becker, SAS Institute,
+          <a href="mailto:Amy.Becker@sas.com">Amy.Becker@sas.com</a>
         </li>
       </ul>
 
@@ -162,31 +170,103 @@
         understanding.
       </h3>
 
-      <p>TODO: question response ....</p>
-      <h4>sub-title #1</h4>
-      <p>TODO: description of first response...</p>
+      <p>
+        The first step in detecting overall bias involved conducting sentiment
+        analysis on the extracted news sources. By employing a sentiment
+        analysis algorithm and examining the date each article was first added
+        to the knowledge graph, we could gauge whether the articles were
+        generally positive, neutral, or negative over time. We observed that the
+        articles from all three sources were predominantly positive, with
+        Haacklee Herald having the highest percentage of negative articles at
+        6.4%. Specifically, we found that articles about Murray, Friedman and
+        Wall, Vasquez, Chaney and Martinez, and Wilcox-Nelson were negative in
+        Haacklee Herald, yet positive in Lomark Daily and The News Buoy during
+        the same period. This indicates that certain newspapers may exhibit a
+        negative bias towards specific entities.
+      </p>
 
       <figure>
-        <figcaption>Data Visualization title #1</figcaption>
+        <figcaption>bias</figcaption>
         <sas-report-page
-          class="dynamic remove short"
-          reportContextKey="https://jrbenson.github.io/vast-challenges/2022/pkg/don-c1-q2-3/"
-          pageName="vi6"
+          class="dynamic remove medium"
+          packageUri="./packages/q1/bias/"
+          pageName="vi3881"
         ></sas-report-page
-        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+        ><img src="images/bias.png" class="static" />
       </figure>
 
-      <h4>sub-title #2</h4>
-      <p>TODO: description of first response...</p>
+      <p>
+        Most articles contained biased or loaded language as identified by a
+        large language model (LLM), with "Respected," "Commitment to
+        environmental stewardship," and "Legit" being the top three most loaded
+        terms. The LLM observed that almost all of these loaded words had
+        positive connotations, with very few negative ones.
+      </p>
 
       <figure>
-        <figcaption>Data Visualization title #2</figcaption>
+        <figcaption>total articles</figcaption>
         <sas-report-page
-          class="dynamic remove short"
-          reportContextKey="https://jrbenson.github.io/vast-challenges/2022/pkg/don-c1-q2-3/"
-          pageName="vi6"
+          class="dynamic remove medium"
+          packageUri="./packages/q1/articles/"
+          pageName="vi3977"
         ></sas-report-page
-        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+        ><img src="images/articles.png" class="static" />
+      </figure>
+
+      <p>
+        Sentiment analysis was subsequently conducted on particular events
+        within the knowledge graph. We observed that certain entities might
+        display a transition from negative to positive events solely within the
+        News Buoy. For instance, NyanzaRiver Worldwide AS and V. Miesel Shipping
+        both experience a shift from negative to positive events over time in
+        The News Buoy.
+      </p>
+
+      <figure>
+        <figcaption>Sentiment over Time by Paper</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q1/sentiment_timeline/"
+          pageName="vi1490"
+        ></sas-report-page
+        ><img src="images/sentiment_timeline.png" class="static" />
+      </figure>
+
+      <p>
+        We discovered that SouthSeafood Express was unexpectedly missing as an
+        entity in related article filenames. However, within the knowledge
+        graph, SouthSeafood Express is exclusively associated with positive
+        events.
+      </p>
+
+      <figure>
+        <figcaption>CatchNet Knowledge Graph</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q1/knowledge_graph/"
+          pageName="vi1538"
+        ></sas-report-page
+        ><img src="images/knowledge_graph.jpg" class="static" />
+      </figure>
+
+      <p>
+        While we discovered that most events are either neutral or positive, the
+        majority of negative events seem to originate from police report tables
+        rather than the extracted articles themselves. Considering the positive
+        sentiment of the articles, the neutral-to-positive sentiment of the
+        events, and the tendency for event sentiment to become more positive
+        over time for certain companies, we believe there is an overall positive
+        bias within the knowledge graph.
+      </p>
+
+      <figure>
+        <figcaption>CatchNet Company-Source Graph</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q1/company_graph/"
+          pageName="vi1573"
+        ></sas-report-page
+        ><img src="images/company_graph.png" class="static" />
       </figure>
 
       <!-- QUESTION #2 -->
@@ -198,31 +278,81 @@
         your own LLM-based extraction and include it in the comparison.
       </h3>
 
-      <p>TODO: question response ....</p>
-      <h4>sub-title #1</h4>
-      <p>TODO: description of first response...</p>
+      <p>
+        When examining event sentiment using different algorithms, we observe
+        that the results are quite similar overall, even across various studies.
+        The sentiment of events tends to be generally positive or neutral, with
+        few negative events.
+      </p>
 
       <figure>
-        <figcaption>Data Visualization title #1</figcaption>
+        <figcaption>Total Edges by Sentiment: Algorithm vs. Paper</figcaption>
         <sas-report-page
-          class="dynamic remove short"
-          reportContextKey="https://jrbenson.github.io/vast-challenges/2022/pkg/don-c1-q2-3/"
-          pageName="vi6"
+          class="dynamic remove medium"
+          packageUri="./packages/q2/sentiment_bar/"
+          pageName="vi1593"
         ></sas-report-page
-        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+        ><img src="images/sentiment_bar.png" class="static" />
       </figure>
 
-      <h4>sub-title #2</h4>
-      <p>TODO: description of first response...</p>
+      <p>
+        When comparing the behavior of each algorithm regarding sentiment per
+        entity, the outcomes are quite similar. Both algorithms produce
+        comparable results, indicating no evident bias towards either one.
+      </p>
 
       <figure>
-        <figcaption>Data Visualization title #2</figcaption>
+        <figcaption>CatchNet Algorithm-Sentiment-Company</figcaption>
         <sas-report-page
           class="dynamic remove short"
-          reportContextKey="https://jrbenson.github.io/vast-challenges/2022/pkg/don-c1-q2-3/"
-          pageName="vi6"
+          packageUri="./packages/q2/algorithms/"
+          pageName="vi1638"
         ></sas-report-page
-        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+        ><img src="images/algorithms.png" class="static" />
+      </figure>
+
+      <p>
+        We observed that certain edges were more frequently associated with one
+        algorithm over another, but we did not identify any issues of concern.
+        Nonetheless, some entities had edges that were exclusively comprised of
+        ShadGPT, specifically:
+      </p>
+      <ul>
+        <li>Collins, Johnson and Lloyd</li>
+        <li>Irtysh Creek Logistics</li>
+        <li>Underwood Inc</li>
+      </ul>
+      <br />
+      <p>
+        Irtysh Creek Logistics received a summons and faced criticism for
+        over-fishing, whereas the other two entities experienced only positive
+        or neutral feedback.
+      </p>
+
+      <figure>
+        <figcaption>% of Edges by Algorithm and Company</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q2/edges/"
+          pageName="vi1669"
+        ></sas-report-page
+        ><img src="images/edges.png" class="static" />
+      </figure>
+
+      <p>
+        Based on the results from Q1, we believe that either the extraction
+        algorithms or the analysts tend to have a positive bias. However, the
+        knowledge graph suggests that neither is more biased than the other.
+      </p>
+
+      <figure>
+        <figcaption>CatchNet Company-Algorithm Graph</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q2/algorithm_graph/"
+          pageName="vi1707"
+        ></sas-report-page
+        ><img src="images/algorithm_graph.png" class="static" />
       </figure>
 
       <!-- QUESTION #3 -->
@@ -234,32 +364,57 @@
         examples of the types of bias present.
       </h3>
 
-      <p>TODO: question response ....</p>
-      <h4>sub-title #1</h4>
-      <p>TODO: description of first response...</p>
+      <p>
+        Upon initial inspection, analysts generally exhibit comparable sentiment
+        towards the event, without any noticeable exceptions.
+      </p>
 
       <figure>
-        <figcaption>Data Visualization title #1</figcaption>
+        <figcaption>CatchNet Edges by Analyst and Sentiment</figcaption>
         <sas-report-page
-          class="dynamic remove short"
-          reportContextKey="https://jrbenson.github.io/vast-challenges/2022/pkg/don-c1-q2-3/"
-          pageName="vi6"
+          class="dynamic remove medium"
+          packageUri="./packages/q3/analyst/"
+          pageName="vi1723"
         ></sas-report-page
-        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+        ><img src="images/analyst.png" class="static" />
       </figure>
 
-      <h4>sub-title #2</h4>
-      <p>TODO: description of first response...</p>
+      <p>
+        However, Harvey Janus devoted an unusually large amount of time to
+        editing compared to the others.
+      </p>
 
       <figure>
-        <figcaption>Data Visualization title #2</figcaption>
+        <figcaption>Editing Timespan (hours) by Editor</figcaption>
         <sas-report-page
-          class="dynamic remove short"
-          reportContextKey="https://jrbenson.github.io/vast-challenges/2022/pkg/don-c1-q2-3/"
-          pageName="vi6"
+          class="dynamic remove medium"
+          packageUri="./packages/q3/timespan/"
+          pageName="vi1743"
         ></sas-report-page
-        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+        ><img src="images/timespan.png" class="static" />
       </figure>
+
+      <p>
+        Upon examining Harvey's editing activity, it becomes evident that he
+        dedicated a significant portion of time to editing one specific entity:
+        SouthSeafood Express. All the edits exclusively favor SouthSeafood
+        Express, and Harvey is its sole editor.
+      </p>
+
+      <figure>
+        <figcaption>CatchNet Company-Analyst Graph</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q3/analyst_graph/"
+          pageName="vi1781"
+        ></sas-report-page
+        ><img src="images/analyst_graph.png" class="static" />
+      </figure>
+
+      <p>
+        Based on the evidence presented, we trust most editors except Harvey
+        Janus, who may be introducing bias into the knowledge graph.
+      </p>
 
       <!-- QUESTION #4 -->
 
@@ -270,32 +425,70 @@
         a visual analytics workflow to determine who else may be involved?
       </h3>
 
-      <p>TODO: question response ....</p>
-      <h4>sub-title #1</h4>
-      <p>TODO: description of first response...</p>
+      <p>
+        Harvey Janus is strongly suspected of introducing bias into the
+        knowledge graph, and there are concerns he may be trying to enhance the
+        reputation of SouthSeafood Express through deceptive methods. As
+        indicated in Q3, Harvey Janus is the sole editor responsible for
+        SouthSeafood Express in the knowledge graph, dedicating more than 72
+        hours to editing this entity alone.
+      </p>
 
       <figure>
-        <figcaption>Data Visualization title #1</figcaption>
+        <figcaption>CatchNet Company Summary</figcaption>
         <sas-report-page
-          class="dynamic remove short"
-          reportContextKey="https://jrbenson.github.io/vast-challenges/2022/pkg/don-c1-q2-3/"
-          pageName="vi6"
+          class="dynamic remove medium"
+          packageUri="./packages/q4/summary/"
+          pageName="vi1811"
         ></sas-report-page
-        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+        ><img src="images/summary.png" class="static" />
       </figure>
-
-      <h4>sub-title #2</h4>
-      <p>TODO: description of first response...</p>
 
       <figure>
-        <figcaption>Data Visualization title #2</figcaption>
+        <figcaption>editors</figcaption>
         <sas-report-page
-          class="dynamic remove short"
-          reportContextKey="https://jrbenson.github.io/vast-challenges/2022/pkg/don-c1-q2-3/"
-          pageName="vi6"
+          class="dynamic remove medium"
+          packageUri="./packages/q4/editors/"
+          pageName="vi4007"
         ></sas-report-page
-        ><img src="img/fig-c1-q2-1-alt.png" class="static" />
+        ><img src="images/editors.png" class="static" />
       </figure>
+
+      <p>
+        We discovered that SouthSeafood Express is not prominently featured in
+        the article titles and is only briefly mentioned in them. The article
+        associated with SouthSeafood Express actually pertains to Jones Group
+        (ID of Jones Group__0_1__&lt;paper&gt;), which is criticized for
+        overfishing in the knowledge graph. However, the articles indicate that
+        Jones Group is making efforts to improve its sustainable fishing
+        practices. These articles are quite extensive and would require a
+        significant amount of time to read through. It is possible that Harvey
+        aims to protect SouthSeafood Express's reputation by casting doubt on
+        Jones Group and complicating the information available in the graph. For
+        instance, if someone were looking into SouthSeafood Express but
+        encountered an article about Jones Group instead, they might initially
+        disregard it. However, further exploration would reveal numerous lengthy
+        articles, possibly designed to discourage deeper investigation.
+      </p>
+      <figure>
+        <figcaption>SouthSeafood Express</figcaption>
+        <sas-report-page
+          class="dynamic remove medium"
+          packageUri="./packages/q4/southseafood/"
+          pageName="vi4087"
+        ></sas-report-page
+        ><img src="images/southseafood.png" class="static" />
+      </figure>
+
+      <p>
+        Although we cannot conclusively state that Harvey Janus is acting
+        maliciously within the group, indications suggest he may be introducing
+        bias into the knowledge graph. In light of SouthSeafood Express facing
+        charges for illegal fishing practices, yet these are not reflected in
+        the knowledge graph, we suspect Harvey Janus is operating in bad faith.
+        Therefore, we recommend further investigation into his editing
+        practices, including additional audits.
+      </p>
 
       <script>
         const statics = document.querySelectorAll(".static");

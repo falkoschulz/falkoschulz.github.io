@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds70" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:53.935Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="index" xref="index"/>
+                <column dataType="string" label="filename" xref="filename"/>
+                <column dataType="string" label="entity" xref="entity"/>
+                <column dataType="string" label="paper" xref="paper"/>
+                <column dataType="string" label="article" xref="article"/>
+                <column dataType="double" format="BEST12." label="total_words" xref="total_words"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds78" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES_CONCAT','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:51.296Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="index" xref="index"/>
+                <column dataType="string" label="filename" xref="filename"/>
+                <column dataType="string" label="entity" xref="entity"/>
+                <column dataType="string" label="paper" xref="paper"/>
+                <column dataType="string" label="article" xref="article"/>
+                <column dataType="double" format="BEST12." label="total_words" xref="total_words"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds350" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_POLICE_TABLES','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:54.382Z">
+            <columns>
+                <column dataType="string" label="Location" xref="Location"/>
+                <column dataType="string" label="Person" xref="Person"/>
+                <column dataType="string" label="Citation ID" xref="Citation ID"/>
+                <column dataType="string" label="Reason" xref="Reason"/>
+                <column dataType="string" label="filename" xref="filename"/>
+                <column dataType="string" label="entity" xref="entity"/>
+                <column dataType="string" label="paper" xref="paper"/>
+                <column dataType="string" label="Entity Involved" xref="Entity Involved"/>
+                <column dataType="string" label="Action Taken" xref="Action Taken"/>
+                <column dataType="string" label="Action" xref="Action"/>
+                <column dataType="datetime" format="DATETIME0" label="Datetime" xref="Datetime"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds650" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES_SCORED','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:51.208Z">
+            <columns>
+                <column dataType="string" label="Article ID (Edge)" xref="articleid"/>
+                <column dataType="date" format="DATE9" label="date_written" xref="date_written"/>
+                <column dataType="string" label="News Source (Edge)" xref="paper"/>
+                <column dataType="string" label="entity" xref="entity"/>
+                <column dataType="string" label="article" xref="article"/>
+                <column dataType="string" label="Sentiment" xref="sentiment"/>
+                <column dataType="double" format="BEST12." label="Score" xref="sentiment_score"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds833" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_GRAPH','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:54.019Z">
+            <columns>
+                <column dataType="datetime" format="DATETIME0" label="Date Added (Edge)" xref="edge_date_added"/>
+                <column dataType="string" label="Author Last Modified (Edge)" xref="edge_last_edited_by"/>
+                <column dataType="datetime" format="DATETIME0" label="Date Last Modified (Edge)" xref="edge_last_edited_date"/>
+                <column dataType="string" label="Algorithm (Edge)" xref="algorithm"/>
+                <column dataType="string" label="Type (Edge)" xref="type"/>
+                <column dataType="string" label="News Source (Edge)" xref="raw_source"/>
+                <column dataType="string" label="Article ID (Edge)" xref="articleid"/>
+                <column dataType="string" label="Article Filename (Edge)" xref="filename"/>
+                <column dataType="string" label="ID (Source)" xref="source"/>
+                <column dataType="string" label="Type (Source)" xref="source_type"/>
+                <column dataType="string" label="Country (Source)" xref="source_country"/>
+                <column dataType="date" format="DATE9" label="Date of birth (Source)" xref="source_dob"/>
+                <column dataType="string" label="ID (Target)" xref="target"/>
+                <column dataType="string" label="Type (Target)" xref="target_type"/>
+                <column dataType="string" label="Country (Target)" xref="target_country"/>
+                <column dataType="date" format="DATE9" label="Date of birth (Target)" xref="target_dob"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds942" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES_LOADED','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:54.885Z">
+            <columns>
+                <column dataType="string" label="Article ID (Edge)" xref="articleid"/>
+                <column dataType="date" format="DATE9" label="date_written" xref="date_written"/>
+                <column dataType="string" label="News Source (Edge)" xref="paper"/>
+                <column dataType="string" label="Algorithm (Edge)" xref="algorithm"/>
+                <column dataType="string" label="entity" xref="entity"/>
+                <column dataType="string" label="article" xref="article"/>
+                <column dataType="string" label="loaded_word" xref="loaded_word"/>
+                <column dataType="double" format="BEST12." label="flag_loaded_word" xref="flag_loaded_word"/>
+                <column dataType="string" label="word" xref="word"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds2137" resourceIdentifier="GeneratedResource-ge2136" tableModifiedTimeStamp="2024-07-07T20:09:54.885Z">
+            <columns/>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds37" resourceIdentifier="'cas-shared-default','Public','MC1_COMP_ART_DF','en_US'" tableModifiedTimeStamp="2024-07-07T18:44:39.837Z">
+            <columns>
+                <column dataType="string" label="_algorithm" xref="_algorithm"/>
+                <column dataType="string" label="_articleid" xref="_articleid"/>
+                <column dataType="string" label="_date_added" xref="_date_added"/>
+                <column dataType="string" label="_last_edited_by" xref="_last_edited_by"/>
+                <column dataType="string" label="_last_edited_date" xref="_last_edited_date"/>
+                <column dataType="string" label="_raw_source" xref="_raw_source"/>
+                <column dataType="string" label="type" xref="type"/>
+                <column dataType="string" label="edge_type_sentiment" xref="edge_type_sentiment"/>
+                <column dataType="string" label="company" xref="company"/>
+                <column dataType="double" format="BEST12." label="editing_timespan(h)" xref="editing_timespan(h)"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds272" resourceIdentifier="'cas-shared-default','Public','MC1_G_DF','en_US'" tableModifiedTimeStamp="2024-07-07T18:44:37.637Z">
+            <columns>
+                <column dataType="string" label="from" xref="from"/>
+                <column dataType="string" label="to" xref="to"/>
+                <column dataType="double" format="BEST12." label="edge_key" xref="edge_key"/>
+                <column dataType="string" label="_algorithm" xref="_algorithm"/>
+                <column dataType="string" label="_articleid" xref="_articleid"/>
+                <column dataType="string" label="_date_added" xref="_date_added"/>
+                <column dataType="string" label="_last_edited_by" xref="_last_edited_by"/>
+                <column dataType="string" label="_last_edited_date" xref="_last_edited_date"/>
+                <column dataType="string" label="_raw_source" xref="_raw_source"/>
+                <column dataType="string" label="type" xref="type"/>
+                <column dataType="string" label="country_source" xref="country_source"/>
+                <column dataType="string" label="dob_source" xref="dob_source"/>
+                <column dataType="string" label="type_source" xref="type_source"/>
+                <column dataType="string" label="country_target" xref="country_target"/>
+                <column dataType="string" label="dob_target" xref="dob_target"/>
+                <column dataType="string" label="type_target" xref="type_target"/>
+                <column dataType="string" label="edge_type_sentiment" xref="edge_type_sentiment"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds376" resourceIdentifier="GeneratedResource-ge374" tableModifiedTimeStamp="2024-07-07T18:44:39.837Z">
+            <columns/>
+        </table>
+        <table dataLocale="en_US" dataSources="ds472" resourceIdentifier="'cas-shared-default','Public','COMP_AGG_DF','en_US'" tableModifiedTimeStamp="2024-07-07T18:44:39.684Z">
+            <columns>
+                <column dataType="string" label="company" xref="company"/>
+                <column dataType="double" format="BEST12." label="avg edit timespan (h)" xref="avg edit timespan (h)"/>
+                <column dataType="double" format="BEST12." label="number of editors" xref="number of editors"/>
+                <column dataType="double" format="BEST12." label="negative" xref="negative"/>
+                <column dataType="double" format="BEST12." label="neutral" xref="neutral"/>
+                <column dataType="double" format="BEST12." label="positive" xref="positive"/>
+                <column dataType="double" format="BEST12." label="total" xref="total"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds665" resourceIdentifier="'cas-shared-default','Public','COMP_EDITOR_G','en_US'" tableModifiedTimeStamp="2024-07-07T18:44:39.377Z">
+            <columns>
+                <column dataType="string" label="to" xref="to"/>
+                <column dataType="string" label="from" xref="from"/>
+                <column dataType="string" label="edge_type_sentiment" xref="edge_type_sentiment"/>
+                <column dataType="double" format="BEST12." label="count" xref="count"/>
+                <column dataType="string" label="country_source" xref="country_source"/>
+                <column dataType="string" label="dob_source" xref="dob_source"/>
+                <column dataType="string" label="type_source" xref="type_source"/>
+                <column dataType="string" label="country_target" xref="country_target"/>
+                <column dataType="string" label="dob_target" xref="dob_target"/>
+                <column dataType="string" label="type_target" xref="type_target"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds700" resourceIdentifier="'cas-shared-default','Public','COMP_ALG_G','en_US'" tableModifiedTimeStamp="2024-07-07T18:44:39.816Z">
+            <columns>
+                <column dataType="string" label="to" xref="to"/>
+                <column dataType="string" label="from" xref="from"/>
+                <column dataType="string" label="edge_type_sentiment" xref="edge_type_sentiment"/>
+                <column dataType="double" format="BEST12." label="count" xref="count"/>
+                <column dataType="string" label="country_source" xref="country_source"/>
+                <column dataType="string" label="dob_source" xref="dob_source"/>
+                <column dataType="string" label="type_source" xref="type_source"/>
+                <column dataType="string" label="country_target" xref="country_target"/>
+                <column dataType="string" label="dob_target" xref="dob_target"/>
+                <column dataType="string" label="type_target" xref="type_target"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds713" resourceIdentifier="'cas-shared-default','Public','COMP_SOURCE_G','en_US'" tableModifiedTimeStamp="2024-07-07T18:44:39.762Z">
+            <columns>
+                <column dataType="string" label="to" xref="to"/>
+                <column dataType="string" label="from" xref="from"/>
+                <column dataType="string" label="edge_type_sentiment" xref="edge_type_sentiment"/>
+                <column dataType="double" format="BEST12." label="count" xref="count"/>
+                <column dataType="string" label="country_source" xref="country_source"/>
+                <column dataType="string" label="dob_source" xref="dob_source"/>
+                <column dataType="string" label="type_source" xref="type_source"/>
+                <column dataType="string" label="country_target" xref="country_target"/>
+                <column dataType="string" label="dob_target" xref="dob_target"/>
+                <column dataType="string" label="type_target" xref="type_target"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>

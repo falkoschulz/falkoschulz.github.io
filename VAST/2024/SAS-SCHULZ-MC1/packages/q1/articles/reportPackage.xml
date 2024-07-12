@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportPackage>
+    <dataLevel>offline</dataLevel>
+    <files>
+        <file contentKey="HWHGLJIKYOTTYTGOWPD7UE43TCERETSM" name="report" type="report">
+            <links>
+                <link href="/report.xml" method="GET" rel="content" type="application/vnd.sas.report.content" uri="/report.xml"/>
+            </links>
+        </file>
+        <file contentKey="DIMERTYUZ4IKO7NH2VB7YTANZ7XYLCO7" name="basems1.css" type="css">
+            <links>
+                <link href="/css/basems1.css" method="GET" rel="content" type="text/css" uri="/css/basems1.css"/>
+            </links>
+        </file>
+        <file contentKey="DTTUBSAVW6CHQAHKMR3CQG5GBMNWTU54" name="highcontrast.css" type="css">
+            <links>
+                <link href="/css/highcontrast.css" method="GET" rel="content" type="text/css" uri="/css/highcontrast.css"/>
+            </links>
+        </file>
+        <file contentKey="GICIQWJ5STIQC55PPK5I6BDHAEMSZGVN" name="ms1.css" type="css">
+            <links>
+                <link href="/css/ms1.css" method="GET" rel="content" type="text/css" uri="/css/ms1.css"/>
+            </links>
+        </file>
+        <file contentKey="ZGORHWC6SBRC57HIKCNUP452XC2GZFIZ" name="metadataSupplement" type="resource">
+            <links>
+                <link href="/metadataSupplement.xml" method="GET" rel="content" type="application/vnd.sas.report.metadata.supplement" uri="/metadataSupplement.xml"/>
+            </links>
+        </file>
+        <file contentKey="45BSCUXYZLI65K5BY4G7UPZTIDPFH75R" name="index.html" type="html">
+            <links>
+                <link href="/index.html" method="GET" rel="content" type="text/html" uri="/index.html"/>
+            </links>
+        </file>
+        <file contentKey="76IHRYO3ERWYMFFZOZI3TD3B2IDZE6ZH" name="packageIndex.html" type="html">
+            <links>
+                <link href="/packageIndex.html" method="GET" rel="content" type="text/html" uri="/packageIndex.html"/>
+            </links>
+        </file>
+        <file contentKey="QUYBEHFCJ23GDEGHJSKO36TVJQNRWQ32" name="viyafonts.css" type="css">
+            <links>
+                <link href="/css/viyafonts.css" method="GET" rel="content" type="text/css" uri="/css/viyafonts.css"/>
+            </links>
+        </file>
+        <file contentKey="CT6TPYGFAL454656P3U4V4LESC6TKJJA" name="settings" type="resource">
+            <links>
+                <link href="/settings.json" method="GET" rel="content" type="application/vnd.sas.attributes" uri="/settings.json"/>
+            </links>
+        </file>
+    </files>
+    <formatLocale>en-US</formatLocale>
+    <generatedTimeStamp>2024-07-12T07:10:00.163Z</generatedTimeStamp>
+    <id>c_121abaf4-b93b-43c0-a45b-250232efd24f</id>
+    <links>
+        <link href="/reportPackages/packages/c_121abaf4-b93b-43c0-a45b-250232efd24f" method="GET" rel="self" type="application/vnd.sas.report.package" uri="/reportPackages/packages/c_121abaf4-b93b-43c0-a45b-250232efd24f"/>
+        <link href="/reportData/results?reportContentKey=KGP4DAVUEAHM7S3CD7TKG2M4WDIOHVFS&amp;reportUri=%2Freports%2Freports%2F5682ddf4-b518-481d-acbc-d3e21b2b038b&amp;reportDate=2024-07-12T07%3A10%3A00.163Z" method="POST" rel="requery" responseType="application/vnd.sas.report.results" type="application/vnd.sas.report.query.state" uri="/reportData/results?reportContentKey=KGP4DAVUEAHM7S3CD7TKG2M4WDIOHVFS&amp;reportUri=%2Freports%2Freports%2F5682ddf4-b518-481d-acbc-d3e21b2b038b&amp;reportDate=2024-07-12T07%3A10%3A00.163Z"/>
+        <link href="/reportData/jobs?reportContentKey=KGP4DAVUEAHM7S3CD7TKG2M4WDIOHVFS&amp;reportUri=%2Freports%2Freports%2F5682ddf4-b518-481d-acbc-d3e21b2b038b&amp;reportDate=2024-07-12T07%3A10%3A00.163Z" method="POST" rel="requeryJob" responseType="application/vnd.sas.report.data.job" type="application/vnd.sas.report.query.state" uri="/reportData/jobs?reportContentKey=KGP4DAVUEAHM7S3CD7TKG2M4WDIOHVFS&amp;reportUri=%2Freports%2Freports%2F5682ddf4-b518-481d-acbc-d3e21b2b038b&amp;reportDate=2024-07-12T07%3A10%3A00.163Z"/>
+    </links>
+    <locale>en-US</locale>
+    <modifiedTimeStamp>2024-07-12T07:09:33.560Z</modifiedTimeStamp>
+    <reportElements>vi3977</reportElements>
+    <size>361145</size>
+    <source>/reports/reports/5682ddf4-b518-481d-acbc-d3e21b2b038b</source>
+    <version>47</version>
+</reportPackage>

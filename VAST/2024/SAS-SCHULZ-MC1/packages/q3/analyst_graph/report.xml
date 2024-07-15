@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.42.0" label="Amy - MC1 v2" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.42.0" dateCreated="2024-07-03T20:32:29Z" dateModified="2024-07-12T08:45:47Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="1795">
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.42.0" label="Amy - MC1 v2" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.42.0" dateCreated="2024-07-03T20:32:29Z" dateModified="2024-07-15T05:58:21Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="1921">
 	<Results>
-		<Result ref="dd1776" type="relational" status="success" dataLevel="baseline" label="Network Analysis Summary" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-07T18:44:39.377Z">
+		<Result ref="dd1776" type="relational" status="success" dataLevel="baseline" label="Network Analysis Summary" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-14T18:13:14.287Z">
 			<Variables>
 				<StringVariable label="Network Analysis Summary" ref="bi1773" varname="bi1773" column="c0"/>
 			</Variables>
@@ -11,7 +11,7 @@
 			<Data isIndexed="false" availableRowCount="1" contentKey="R4SELGMFGT5BASU3BH2V2YARSG4B7ODX" size="503" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA["The network analysis object displays the relationships between data item values as a series of linked nodes. The graph is a single connected cluster (a connected group of three or more nodes). There are 189 nodes and 2.8K links, where the average degree (links per node) is 30. Harvey Janus and Worf Peer have the highest degree centrality score of 226 (total number of links). The average clustering coefficient is 0. An average clustering coefficient of 1 indicates perfect local interconnectivity."
 ]]></Data>
 		</Result>
-		<Result ref="dd1771" type="relational" status="success" dataLevel="baseline" label="Ungrouped - from" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-07T18:44:39.377Z">
+		<Result ref="dd1771" type="relational" status="success" dataLevel="baseline" label="Ungrouped - from" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-14T18:13:14.287Z">
 			<Variables>
 				<StringVariable label="Item Type" ref="bi1759" varname="bi1759" column="c0"/>
 				<StringVariable label="Item Type" ref="bi1770" varname="bi1770" column="c1"/>
@@ -50,7 +50,7 @@
 				<StringColumn maxLength="1" colname="c15" encoding="text"/>
 				<StringColumn maxLength="3" colname="c16" encoding="text"/>
 			</Columns>
-			<DataFile contentKey="624NB3WMUWEWEI5IYNL3R2QJFZ6HYBB5" size="213259" format="CSV" rowCount="3027" grandTotal="false" dataLayout="minimal" file="dd1771.csv" isIndexed="true" availableRowCount="3027"/>
+			<DataFile contentKey="EIHQASPVQX6LJEQAPCPWUKHSZKF5H6KQ" size="213252" format="CSV" rowCount="3027" grandTotal="false" dataLayout="minimal" file="dd1771.csv" isIndexed="true" availableRowCount="3027"/>
 			<StringTableFile contentKey="HUWTLPXLJGBZW4YZRIFYE5HQVJNZVDF7" size="247779" format="CSV" rowCount="6067" file="dd1771index.csv"/>
 		</Result>
 	</Results>
@@ -210,7 +210,7 @@
 					<Expression>in(${bi438,binned},&apos;Haacklee Herald&apos;,&apos;Lomark Daily&apos;,&apos;The News Buoy&apos;)</Expression>
 				</RelationalFilterItem>
 				<RelationalDataItem name="bi1144" base="bi59"/>
-				<RelationalDataItem name="bi1782" base="bi1145"/>
+				<RelationalDataItem name="bi1908" base="bi1145"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="multidimensional" name="dd451">
 				<MultidimensionalQuery detail="false">
@@ -326,7 +326,7 @@
 							<BooleanValue>false</BooleanValue>
 						</Argument>
 						<Argument purpose="savedLayout">
-							<ExpressionValue>[[&apos;SouthSeafood Express Corp&apos;,736.7205810546875,1264.797119140625]]</ExpressionValue>
+							<ExpressionValue>[[&apos;SouthSeafood Express Corp&apos;,736.7205810546875,1264.797119140625],[&apos;Harvey Janus&apos;,875.615234375,1448.9716796875]]</ExpressionValue>
 						</Argument>
 					</Arguments>
 				</ProceduralQuery>
@@ -748,7 +748,7 @@
 			<BusinessItems>
 				<RelationalDataItem name="bi371" base="bi44"/>
 				<RelationalDataItem name="bi1177" base="bi49"/>
-				<RelationalDataItem name="bi1783" base="bi45"/>
+				<RelationalDataItem name="bi1909" base="bi45"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="relational" name="dd1096">
 				<RelationalQuery detail="false">
@@ -1174,8 +1174,8 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds37" name="dd1281">
 			<BusinessItems>
 				<RelationalDataItem name="bi1284" base="bi44"/>
-				<RelationalDataItem name="bi1784" base="bi45"/>
-				<RelationalDataItem name="bi1785" base="bi38"/>
+				<RelationalDataItem name="bi1910" base="bi45"/>
+				<RelationalDataItem name="bi1911" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="relational" name="dd1282">
 				<RelationalQuery detail="false">
@@ -1236,7 +1236,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds37" name="dd1299">
 			<BusinessItems>
 				<RelationalDataItem name="bi979" base="bi44"/>
-				<RelationalDataItem name="bi1786" base="bi41"/>
+				<RelationalDataItem name="bi1912" base="bi41"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="relational" name="dd1300">
 				<RelationalQuery detail="false">
@@ -1387,7 +1387,7 @@
 			<BusinessItems>
 				<RelationalDataItem binOption="formatBin" name="bi1476" base="bi1145" usage="quantitative" aggregation="min"/>
 				<RelationalDataItem binOption="formatBin" name="bi1477" base="bi1145" usage="quantitative" aggregation="max"/>
-				<RelationalDataItem name="bi1787" base="bi45"/>
+				<RelationalDataItem name="bi1913" base="bi45"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="relational" name="dd1479">
 				<RelationalQuery detail="false">
@@ -1416,8 +1416,8 @@
 					<Expression>in(${bi1461,binned},&apos;Haacklee Herald&apos;,&apos;Lomark Daily&apos;,&apos;The News Buoy&apos;)</Expression>
 				</RelationalFilterItem>
 				<RelationalDataItem name="bi1463" base="bi59"/>
-				<RelationalDataItem name="bi1788" base="bi1145"/>
-				<RelationalDataItem name="bi1789" base="bi44"/>
+				<RelationalDataItem name="bi1914" base="bi1145"/>
+				<RelationalDataItem name="bi1915" base="bi44"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="multidimensional" name="dd1467">
 				<MultidimensionalQuery detail="false">
@@ -1509,7 +1509,7 @@
 							<BooleanValue>false</BooleanValue>
 						</Argument>
 						<Argument purpose="savedLayout">
-							<ExpressionValue>[[&apos;PregolyaDredge Logistics Incorporated&apos;,598.3673095703125,217.74102783203125],[&apos;SouthSeafood Express Corp&apos;,1441.8427734375,2104.22216796875]]</ExpressionValue>
+							<ExpressionValue>[[&apos;PregolyaDredge Logistics Incorporated&apos;,598.3673095703125,217.74102783203125],[&apos;SouthSeafood Express Corp&apos;,1441.8427734375,2104.22216796875],[&apos;Jones Group&apos;,970.1677856445312,456.6181945800781]]</ExpressionValue>
 						</Argument>
 					</Arguments>
 				</ProceduralQuery>
@@ -1641,7 +1641,7 @@
 					</EditorProperties>
 					<Expression>in(${bi1583,binned},&apos;Haacklee Herald&apos;,&apos;Lomark Daily&apos;,&apos;The News Buoy&apos;)</Expression>
 				</RelationalFilterItem>
-				<RelationalDataItem name="bi1790" base="bi44"/>
+				<RelationalDataItem name="bi1916" base="bi44"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="multidimensional" name="dd1589">
 				<MultidimensionalQuery detail="false">
@@ -1781,8 +1781,8 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds37" name="dd1649">
 			<BusinessItems>
 				<RelationalDataItem name="bi1630" base="bi44"/>
-				<RelationalDataItem name="bi1791" base="bi45"/>
-				<RelationalDataItem name="bi1792" base="bi38"/>
+				<RelationalDataItem name="bi1917" base="bi45"/>
+				<RelationalDataItem name="bi1918" base="bi38"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="relational" name="dd1650">
 				<RelationalQuery detail="false">
@@ -1958,7 +1958,7 @@
 				<RelationalDataItem name="bi1715" base="bi41"/>
 				<RelationalDataItem name="bi1717" base="bi49"/>
 				<RelationalDataItem name="bi1716" base="bi45"/>
-				<RelationalDataItem name="bi1793" base="bi44"/>
+				<RelationalDataItem name="bi1919" base="bi44"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="multidimensional" name="dd1719">
 				<MultidimensionalQuery detail="false">
@@ -2005,7 +2005,7 @@
 			<BusinessItems>
 				<RelationalDataItem name="bi1734" base="bi41"/>
 				<RelationalDataItem name="bi1735" base="bi47"/>
-				<RelationalDataItem name="bi1794" base="bi44"/>
+				<RelationalDataItem name="bi1920" base="bi44"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds37" type="multidimensional" name="dd1737">
 				<MultidimensionalQuery detail="false">
@@ -2091,13 +2091,48 @@
 							<BooleanValue>false</BooleanValue>
 						</Argument>
 						<Argument purpose="savedLayout">
-							<ExpressionValue>[[&apos;SouthSeafood Express Corp&apos;,736.7205810546875,1264.797119140625]]</ExpressionValue>
+							<ExpressionValue>[[&apos;SouthSeafood Express Corp&apos;,732.7205810546875,1258.797119140625],[&apos;Harvey Janus&apos;,870.615234375,1334.57177734375]]</ExpressionValue>
 						</Argument>
 					</Arguments>
 				</ProceduralQuery>
 				<ResultDefinitions>
 					<ResultDefinition purpose="primary" name="dd1771" syntheticItems="si1752"/>
 					<ResultDefinition purpose="textSummary" name="dd1776" syntheticItems="si1772"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds472" name="dd1795">
+			<BusinessItems>
+				<RelationalDataItem name="bi1794" base="bi474"/>
+				<RelationalDataItem name="bi1790" base="bi475"/>
+				<RelationalDataItem name="bi1789" base="bi476"/>
+				<RelationalDataItem name="bi1788" base="bi478"/>
+				<RelationalDataItem name="bi1791" base="bi479"/>
+				<RelationalDataItem name="bi1792" base="bi473"/>
+				<RelationalDataItem name="bi1793" base="bi477"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds472" type="multidimensional" name="dd1796">
+				<MultidimensionalQuery rowSubtotals="true" columnSubtotals="true" rowTotals="false" columnTotals="false" detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi1788"/>
+							<BusinessItem ref="bi1789"/>
+							<BusinessItem ref="bi1790"/>
+							<BusinessItem ref="bi1791"/>
+							<BusinessItem ref="bi1792"/>
+							<BusinessItem ref="bi1793"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi1794"/>
+						</Axis>
+					</Axes>
+					<RowSortItems>
+						<MeasureSortItem ref="bi1793" sortDirection="ascending"/>
+						<SortItem ref="bi1794" sortDirection="ascending"/>
+					</RowSortItems>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="crosstab" maxRowsBehavior="noData" name="dd1797"/>
 				</ResultDefinitions>
 			</DataDefinition>
 		</ParentDataDefinition>
@@ -2518,7 +2553,7 @@
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi441</Property>
-				<Property key="addedInteractionQueryDataItems">bi1782</Property>
+				<Property key="addedInteractionQueryDataItems">bi1908</Property>
 			</EditorProperties>
 			<Title auto="false"><P class="styleForTitle_paragraph2"><Span class="styleForTitle_span2">Sentiment over Time by Paper</Span></P></Title>
 			<Conditions>
@@ -3393,7 +3428,7 @@
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
-				<Property key="addedInteractionQueryDataItems">bi1783</Property>
+				<Property key="addedInteractionQueryDataItems">bi1909</Property>
 			</EditorProperties>
 			<CheckBoxList searchable="true" selectAllEnabled="true" valueVariable="bi371" measureVariable="bi1177"/>
 		</Prompt>
@@ -3636,7 +3671,7 @@
 			</EditorProperties>
 			<CheckBoxList searchable="true" selectAllEnabled="true" valueVariable="bi1218"/>
 		</Prompt>
-		<Graph graphType="pcPlot" supplementalVisuals="ve1263" resultDefinitions="dd1260 dd1261" name="ve1245" data="dd1246" label="Parallel coordinates - Algorithm 1" applyDynamicBrushes="no" sourceInteractionVariables="bi1264 bi1265 bi1266">
+		<Graph graphType="pcPlot" supplementalVisuals="ve1263" resultDefinitions="dd1260 dd1261" name="ve1245" data="dd1246" label="Parallel coordinates - Algorithm 2" applyDynamicBrushes="no" sourceInteractionVariables="bi1264 bi1265 bi1266">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 			</EditorProperties>
@@ -3644,25 +3679,22 @@
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
     <Meta>
         <DataNameMap>
-            <Entry model="ParallelCoordinatesPlot_4" data="dd1260"/>
-            <Entry model="BinMetadata_4" data="dd1261"/>
+            <Entry model="ParallelCoordinatesPlot_9" data="dd1260"/>
+            <Entry model="BinMetadata_9" data="dd1261"/>
         </DataNameMap>
     </Meta>
     <LayoutRegion>
-        <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_4" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd1260#bi1249">
-            <BinMetadata dataField="dd1261#bi1252" size="dd1261#bi1254" start="dd1261#bi1253" count="dd1261#bi1255" name="BinMetadata_4"/>
+        <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_9" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd1260#bi1249">
+            <BinMetadata name="BinMetadata_9" dataField="dd1261#bi1252" size="dd1261#bi1254" start="dd1261#bi1253" count="dd1261#bi1255"/>
             <Response>
                 <Value>dd1260#bi1264</Value>
                 <Value>dd1260#bi1266</Value>
                 <Value>dd1260#bi1265</Value>
             </Response>
             <ParallelAxisOpts>
-                <AxisOpts reverse="true" discreteSortOrder="ascendingunformatted" type="discrete" name="response1">
-                </AxisOpts>
-                <AxisOpts reverse="true" discreteSortOrder="ascendingunformatted" type="discrete" name="response2">
-                </AxisOpts>
-                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response3">
-                </AxisOpts>
+                <AxisOpts reverse="true" discreteSortOrder="ascendingunformatted" type="discrete" name="response1"/>
+                <AxisOpts reverse="true" discreteSortOrder="ascendingunformatted" type="discrete" name="response2"/>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response3"/>
             </ParallelAxisOpts>
         </ParallelCoordinatesPlot>
     </LayoutRegion>
@@ -3700,7 +3732,7 @@
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi1784,bi1785</Property>
+				<Property key="addedInteractionQueryDataItems">bi1910,bi1911</Property>
 			</EditorProperties>
 			<CheckBoxList searchable="true" selectAllEnabled="true" valueVariable="bi1284"/>
 		</Prompt>
@@ -3722,7 +3754,7 @@
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
-				<Property key="addedInteractionQueryDataItems">bi1786</Property>
+				<Property key="addedInteractionQueryDataItems">bi1912</Property>
 			</EditorProperties>
 			<CheckBoxList searchable="true" selectAllEnabled="true" valueVariable="bi979"/>
 		</Prompt>
@@ -3797,9 +3829,6 @@
             </YAxisOpts>
         </LayoutPrototypeOverlay2D>
     </LayoutDataMatrix>
-    <RangeAttrMap name="cd1325">
-        <AttrRange minValue="1300" minExclude="false" maxValue="max" maxExclude="true"/>
-    </RangeAttrMap>
     <OverviewAxis maxPlotSize="60px" minPlotSize="35px" visible="off" axis="categoryAxis"/>
 </StatGraph>]]>
 		</Graph>
@@ -3809,7 +3838,7 @@
 				<Column variable="bi1022"/>
 			</Columns>
 		</Table>
-		<Prompt resultDefinitions="dd1446" name="ve1447" data="dd1444" label="Button bar - Sentiment 1 (1)" selectionDisabled="true" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1443">
+		<Prompt resultDefinitions="dd1446" name="ve1447" data="dd1444" label="Button bar - Sentiment 4" selectionDisabled="true" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1443">
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
@@ -3817,7 +3846,7 @@
 			<Title><P><Span>Sentiment</Span></P></Title>
 			<LinkBar orientation="vertical" valueVariable="bi1443"/>
 		</Prompt>
-		<Prompt required="false" resultDefinitions="dd1457" name="ve1458" data="dd1455" label="List - Entity 2 (1)" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1452">
+		<Prompt required="false" resultDefinitions="dd1457" name="ve1458" data="dd1455" label="List - Entity 10" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1452">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
@@ -3825,11 +3854,11 @@
 			<Title><P><Span>Entity</Span></P></Title>
 			<CheckBoxList searchable="true" selectAllEnabled="false" valueVariable="bi1452" measureVariable="bi1451"/>
 		</Prompt>
-		<Prompt interactOnAggregateData="false" required="true" resultDefinitions="dd1480" name="ve1481" data="dd1478" label="Slider - Month Added 1 (1)" selectionDisabled="true" applyDynamicBrushes="no" sourceInteractionVariables="bi1476">
+		<Prompt interactOnAggregateData="false" required="true" resultDefinitions="dd1480" name="ve1481" data="dd1478" label="Slider - Month Added 2" selectionDisabled="true" applyDynamicBrushes="no" sourceInteractionVariables="bi1476">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
-				<Property key="addedInteractionQueryDataItems">bi1787</Property>
+				<Property key="addedInteractionQueryDataItems">bi1913</Property>
 			</EditorProperties>
 			<Title><P><Span>Date</Span></P></Title>
 			<DualSlider minVariable="bi1476" maxVariable="bi1477">
@@ -3846,11 +3875,11 @@
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
 			</EditorProperties>
 		</VisualContainer>
-		<Graph graphType="line" supplementalVisuals="ve1468" resultDefinitions="dd1460" name="ve1469" data="dd1466" label="Line - Date Added 1 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi1462 bi1461 bi1463">
+		<Graph graphType="line" supplementalVisuals="ve1468" resultDefinitions="dd1460" name="ve1469" data="dd1466" label="Line - Date Added 2" applyDynamicBrushes="yes" sourceInteractionVariables="bi1462 bi1461 bi1463">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi1464</Property>
-				<Property key="addedInteractionQueryDataItems">bi1788,bi1789</Property>
+				<Property key="addedInteractionQueryDataItems">bi1914,bi1915</Property>
 			</EditorProperties>
 			<Conditions>
 				<Condition ref="rg1092">
@@ -4116,7 +4145,7 @@
 				<Column variable="bi1565"/>
 			</Columns>
 		</Table>
-		<Prompt required="false" resultDefinitions="dd1579" name="ve1580" data="dd1577" label="List - Entity 4 (1)" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1575">
+		<Prompt required="false" resultDefinitions="dd1579" name="ve1580" data="dd1577" label="List - Entity 11" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1575">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
@@ -4124,11 +4153,11 @@
 			<Title><P><Span>Entity</Span></P></Title>
 			<CheckBoxList searchable="true" selectAllEnabled="true" valueVariable="bi1575"/>
 		</Prompt>
-		<Graph graphType="bar" supplementalVisuals="ve1590" resultDefinitions="dd1582" name="ve1591" data="dd1588" label="Bar - Source 2 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi1584 bi1583 bi1585">
+		<Graph graphType="bar" supplementalVisuals="ve1590" resultDefinitions="dd1582" name="ve1591" data="dd1588" label="Bar - Source 4" applyDynamicBrushes="yes" sourceInteractionVariables="bi1584 bi1583 bi1585">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi1586</Property>
-				<Property key="addedInteractionQueryDataItems">bi1790</Property>
+				<Property key="addedInteractionQueryDataItems">bi1916</Property>
 			</EditorProperties>
 			<Conditions>
 				<Condition ref="rg1092">
@@ -4228,25 +4257,22 @@
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
     <Meta>
         <DataNameMap>
-            <Entry model="ParallelCoordinatesPlot_13" data="dd1597"/>
-            <Entry model="BinMetadata_13" data="dd1603"/>
+            <Entry model="ParallelCoordinatesPlot_8" data="dd1597"/>
+            <Entry model="BinMetadata_8" data="dd1603"/>
         </DataNameMap>
     </Meta>
     <LayoutRegion>
-        <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_13" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd1597#bi1607">
-            <BinMetadata dataField="dd1603#bi1599" size="dd1603#bi1601" start="dd1603#bi1600" count="dd1603#bi1602" name="BinMetadata_13"/>
+        <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_8" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd1597#bi1607">
+            <BinMetadata name="BinMetadata_8" dataField="dd1603#bi1599" size="dd1603#bi1601" start="dd1603#bi1600" count="dd1603#bi1602"/>
             <Response>
                 <Value>dd1597#bi1604</Value>
                 <Value>dd1597#bi1605</Value>
                 <Value>dd1597#bi1606</Value>
             </Response>
             <ParallelAxisOpts>
-                <AxisOpts reverse="true" discreteSortOrder="ascendingunformatted" type="discrete" name="response1">
-                </AxisOpts>
-                <AxisOpts reverse="true" discreteSortOrder="ascendingunformatted" type="discrete" name="response2">
-                </AxisOpts>
-                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response3">
-                </AxisOpts>
+                <AxisOpts reverse="true" discreteSortOrder="ascendingunformatted" type="discrete" name="response1"/>
+                <AxisOpts reverse="true" discreteSortOrder="ascendingunformatted" type="discrete" name="response2"/>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response3"/>
             </ParallelAxisOpts>
         </ParallelCoordinatesPlot>
     </LayoutRegion>
@@ -4260,7 +4286,7 @@
 				<Column variable="bi1607"/>
 			</Columns>
 		</Table>
-		<Prompt resultDefinitions="dd1621" name="ve1622" data="dd1619" label="Button bar - Sentiment 3 (1)" selectionDisabled="true" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1618">
+		<Prompt resultDefinitions="dd1621" name="ve1622" data="dd1619" label="Button bar - Sentiment 5" selectionDisabled="true" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1618">
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
@@ -4268,7 +4294,7 @@
 			<Title><P><Span>Sentiment</Span></P></Title>
 			<LinkBar orientation="vertical" valueVariable="bi1618"/>
 		</Prompt>
-		<Prompt resultDefinitions="dd1627" name="ve1628" data="dd1625" label="Button bar - Algorithm 1 (1)" selectionDisabled="true" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1624">
+		<Prompt resultDefinitions="dd1627" name="ve1628" data="dd1625" label="Button bar - Algorithm 2" selectionDisabled="true" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1624">
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
@@ -4290,19 +4316,19 @@
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
-				<Property key="addedInteractionQueryDataItems">bi1791,bi1792</Property>
+				<Property key="addedInteractionQueryDataItems">bi1917,bi1918</Property>
 			</EditorProperties>
 			<Title><P><Span>Entity</Span></P></Title>
 			<ComboBox valueVariable="bi1630"/>
 		</Prompt>
-		<Prompt resultDefinitions="dd1655" name="ve1656" data="dd1653" label="List - Entity 6 (1)" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1652">
+		<Prompt resultDefinitions="dd1655" name="ve1656" data="dd1653" label="List - Entity 12" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1652">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
 			</EditorProperties>
 			<CheckBoxList searchable="true" selectAllEnabled="true" valueVariable="bi1652"/>
 		</Prompt>
-		<Graph graphType="bar" supplementalVisuals="ve1666" resultDefinitions="dd1658" name="ve1667" data="dd1664" label="Bar - Entity 3 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi1660 bi1661">
+		<Graph graphType="bar" supplementalVisuals="ve1666" resultDefinitions="dd1658" name="ve1667" data="dd1664" label="Bar - Entity 4" applyDynamicBrushes="yes" sourceInteractionVariables="bi1660 bi1661">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi1662</Property>
@@ -4482,19 +4508,19 @@
 				<Column variable="bi1699"/>
 			</Columns>
 		</Table>
-		<Prompt resultDefinitions="dd1711" name="ve1712" data="dd1709" label="List - Entity 7 (1)" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1708">
+		<Prompt resultDefinitions="dd1711" name="ve1712" data="dd1709" label="List - Entity 13" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1708">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
 			</EditorProperties>
 			<CheckBoxList searchable="true" selectAllEnabled="true" valueVariable="bi1708"/>
 		</Prompt>
-		<Graph graphType="bar" supplementalVisuals="ve1720" resultDefinitions="dd1714" name="ve1721" data="dd1718" label="Bar - Editor 1 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi1715 bi1716">
+		<Graph graphType="bar" supplementalVisuals="ve1720" resultDefinitions="dd1714" name="ve1721" data="dd1718" label="Bar - Editor 2" applyDynamicBrushes="yes" sourceInteractionVariables="bi1715 bi1716">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi1717</Property>
 				<Property key="measureAxisLayout">sharedAxis</Property>
-				<Property key="addedInteractionQueryDataItems">bi1793</Property>
+				<Property key="addedInteractionQueryDataItems">bi1919</Property>
 			</EditorProperties>
 			<Conditions>
 				<Condition ref="rg1092">
@@ -4581,7 +4607,7 @@
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
 			</EditorProperties>
 		</VisualContainer>
-		<Prompt resultDefinitions="dd1730" name="ve1731" data="dd1728" label="List - Entity 9 (1)" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1727">
+		<Prompt resultDefinitions="dd1730" name="ve1731" data="dd1728" label="List - Entity 14" applyDynamicBrushes="promptsOnly" sourceInteractionVariables="bi1727">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
@@ -4589,10 +4615,10 @@
 			<Title><P><Span>Entity</Span></P></Title>
 			<CheckBoxList searchable="true" selectAllEnabled="true" valueVariable="bi1727"/>
 		</Prompt>
-		<Graph graphType="dot" supplementalVisuals="ve1738" resultDefinitions="dd1733" name="ve1741" data="dd1736" label="Dot - Editor 1 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi1734">
+		<Graph graphType="dot" supplementalVisuals="ve1738" resultDefinitions="dd1733" name="ve1741" data="dd1736" label="Dot - Editor 2" applyDynamicBrushes="yes" sourceInteractionVariables="bi1734">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi1794</Property>
+				<Property key="addedInteractionQueryDataItems">bi1920</Property>
 			</EditorProperties>
 			<Conditions>
 				<Condition ref="rg1092">
@@ -4646,9 +4672,6 @@
             </YAxisOpts>
         </LayoutPrototypeOverlay2D>
     </LayoutDataMatrix>
-    <RangeAttrMap name="cd1739">
-        <AttrRange minValue="1300" minExclude="false" maxValue="max" maxExclude="true"/>
-    </RangeAttrMap>
     <OverviewAxis maxPlotSize="60px" minPlotSize="35px" visible="off" axis="categoryAxis"/>
 </StatGraph>]]>
 		</Graph>
@@ -4755,6 +4778,52 @@
 				<Column variable="bi1773"/>
 			</Columns>
 		</Table>
+		<Crosstab layout="indented" measureSizing="autoFill" resultDefinitions="dd1797" name="ve1802" data="dd1795" label="Crosstab - Company 2" applyDynamicBrushes="yes" sourceInteractionVariables="bi1794">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Axes>
+				<Axis type="row">
+					<Hierarchy name="ve1803" variable="bi1794"/>
+				</Axis>
+				<Axis type="column">
+					<Measures>
+						<Measure compactFormat="false" name="ve1804" variable="bi1788"/>
+						<Measure compactFormat="false" name="ve1805" variable="bi1789"/>
+						<Measure compactFormat="false" name="ve1806" variable="bi1790"/>
+						<Measure compactFormat="false" name="ve1807" class="tableColumnbi1791" variable="bi1791">
+							<Cell>
+								<CellVisuals nestedElementPosition="left">
+									<SparkValue type="bar" response="bi1791" name="cv1814"/>
+								</CellVisuals>
+							</Cell>
+						</Measure>
+						<Measure compactFormat="false" name="ve1808" variable="bi1792">
+							<Conditions>
+								<Condition ref="cd1798">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi1792"/>
+									</ConditionParameters>
+								</Condition>
+							</Conditions>
+						</Measure>
+						<Measure compactFormat="false" name="ve1809" variable="bi1793">
+							<Conditions>
+								<Condition ref="cd1800">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi1793"/>
+									</ConditionParameters>
+								</Condition>
+							</Conditions>
+						</Measure>
+					</Measures>
+				</Axis>
+			</Axes>
+			<Summary>
+				<Total columnVisible="false" rowVisible="false"/>
+				<Subtotal columnVisible="true" rowVisible="true"/>
+			</Summary>
+		</Crosstab>
 	</VisualElements>
 	<PromptDefinitions>
 		<PromptDefinition label="Q1 Sentiment Timelime Company Parameter" isParameter="true" dataType="string" multiValued="false" name="pr1103"/>
@@ -4899,6 +4968,48 @@
 						</Weights>
 					</ResponsiveLayout>
 					<Visual ref="ve521" name="vi520">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+					</Visual>
+				</MediaContainer>
+			</Body>
+		</Section>
+		<Section name="vi1811" label="CatchNet Company Summary (Falko)">
+			<Header location="left" width="20%">
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+				</MediaContainer>
+			</Header>
+			<Body>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+					<Visual ref="ve1802" name="vi1810">
 						<ResponsiveConstraint>
 							<WidthConstraint>
 								<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
@@ -6375,7 +6486,7 @@
 		</Interaction>
 		<Interaction name="ia1143" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1118" variable="bi1146"/>
-			<InteractionElementReference purpose="target" ref="ve447" variable="bi1782"/>
+			<InteractionElementReference purpose="target" ref="ve447" variable="bi1908"/>
 		</Interaction>
 		<Interaction name="ia1162" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1151" variable="bi1161"/>
@@ -6383,7 +6494,7 @@
 		</Interaction>
 		<Interaction name="ia1173" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1165" variable="bi1172"/>
-			<InteractionElementReference purpose="target" ref="ve367" variable="bi1783"/>
+			<InteractionElementReference purpose="target" ref="ve367" variable="bi1909"/>
 		</Interaction>
 		<Interaction name="ia1287" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1270" variable="bi1286"/>
@@ -6399,23 +6510,23 @@
 		</Interaction>
 		<Interaction name="ia1290" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1270" variable="bi1286"/>
-			<InteractionElementReference purpose="target" ref="ve1280" variable="bi1784"/>
+			<InteractionElementReference purpose="target" ref="ve1280" variable="bi1910"/>
 		</Interaction>
 		<Interaction name="ia1291" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1277" variable="bi1285"/>
-			<InteractionElementReference purpose="target" ref="ve1280" variable="bi1785"/>
+			<InteractionElementReference purpose="target" ref="ve1280" variable="bi1911"/>
 		</Interaction>
 		<Interaction name="ia1308" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1303" variable="bi1307"/>
-			<InteractionElementReference purpose="target" ref="ve975" variable="bi1786"/>
+			<InteractionElementReference purpose="target" ref="ve975" variable="bi1912"/>
 		</Interaction>
 		<Interaction name="ia1496" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1447" variable="bi1443"/>
-			<InteractionElementReference purpose="target" ref="ve1481" variable="bi1787"/>
+			<InteractionElementReference purpose="target" ref="ve1481" variable="bi1913"/>
 		</Interaction>
 		<Interaction name="ia1503" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1481" variable="bi1476"/>
-			<InteractionElementReference purpose="target" ref="ve1469" variable="bi1788"/>
+			<InteractionElementReference purpose="target" ref="ve1469" variable="bi1914"/>
 		</Interaction>
 		<Interaction name="ia1504" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve1447" variable="bi1443"/>
@@ -6423,11 +6534,11 @@
 		</Interaction>
 		<Interaction name="ia1505" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1458" variable="bi1452"/>
-			<InteractionElementReference purpose="target" ref="ve1469" variable="bi1789"/>
+			<InteractionElementReference purpose="target" ref="ve1469" variable="bi1915"/>
 		</Interaction>
 		<Interaction name="ia1596" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1580" variable="bi1575"/>
-			<InteractionElementReference purpose="target" ref="ve1591" variable="bi1790"/>
+			<InteractionElementReference purpose="target" ref="ve1591" variable="bi1916"/>
 		</Interaction>
 		<Interaction name="ia1639" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1622" variable="bi1618"/>
@@ -6443,11 +6554,11 @@
 		</Interaction>
 		<Interaction name="ia1642" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1622" variable="bi1618"/>
-			<InteractionElementReference purpose="target" ref="ve1634" variable="bi1791"/>
+			<InteractionElementReference purpose="target" ref="ve1634" variable="bi1917"/>
 		</Interaction>
 		<Interaction name="ia1643" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1628" variable="bi1624"/>
-			<InteractionElementReference purpose="target" ref="ve1634" variable="bi1792"/>
+			<InteractionElementReference purpose="target" ref="ve1634" variable="bi1918"/>
 		</Interaction>
 		<Interaction name="ia1672" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1656" variable="bi1652"/>
@@ -6455,11 +6566,11 @@
 		</Interaction>
 		<Interaction name="ia1726" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1712" variable="bi1708"/>
-			<InteractionElementReference purpose="target" ref="ve1721" variable="bi1793"/>
+			<InteractionElementReference purpose="target" ref="ve1721" variable="bi1919"/>
 		</Interaction>
 		<Interaction name="ia1746" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1731" variable="bi1727"/>
-			<InteractionElementReference purpose="target" ref="ve1741" variable="bi1794"/>
+			<InteractionElementReference purpose="target" ref="ve1741" variable="bi1920"/>
 		</Interaction>
 	</Interactions>
 	<Conditions>
@@ -6493,6 +6604,22 @@
 			</ConditionVariables>
 			<If name="cc1740" class="If">
 				<Expression>gt(${bi1},1300)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd1798">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc1799" class="If">
+				<Expression>gt(${bi1},0)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd1800">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc1801" class="If">
+				<Expression>lt(${bi1},2)</Expression>
 			</If>
 		</Condition>
 		<Range scope="global" name="rg1092">
@@ -6572,7 +6699,7 @@
 	</Versions>
 	<Editors>
 		<Editor applicationName="VA">
-			<Revision editorVersion="2020" lastDate="2024-07-12T08:45:47.877Z"/>
+			<Revision editorVersion="2020" lastDate="2024-07-15T05:58:21.706Z"/>
 		</Editor>
 	</Editors>
 </History>
@@ -6583,11 +6710,7 @@
 			<PromptState element="ve1052"/>
 			<PromptState element="ve367"/>
 			<PromptState element="ve435"/>
-			<PromptState element="ve1118">
-				<Selections>
-					<Selection resultDefinition="dd1140">between(${bi1146},2369520000,2382480000)</Selection>
-				</Selections>
-			</PromptState>
+			<PromptState element="ve1118"/>
 			<PromptState element="ve1151"/>
 			<PromptState element="ve1165"/>
 			<PromptState element="ve882"/>
@@ -6610,11 +6733,7 @@
 			<PromptState element="ve1656"/>
 			<PromptState element="ve1712"/>
 			<PromptState element="ve1731"/>
-			<PromptState element="ve1481">
-				<Selections>
-					<Selection resultDefinition="dd1480">between(${bi1476},2369520000,2382480000)</Selection>
-				</Selections>
-			</PromptState>
+			<PromptState element="ve1481"/>
 		</VisualElements>
 		<View/>
 	</SASReportState>

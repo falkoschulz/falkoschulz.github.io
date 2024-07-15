@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.42.0" label="Stu - MC1" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.41.0" dateCreated="2024-05-19T18:52:07Z" dateModified="2024-07-12T09:05:00Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="4106">
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.42.0" label="Stu - MC1" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.41.0" dateCreated="2024-05-19T18:52:07Z" dateModified="2024-07-14T19:12:36Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="4270">
 	<Results>
-		<Result ref="dd4030" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-07T20:09:51.208Z">
+		<Result ref="dd4030" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-14T19:04:49.999Z">
 			<Variables>
 				<NumericVariable format="BEST12." usage="quantitative" definedAggregation="min" label="Sentiment Score" ref="bi4031" varname="bi4031" column="c0"/>
 			</Variables>
@@ -14,7 +14,7 @@
 			<Data isIndexed="false" availableRowCount="1" contentKey="BBKWGZIDCT6ZH6EYFSQWIDTGWOE6IE5E" size="23" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA[1.8048513285848406E-35
 ]]></Data>
 		</Result>
-		<Result ref="dd4046" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-07T20:09:51.208Z">
+		<Result ref="dd4046" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-14T19:04:49.999Z">
 			<Variables>
 				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="totalCount" label="Total Articles" ref="bi4048" varname="bi4048" column="c0"/>
 			</Variables>
@@ -27,7 +27,7 @@
 			<Data isIndexed="false" availableRowCount="1" contentKey="ZXT3GOY6V2G7W5ANWDQ5VOGWY67GIKUX" size="4" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA[6.0
 ]]></Data>
 		</Result>
-		<Result ref="dd4008" type="relational" status="success" dataLevel="baseline" label="Parallel Coordinates Plot" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-07T20:09:54.019Z">
+		<Result ref="dd4008" type="relational" status="success" dataLevel="baseline" label="Parallel Coordinates Plot" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-14T19:04:50.035Z">
 			<Variables>
 				<StringVariable label="Source Entity" ref="bi4015" varname="bi4015" column="c0"/>
 				<StringVariable label="News Source (Edge)" ref="bi4016" varname="bi4016" column="c1"/>
@@ -51,7 +51,7 @@
 "The News Buoy"
 ]]></StringTable>
 		</Result>
-		<Result ref="dd4026" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-07T20:09:54.019Z">
+		<Result ref="dd4026" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-14T19:04:50.035Z">
 			<Variables>
 				<StringVariable label="Number of Polylines" ref="bi4020" varname="bi4020" column="c0"/>
 				<StringVariable label="Number of Polylines" ref="bi4022" varname="bi4022" column="c1"/>
@@ -65,7 +65,7 @@
 			<Data isIndexed="false" availableRowCount="1" contentKey="X7E2QDRURYQP7YABG2HIXQ6WL5V5W5ML" size="21" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA["3","3","Polylines:"
 ]]></Data>
 		</Result>
-		<Result ref="dd4014" type="relational" status="success" dataLevel="baseline" label="Dependent Variables Results" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-07T20:09:54.019Z">
+		<Result ref="dd4014" type="relational" status="success" dataLevel="baseline" label="Dependent Variables Results" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-14T19:04:50.035Z">
 			<Variables>
 				<StringVariable label="Variable Name" ref="bi4010" varname="bi4010" column="c0"/>
 				<NumericVariable format="BEST." usage="quantitative" label="Bin lower bound" ref="bi4011" varname="bi4011" column="c1"/>
@@ -87,7 +87,7 @@
 "bi4017"
 ]]></StringTable>
 		</Result>
-		<Result ref="dd4039" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-07T20:09:51.208Z">
+		<Result ref="dd4039" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-14T19:04:49.999Z">
 			<Variables>
 				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="sum" label="Total Articles" ref="bi4040" varname="bi4040" column="c0"/>
 			</Variables>
@@ -1019,7 +1019,7 @@ else 1=1</Property>
 					<Expression>cond(isSet(#{pr3525}),contains(upper(${bi3534,binned}),upper(#{pr3525})),eq(1,1))</Expression>
 				</RelationalFilterItem>
 				<RelationalDataItem name="bi3536" base="bi658"/>
-				<RelationalDataItem name="bi4104" base="bi654"/>
+				<RelationalDataItem name="bi4268" base="bi654"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds650" type="relational" name="dd3531">
 				<RelationalQuery detail="false">
@@ -2010,7 +2010,7 @@ else 0</Property>
 				<Property key="infoBarHiddenParts"></Property>
 			</EditorProperties>
 			<Title></Title>
-			<P><Span class="infoBarTextTitle">Text Topics</Span><Span>   </Span><Span>Language:</Span><Span> </Span><Span class="infoBarTextBold">(none selected)</Span><Span>   </Span><Span>Maximum topics:</Span><Span> </Span><Span class="infoBarTextBold">15</Span><Span>   </Span><Span>Documents:</Span><Span> </Span><DynamicSpan variable="bi639" tooltip="bi640" class="infoBarTextBold"></DynamicSpan><Span>   </Span><Span>Analyze sentiment:</Span><Span> </Span><Span class="infoBarTextBold">Yes</Span><Span>   </Span></P>
+			<P><Span class="infoBarTextTitle">Text Topics</Span><Span>   </Span><Span>Language:</Span><Span> </Span><Span class="infoBarTextBold">English</Span><Span>   </Span><Span>Maximum topics:</Span><Span> </Span><Span class="infoBarTextBold">15</Span><Span>   </Span><Span>Documents:</Span><Span> </Span><DynamicSpan variable="bi639" tooltip="bi640" class="infoBarTextBold"></DynamicSpan><Span>   </Span><Span>Analyze sentiment:</Span><Span> </Span><Span class="infoBarTextBold">Yes</Span><Span>   </Span></P>
 		</Text>
 		<Graph graphType="textTopics" resultDefinitions="dd496" name="ve492" data="dd494" label="Topics" applyDynamicBrushes="no">
 			<EditorProperties>
@@ -2751,13 +2751,13 @@ else 0</Property>
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
     <Meta>
         <DataNameMap>
-            <Entry model="ParallelCoordinatesPlot_14" data="dd3300"/>
-            <Entry model="BinMetadata_14" data="dd3301"/>
+            <Entry model="ParallelCoordinatesPlot_2" data="dd3300"/>
+            <Entry model="BinMetadata_2" data="dd3301"/>
         </DataNameMap>
     </Meta>
     <LayoutRegion>
-        <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_14" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd3300#bi3289">
-            <BinMetadata dataField="dd3301#bi3292" size="dd3301#bi3294" start="dd3301#bi3293" count="dd3301#bi3295" name="BinMetadata_14"/>
+        <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_2" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd3300#bi3289">
+            <BinMetadata dataField="dd3301#bi3292" size="dd3301#bi3294" start="dd3301#bi3293" count="dd3301#bi3295" name="BinMetadata_2"/>
             <Response>
                 <Value>dd3300#bi3304</Value>
                 <Value>dd3300#bi3307</Value>
@@ -2931,10 +2931,10 @@ else 0</Property>
 		<Text name="ve3463" label="Text 2" selectionDisabled="true" applyDynamicBrushes="no"/>
 		<Text name="ve3470" label="Text 2 (1)" selectionDisabled="true" applyDynamicBrushes="no"/>
 		<Text name="ve3473" label="Text 3" selectionDisabled="true" applyDynamicBrushes="no">
-			<P><Span class="span1">SouthSeafood Express is seen as a source entity for three articles, but none of the articles are about SouthSeafood Express.</Span></P>
+			<P><Span class="span1">SouthSeafood Express is seen as a source entity for three articles, but the articles only briefly mention SouthSeafood Express.</Span></P>
 		</Text>
 		<Text name="ve3480" label="Text 3 (1)" selectionDisabled="true" applyDynamicBrushes="no">
-			<P><Span class="span1">Jones Group has six articles with positive edges but an overall negative sentiment from the article.</Span></P>
+			<P><Span class="span1">Jones Group has six articles with positive edges but an overall negative sentiment from all articles.</Span></P>
 		</Text>
 		<Graph graphType="bar" supplementalVisuals="ve3485" resultDefinitions="dd3484" name="ve3181" data="dd3482" label="Bar - Word or Phrase 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi3193">
 			<EditorProperties>
@@ -3019,7 +3019,7 @@ else 0</Property>
 		</VisualContainer>
 		<Text resultDefinitions="dd3532" name="ve3529" data="dd3530" label="Text 4" selectionDisabled="true" applyDynamicBrushes="no">
 			<EditorProperties>
-				<Property key="addedInteractionQueryDataItems">bi4104</Property>
+				<Property key="addedInteractionQueryDataItems">bi4268</Property>
 			</EditorProperties>
 			<P><Span>Total articles: </Span><DynamicSpan variable="bi3536"></DynamicSpan></P>
 		</Text>
@@ -3590,7 +3590,7 @@ else 0</Property>
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
 			</EditorProperties>
 		</VisualContainer>
-		<Graph graphType="bar" supplementalVisuals="ve3974" resultDefinitions="dd3969" name="ve3975" data="dd3972" label="Bar - Word or Phrase 1 (1)" applyDynamicBrushes="yes" sourceInteractionVariables="bi3968">
+		<Graph graphType="bar" supplementalVisuals="ve3974" resultDefinitions="dd3969" name="ve3975" data="dd3972" label="Bar - Word or Phrase 2" applyDynamicBrushes="yes" sourceInteractionVariables="bi3968">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi3970</Property>
@@ -3753,13 +3753,13 @@ else 0</Property>
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
     <Meta>
         <DataNameMap>
-            <Entry model="ParallelCoordinatesPlot_16" data="dd4008"/>
-            <Entry model="BinMetadata_16" data="dd4014"/>
+            <Entry model="ParallelCoordinatesPlot_3" data="dd4008"/>
+            <Entry model="BinMetadata_3" data="dd4014"/>
         </DataNameMap>
     </Meta>
     <LayoutRegion>
-        <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_16" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd4008#bi4018">
-            <BinMetadata dataField="dd4014#bi4010" size="dd4014#bi4012" start="dd4014#bi4011" count="dd4014#bi4013" name="BinMetadata_16"/>
+        <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_3" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd4008#bi4018">
+            <BinMetadata dataField="dd4014#bi4010" size="dd4014#bi4012" start="dd4014#bi4011" count="dd4014#bi4013" name="BinMetadata_3"/>
             <Response>
                 <Value>dd4008#bi4015</Value>
                 <Value>dd4008#bi4016</Value>
@@ -3925,10 +3925,10 @@ else 0</Property>
 			<P class="paragraph1"><Span class="span1"><Span class="span2">Source Article: Jones Group</Span></Span></P>
 		</Text>
 		<Text name="ve4078" label="Text 3 (2)" selectionDisabled="true" applyDynamicBrushes="no">
-			<P><Span class="span1">SouthSeafood Express is seen as a source entity for three articles, but none of the articles are about SouthSeafood Express.</Span></P>
+			<P><Span class="span1">SouthSeafood Express is seen as a source entity for three articles, but the articles only briefly mention SouthSeafood Express.</Span></P>
 		</Text>
 		<Text name="ve4083" label="Text 3 (1) (1)" selectionDisabled="true" applyDynamicBrushes="no">
-			<P><Span class="span1">Jones Group has six articles with positive edges but an overall negative sentiment from the article.</Span></P>
+			<P><Span class="span1">Jones Group has six articles with positive edges but an overall negative sentiment from all articles.</Span></P>
 		</Text>
 		<VisualContainer containerType="layout" name="ve4090" label="Layout Container 5" selectionDisabled="true">
 			<EditorProperties>
@@ -5262,45 +5262,45 @@ else 0</Property>
 		</Interaction>
 		<Interaction name="ia3680" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3510" variable="bi3514"/>
-			<InteractionElementReference purpose="target" ref="ve3529" variable="bi4104"/>
+			<InteractionElementReference purpose="target" ref="ve3529" variable="bi4268"/>
 		</Interaction>
-		<Interaction name="ia4095" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4259" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3519"/>
 			<InteractionElementReference purpose="target" variable="pr3525"/>
 		</Interaction>
-		<Interaction name="ia4096" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4260" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr512"/>
 			<InteractionElementReference purpose="target" ref="ve641" variable="pr512"/>
 		</Interaction>
-		<Interaction name="ia4097" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4261" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr527"/>
 			<InteractionElementReference purpose="target" ref="ve641" variable="pr527"/>
 		</Interaction>
-		<Interaction name="ia4098" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4262" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr528"/>
 			<InteractionElementReference purpose="target" ref="ve641" variable="pr528"/>
 		</Interaction>
-		<Interaction name="ia4099" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4263" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr512"/>
 			<InteractionElementReference purpose="target" ref="ve513" variable="pr512"/>
 		</Interaction>
-		<Interaction name="ia4100" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4264" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr512"/>
 			<InteractionElementReference purpose="target" ref="ve529" variable="pr512"/>
 		</Interaction>
-		<Interaction name="ia4101" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4265" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr527"/>
 			<InteractionElementReference purpose="target" ref="ve529" variable="pr527"/>
 		</Interaction>
-		<Interaction name="ia4102" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4266" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr528"/>
 			<InteractionElementReference purpose="target" ref="ve529" variable="pr528"/>
 		</Interaction>
-		<Interaction name="ia4103" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4267" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr3525"/>
 			<InteractionElementReference purpose="target" ref="ve804" variable="pr3525"/>
 		</Interaction>
-		<Interaction name="ia4105" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4269" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr3525"/>
 			<InteractionElementReference purpose="target" ref="ve3529" variable="pr3525"/>
 		</Interaction>
@@ -5412,17 +5412,17 @@ else 0</Property>
 	<Editors>
 		<Editor applicationName="VA">
 			<Revision editorVersion="2024.05" lastDate="2024-05-21T18:31:03.209Z"/>
-			<Revision editorVersion="2020" lastDate="2024-07-12T09:05:00.422Z"/>
+			<Revision editorVersion="2020" lastDate="2024-07-14T19:12:36.172Z"/>
 		</Editor>
 	</Editors>
 </History>
-	<SASReportState date="2024-07-11T19:26:12Z">
+	<SASReportState date="2024-07-14T19:12:08Z">
 		<VisualElements>
 			<PromptState element="ve3197"/>
 			<PromptState element="ve3510"/>
+			<PromptState element="ve3519"/>
 			<GraphState element="ve492"/>
 			<GraphState element="ve513"/>
-			<PromptState element="ve3519"/>
 			<PromptState element="ve3684"/>
 		</VisualElements>
 		<View/>

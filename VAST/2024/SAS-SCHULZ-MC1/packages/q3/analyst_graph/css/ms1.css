@@ -3,6 +3,9 @@
 #ve591 .GraphSkin {
   data-skin: GLOSS;
 }
+#ve1802 .Table {
+  border-style: solid;
+}
 #ve247 .styleForTitle_paragraph3 {
   text-align: center;
 }
@@ -12,8 +15,14 @@
 #ve1536 .styleForTitle_span3 {
   font-size: 22px;
 }
+#cd1798 .If {
+  background-color: #B14C51;
+}
 #ve352 .styleForTitle_paragraph1 {
   text-align: center;
+}
+#cd1800 .If {
+  background-color: #B14C51;
 }
 #ve828 .GraphSkin {
   data-skin: GLOSS;
@@ -68,6 +77,9 @@
   wrap-text: normal;
   display-opts: retainnewline;
 }
+#ve1802 .RowHeader {
+  background-color: #10324F;
+}
 #ve963 .styleForTitle_paragraph9 {
   text-align: center;
 }
@@ -98,6 +110,9 @@
 }
 #ve1571 .GraphSkin {
   data-skin: CRISP;
+}
+#ve1802 .tableColumnbi1791 {
+  fill-color: #C7E3F9;
 }
 #ve1535 .Table {
   wrap-text: normal;

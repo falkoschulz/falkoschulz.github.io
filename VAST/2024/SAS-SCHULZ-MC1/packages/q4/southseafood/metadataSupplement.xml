@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <metadataSupplement>
     <tables>
-        <table dataLocale="en_US" dataSources="ds70" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:53.935Z">
+        <table dataLocale="en_US" dataSources="ds70" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES','en_US'" tableModifiedTimeStamp="2024-07-14T19:04:52.473Z">
             <columns>
                 <column dataType="double" format="BEST12." label="index" xref="index"/>
                 <column dataType="string" label="filename" xref="filename"/>
@@ -11,7 +11,7 @@
                 <column dataType="double" format="BEST12." label="total_words" xref="total_words"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds78" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES_CONCAT','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:51.296Z">
+        <table dataLocale="en_US" dataSources="ds78" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES_CONCAT','en_US'" tableModifiedTimeStamp="2024-07-14T19:04:52.405Z">
             <columns>
                 <column dataType="double" format="BEST12." label="index" xref="index"/>
                 <column dataType="string" label="filename" xref="filename"/>
@@ -21,7 +21,7 @@
                 <column dataType="double" format="BEST12." label="total_words" xref="total_words"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds350" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_POLICE_TABLES','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:54.382Z">
+        <table dataLocale="en_US" dataSources="ds350" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_POLICE_TABLES','en_US'" tableModifiedTimeStamp="2024-07-14T19:04:52.865Z">
             <columns>
                 <column dataType="string" label="Location" xref="Location"/>
                 <column dataType="string" label="Person" xref="Person"/>
@@ -36,7 +36,7 @@
                 <column dataType="datetime" format="DATETIME0" label="Datetime" xref="Datetime"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds650" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES_SCORED','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:51.208Z">
+        <table dataLocale="en_US" dataSources="ds650" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES_SCORED','en_US'" tableModifiedTimeStamp="2024-07-14T19:04:49.999Z">
             <columns>
                 <column dataType="string" label="Article ID (Edge)" xref="articleid"/>
                 <column dataType="date" format="DATE9" label="date_written" xref="date_written"/>
@@ -47,7 +47,7 @@
                 <column dataType="double" format="BEST12." label="Score" xref="sentiment_score"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds833" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_GRAPH','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:54.019Z">
+        <table dataLocale="en_US" dataSources="ds833" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_GRAPH','en_US'" tableModifiedTimeStamp="2024-07-14T19:04:50.035Z">
             <columns>
                 <column dataType="datetime" format="DATETIME0" label="Date Added (Edge)" xref="edge_date_added"/>
                 <column dataType="string" label="Author Last Modified (Edge)" xref="edge_last_edited_by"/>
@@ -67,7 +67,7 @@
                 <column dataType="date" format="DATE9" label="Date of birth (Target)" xref="target_dob"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds942" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES_LOADED','en_US'" tableModifiedTimeStamp="2024-07-07T20:09:54.885Z">
+        <table dataLocale="en_US" dataSources="ds942" resourceIdentifier="'cas-shared-default','Public','VAST2024_MC1_ARTICLES_LOADED','en_US'" tableModifiedTimeStamp="2024-07-14T19:04:52.981Z">
             <columns>
                 <column dataType="string" label="Article ID (Edge)" xref="articleid"/>
                 <column dataType="date" format="DATE9" label="date_written" xref="date_written"/>
@@ -80,7 +80,7 @@
                 <column dataType="string" label="word" xref="word"/>
             </columns>
         </table>
-        <table dataLocale="en_US" dataSources="ds2137" resourceIdentifier="GeneratedResource-ge2136" tableModifiedTimeStamp="2024-07-07T20:09:54.885Z">
+        <table dataLocale="en_US" dataSources="ds2137" resourceIdentifier="GeneratedResource-ge2136" tableModifiedTimeStamp="2024-07-14T19:04:52.981Z">
             <columns/>
         </table>
     </tables>

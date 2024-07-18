@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.42.0" label="Stu - MC1" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.41.0" dateCreated="2024-05-19T18:52:07Z" dateModified="2024-07-14T19:12:36Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="4270">
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.42.0" label="Stu - MC1" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.41.0" dateCreated="2024-05-19T18:52:07Z" dateModified="2024-07-16T16:53:56Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="4436">
 	<Results>
 		<Result ref="dd4030" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2024-07-14T19:04:49.999Z">
 			<Variables>
@@ -1019,7 +1019,7 @@ else 1=1</Property>
 					<Expression>cond(isSet(#{pr3525}),contains(upper(${bi3534,binned}),upper(#{pr3525})),eq(1,1))</Expression>
 				</RelationalFilterItem>
 				<RelationalDataItem name="bi3536" base="bi658"/>
-				<RelationalDataItem name="bi4268" base="bi654"/>
+				<RelationalDataItem name="bi4434" base="bi654"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds650" type="relational" name="dd3531">
 				<RelationalQuery detail="false">
@@ -1668,7 +1668,7 @@ else 1=1</Property>
 			<BusinessItemFolder>
 				<DataItem name="bi651" label="Article" xref="article"/>
 				<DataItem name="bi652" label="Article ID" xref="articleid"/>
-				<DataItem name="bi653" label="Week Written" xref="date_written" format="WEEKV5"/>
+				<DataItem name="bi653" label="Week Written" xref="date_written" format="WEEKV2"/>
 				<DataItem name="bi654" label="Entity" xref="entity"/>
 				<DataItem name="bi655" label="News Source" xref="paper"/>
 				<DataItem name="bi656" label="Sentiment Score" xref="sentiment_score" aggregation="min"/>
@@ -2010,7 +2010,7 @@ else 0</Property>
 				<Property key="infoBarHiddenParts"></Property>
 			</EditorProperties>
 			<Title></Title>
-			<P><Span class="infoBarTextTitle">Text Topics</Span><Span>   </Span><Span>Language:</Span><Span> </Span><Span class="infoBarTextBold">English</Span><Span>   </Span><Span>Maximum topics:</Span><Span> </Span><Span class="infoBarTextBold">15</Span><Span>   </Span><Span>Documents:</Span><Span> </Span><DynamicSpan variable="bi639" tooltip="bi640" class="infoBarTextBold"></DynamicSpan><Span>   </Span><Span>Analyze sentiment:</Span><Span> </Span><Span class="infoBarTextBold">Yes</Span><Span>   </Span></P>
+			<P><Span class="infoBarTextTitle">Text Topics</Span><Span>   </Span><Span>Language:</Span><Span> </Span><Span class="infoBarTextBold">(none selected)</Span><Span>   </Span><Span>Maximum topics:</Span><Span> </Span><Span class="infoBarTextBold">15</Span><Span>   </Span><Span>Documents:</Span><Span> </Span><DynamicSpan variable="bi639" tooltip="bi640" class="infoBarTextBold"></DynamicSpan><Span>   </Span><Span>Analyze sentiment:</Span><Span> </Span><Span class="infoBarTextBold">Yes</Span><Span>   </Span></P>
 		</Text>
 		<Graph graphType="textTopics" resultDefinitions="dd496" name="ve492" data="dd494" label="Topics" applyDynamicBrushes="no">
 			<EditorProperties>
@@ -2743,7 +2743,7 @@ else 0</Property>
 			</EditorProperties>
 			<CheckBoxList searchable="true" selectAllEnabled="true" valueVariable="bi3201" measureVariable="bi3486"/>
 		</Prompt>
-		<Graph graphType="pcPlot" supplementalVisuals="ve3303" resultDefinitions="dd3300 dd3301" name="ve3285" data="dd3286" label="Parallel coordinates - Source Entity 1" applyDynamicBrushes="no" sourceInteractionVariables="bi3304 bi3307 bi3311">
+		<Graph graphType="pcPlot" supplementalVisuals="ve3303" resultDefinitions="dd3300 dd3301" name="ve3285" data="dd3286" label="Parallel coordinates - Source Entity 2" applyDynamicBrushes="no" sourceInteractionVariables="bi3304 bi3307 bi3311">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 			</EditorProperties>
@@ -2757,19 +2757,16 @@ else 0</Property>
     </Meta>
     <LayoutRegion>
         <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_2" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd3300#bi3289">
-            <BinMetadata dataField="dd3301#bi3292" size="dd3301#bi3294" start="dd3301#bi3293" count="dd3301#bi3295" name="BinMetadata_2"/>
+            <BinMetadata name="BinMetadata_2" dataField="dd3301#bi3292" size="dd3301#bi3294" start="dd3301#bi3293" count="dd3301#bi3295"/>
             <Response>
                 <Value>dd3300#bi3304</Value>
                 <Value>dd3300#bi3307</Value>
                 <Value>dd3300#bi3311</Value>
             </Response>
             <ParallelAxisOpts>
-                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response1">
-                </AxisOpts>
-                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response2">
-                </AxisOpts>
-                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response3">
-                </AxisOpts>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response1"/>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response2"/>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response3"/>
             </ParallelAxisOpts>
         </ParallelCoordinatesPlot>
     </LayoutRegion>
@@ -3019,7 +3016,7 @@ else 0</Property>
 		</VisualContainer>
 		<Text resultDefinitions="dd3532" name="ve3529" data="dd3530" label="Text 4" selectionDisabled="true" applyDynamicBrushes="no">
 			<EditorProperties>
-				<Property key="addedInteractionQueryDataItems">bi4268</Property>
+				<Property key="addedInteractionQueryDataItems">bi4434</Property>
 			</EditorProperties>
 			<P><Span>Total articles: </Span><DynamicSpan variable="bi3536"></DynamicSpan></P>
 		</Text>
@@ -3595,6 +3592,13 @@ else 0</Property>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoFrequencyQueryDataItemName">bi3970</Property>
 			</EditorProperties>
+			<Conditions>
+				<Condition ref="rg4424">
+					<ConditionParameters>
+						<ConditionParameter parameter="bi3968"/>
+					</ConditionParameters>
+				</Condition>
+			</Conditions>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel">
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
     <Meta>
@@ -3759,19 +3763,16 @@ else 0</Property>
     </Meta>
     <LayoutRegion>
         <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_3" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd4008#bi4018">
-            <BinMetadata dataField="dd4014#bi4010" size="dd4014#bi4012" start="dd4014#bi4011" count="dd4014#bi4013" name="BinMetadata_3"/>
+            <BinMetadata name="BinMetadata_3" dataField="dd4014#bi4010" size="dd4014#bi4012" start="dd4014#bi4011" count="dd4014#bi4013"/>
             <Response>
                 <Value>dd4008#bi4015</Value>
                 <Value>dd4008#bi4016</Value>
                 <Value>dd4008#bi4017</Value>
             </Response>
             <ParallelAxisOpts>
-                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response1">
-                </AxisOpts>
-                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response2">
-                </AxisOpts>
-                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response3">
-                </AxisOpts>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response1"/>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response2"/>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response3"/>
             </ParallelAxisOpts>
         </ParallelCoordinatesPlot>
     </LayoutRegion>
@@ -5262,45 +5263,45 @@ else 0</Property>
 		</Interaction>
 		<Interaction name="ia3680" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve3510" variable="bi3514"/>
-			<InteractionElementReference purpose="target" ref="ve3529" variable="bi4268"/>
+			<InteractionElementReference purpose="target" ref="ve3529" variable="bi4434"/>
 		</Interaction>
-		<Interaction name="ia4259" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4425" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" ref="ve3519"/>
 			<InteractionElementReference purpose="target" variable="pr3525"/>
 		</Interaction>
-		<Interaction name="ia4260" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4426" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr512"/>
 			<InteractionElementReference purpose="target" ref="ve641" variable="pr512"/>
 		</Interaction>
-		<Interaction name="ia4261" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4427" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr527"/>
 			<InteractionElementReference purpose="target" ref="ve641" variable="pr527"/>
 		</Interaction>
-		<Interaction name="ia4262" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4428" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr528"/>
 			<InteractionElementReference purpose="target" ref="ve641" variable="pr528"/>
 		</Interaction>
-		<Interaction name="ia4263" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4429" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr512"/>
 			<InteractionElementReference purpose="target" ref="ve513" variable="pr512"/>
 		</Interaction>
-		<Interaction name="ia4264" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4430" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr512"/>
 			<InteractionElementReference purpose="target" ref="ve529" variable="pr512"/>
 		</Interaction>
-		<Interaction name="ia4265" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4431" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr527"/>
 			<InteractionElementReference purpose="target" ref="ve529" variable="pr527"/>
 		</Interaction>
-		<Interaction name="ia4266" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4432" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr528"/>
 			<InteractionElementReference purpose="target" ref="ve529" variable="pr528"/>
 		</Interaction>
-		<Interaction name="ia4267" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4433" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr3525"/>
 			<InteractionElementReference purpose="target" ref="ve804" variable="pr3525"/>
 		</Interaction>
-		<Interaction name="ia4269" type="parameter" dataStage="detail" derived="true">
+		<Interaction name="ia4435" type="parameter" dataStage="detail" derived="true">
 			<InteractionElementReference purpose="source" variable="pr3525"/>
 			<InteractionElementReference purpose="target" ref="ve3529" variable="pr3525"/>
 		</Interaction>
@@ -5351,6 +5352,14 @@ else 0</Property>
 				<Category categoryColor="#B14C51">Harvey Janus</Category>
 			</DiscreteAttrMap>
 		</Range>
+		<Range scope="local" name="rg4424">
+			<DiscreteAttrMap>
+				<Category categoryColor="#84414B">Controversial logistics company</Category>
+				<Category categoryColor="#84414B">Blatant disregard for the law</Category>
+				<Category categoryColor="#84414B">Disturbing trend</Category>
+				<Category categoryColor="#84414B">Under fire</Category>
+			</DiscreteAttrMap>
+		</Range>
 	</Conditions>
 	<MediaSchemes>
 		<MediaScheme name="ms1">
@@ -5365,7 +5374,7 @@ else 0</Property>
 		<MediaTarget windowSize="large" scheme="ms1" name="mt5"/>
 	</MediaTargets>
 	<Properties>
-		<Property key="displayDataSource">ds833</Property>
+		<Property key="displayDataSource">ds2137</Property>
 		<Property key="ReportPackagesServiceVersion">Viya4 2024.06</Property>
 		<Property key="ReportDataServiceVersion">Viya4 2024.06</Property>
 	</Properties>
@@ -5412,7 +5421,7 @@ else 0</Property>
 	<Editors>
 		<Editor applicationName="VA">
 			<Revision editorVersion="2024.05" lastDate="2024-05-21T18:31:03.209Z"/>
-			<Revision editorVersion="2020" lastDate="2024-07-14T19:12:36.172Z"/>
+			<Revision editorVersion="2020" lastDate="2024-07-16T16:53:56.783Z"/>
 		</Editor>
 	</Editors>
 </History>
